@@ -7,6 +7,8 @@ static/
 sekrit_settings.py
 settings.py.backup.py
 
+live-2012-apr-04.pid
+
 # Numerous always-ignore extensions
 *.pyc
 *.diff

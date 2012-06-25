@@ -1,0 +1,100 @@
+/* This file contains basic element formating that is not layout/position related */
+body{
+    background:url("/media/images/cu_page_bg.gif") repeat-x scroll left top #efefef;
+    font-family: Verdana,Geneva,Helvetica,sans-serif;
+    font-size: 76%;
+    color: #333333;
+}
+a:link, a:visited, a:active {
+    color: #0000FF;
+    text-decoration: none;
+}
+a:link:hover, a:visited:hover {
+    text-decoration: underline;
+}
+p{
+    line-height: 1.9;
+    margin: 0 0 0.8em;
+}
+h1{
+
+}
+h2{
+    font-size: 17px;
+    line-height: 15px;
+    margin: 0px 0 15px;
+}
+h3{
+    font-size: 15px;
+    line-height: 15px;
+    margin: 10px 0 5px;
+}
+h4{
+    font-size: 13px;
+    line-height: 13px;
+    margin: 10px 0 5px;
+}
+h5{
+
+}
+div {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+dl dt{
+    font-weight: bold;
+    margin: 0.25em 0;
+    padding: 0;
+}
+
+ul {list-style: square; padding-left: 15px;}
+ol {list-style: decimal; padding-left: 30px;}
+
+li  {padding-bottom: 1ex;}
+
+ul.plugin-list {padding-left: 0;}
+ul.menu {list-style: none; padding-left: 0}
+ul.menu li  {padding-bottom: 0;}
+
+ul.boxed, div.boxed-lists ul    {padding-left: 0;}
+ul.boxed li, div.boxed-lists li {
+    border: 1px solid #ccc;
+    background: #ecf1ff;
+    list-style:none;
+    padding: .5em;
+    margin: 0 0 1em;
+    }
+    
+ul.boxed li li {border: none;}
+ul.boxed li dl {margin:0;}
+
+/* icons */
+ul.icons    {
+    list-style: square url(/media/images/arrow_cu_right.gif);
+    padding-left: 20px;
+}
+
+/* arkestra classes */
+.date {
+color: #666;
+font-weight: bold;
+}
+
+.venue-line {
+color: #333;
+}
+
+.venue  {
+    font-style: italic;
+}
+
+/* presentation editor styles */
+.border-top  {border-top: 1px solid #999; padding-top: 1ex;}      
+
+.multiple-image-shadows:hover ul.multiple.imageset li.image.link { opacity: .4;}
+
+.multiple-image-shadows ul.multiple.imageset:hover li.image.link:hover    {
+    box-shadow: 2px 2px 3px 1px rgba(6,6,6,.5);    
+    opacity: 1; 
+    outline: none;
+    }

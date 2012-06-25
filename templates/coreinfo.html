@@ -1,0 +1,77 @@
+{% load cache cms_tags menu_tags link_tags %}{% load typogrify_tags %}{% block doctype %}<!DOCTYPE html>{% endblock doctype %} 
+{% block html %}
+	<html lang="en" >
+{% endblock html %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+{% block meta %}<meta name="description" content="{% page_attribute meta_description %}"/>{% endblock meta %}
+
+{% block title %}<title>{% page_attribute page_title %}</title>{% endblock %}
+
+{% block styles %}
+	<style media="screen" type="text/css"><!--
+
+			@import url("/media/css/fixes.css");
+			@import url("/media/css/temporaryhacks.css");
+       		@import url("/media/css/carousel.css");
+			@import url("/media/css/coreinfo/coreinfo.css");
+
+		--></style>
+	
+  <!--[if IE]><link href="/media/css/ie-fixes/ie.css" rel="stylesheet" type="text/css" /><![endif]--> 
+  <!--[if IE 8]><link href="/media/css/ie-fixes/ie8.css" rel="stylesheet" type="text/css" /><![endif]--> 
+  <!--[if IE 7]><link href="/media/css/ie-fixes/ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if lt IE 7]><link href="/media/css/ie-fixes/ie6.css" rel="stylesheet" type="text/css" /><![endif]--> 
+
+	<link href="/m edia/css/_core/css/print.css" media="print" rel="stylesheet" type="text/css" />
+{% block extrastyles %}
+{% endblock extrastyles %}
+<script type="text/javascript" src="/media/cms/js/lib/jquery.js"></script>
+
+{% endblock styles %}
+
+</head>
+
+{% block body %}<body>{% endblock body %}
+
+{% block skip %}<p class="access"><a  href="#top">Skip to content</a><br class="access" /><a class="access" href="#nav_local">Skip to navigation menu</a></p>{% endblock skip %}
+    
+<div class="logo"><a style="text-decoration: none; border: none;" href="#"><img style="border: none;" src="/media/css/coreinfo/core-info-logo.jpg" alt="Core Info home" /></a></div>
+
+<p class="strapline standout">{% page_attribute meta_description %}</p>
+
+<ul id="breadcrumbs">{% show_breadcrumb %}</ul>
+<ul>{% show_menu 0 100 1 1 "cms/cardiff_menu.html" "" "core-info-root" %}</ul>
+<div class="row columns2" id="wrapper">
+    
+   	<div class="column lastcolumn bodycolumn">{% block title_body_and_sub %}
+   	
+					
+
+
+
+       	{% block main_page_body %}
+    	{% filter typogrify %}{% placeholder body %}{% endfilter %}
+   	    {% endblock main_page_body %}
+       
+   	    {% block sub %}
+   	    {% endblock sub %}
+   	    
+   	    <ul class="footer"><li><a href="#">Proin a est purus</a></li><li><a href="#">Aliquam erat volutpat</a></li><li><a href="#">Nunc erat leo</a></li><li><a href="#">Pellentesque id elit nisi</a></li></ul>
+   	
+    {% endblock title_body_and_sub %}
+
+   	
+	{% block horizontal_navigation %}{% endblock horizontal_navigation %}
+	</div>
+	{% block nav_local %}<div class="column firstcolumn menucolumn" id="local-menu"><ul>{% show_menu 0 100 0 1 "cms/cardiff_menu.html" %}</ul></div>{% endblock nav_local %}
+
+
+</div>		
+
+
+</body>
+</html>
+

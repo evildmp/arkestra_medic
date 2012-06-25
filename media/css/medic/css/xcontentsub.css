@@ -1,0 +1,156 @@
+/*MEDIC Specific styles*/
+/*Content area styles*/
+
+/*Image with Caption*/
+	#content div.floatCaptionLeft, 
+	#content div.floatCaptionRight {
+		background:#dcdcdc;
+		border:3px solid #dcdcdc;
+		}
+/*Horizontal Rule*/
+	#content hr {
+		background: #cdd8fa; color:#cdd8fa; height:1px; border:none;
+	}
+
+/* should these margins move into fixes? */
+	
+h1,  h3	{color: black; margin-bottom: .25em;}
+h2 {color: #990033;}	
+h4	{color: #333; margin-bottom: .25em;}
+h5, h6	{color: #666; margin-bottom: .25em;}
+	
+/* tint1 black on pale */
+
+div.tint1, table.tint1, table.tint1 td, caption.tint1, tr.tint1, th.tint1, td.tint1, p.tint1 {
+	background: #dce3fa;
+	border-color: #cdd8fa;
+	/*color: black;*/
+	}
+
+div.tint1 h3 {color: #903;}
+
+table.tint1 th {
+	/*this is to ensure that th border colours are tint-defined in Mozilla and Opera, without over-writing background-colour*/
+	border-color: #cdd8fa;
+	background: #cdd8fa;
+	}
+
+/* tint2 black on mid */
+
+.tint2 h3, .tint2 h4, .tint2 h5, .tint2 h6 { color: #4358cc; }
+
+ div.tint2, table.tint2, table.tint2 td, caption.tint2, tr.tint2, th.tint2, td.tint2 {
+	background: #dcdcdc;
+	border-color: #c2d8a8;
+	color: #000;
+	}
+
+table.tint2 th {
+	background-color: #c2d8a8;
+	border-color: #c2d8a8;
+	}
+
+/*tint3 black headings on #a5a5a5 */
+
+.tint3 h3, .tint3 h4, .tint3 h5, .tint3 h6 { color: black; }
+
+table.tint3, table.tint3 td, caption.tint3, tr.tint3, th.tint3, td.tint3, div.tint3, p.tint3 {
+	background: #a5a5a5;
+	border-color: #5265d1;
+	color: black
+	}
+
+table.tint3 th {
+	background: #5265d1;
+	border-right: #5265d1;
+	border-bottom: #5265d1;
+	color: #fff;
+	}
+
+/*tint4 red headings on very pale red */
+
+.tint4 h3, .tint4 h4, .tint4 h5, .tint4 h6 { color: #990033; }
+
+table.tint4, table.tint4 td, caption.tint4, tr.tint4, th.tint4, td.tint4, div.tint4 {
+	background: #fffdfd  ;
+	border-color: #d8d8d8;
+	color: black;
+	}
+
+table.tint4 th {
+	background: #d8d8d8;
+	border-color: #d8d8d8;
+	}
+
+	
+/*tint5 black headings on  pale red */
+
+.tint5 h3, .tint5 h4, .tint5 h5, .tint5 h6 { color: black; }
+
+table.tint5, table.tint5 td, caption.tint5, tr.tint5, th.tint5, td.tint5, div.tint5 {
+	background: #fffdfd;
+	border-color: #d8d8d8;
+	color: black;
+	}
+
+table.tint5 th {
+	background: #d8d8d8;
+	border-color: #d8d8d8;
+	}
+
+table.tint1 tr.tint0 td,
+table.tint2 tr.tint0 td,
+table.tint3 tr.tint0 td,
+table.tint4 tr.tint0 td,
+table.tint1 td.tint0, table.tint2 td.tint0, table.tint3 td.tint0, table.tint4 td.tint0 { background: #fff; }
+
+	
+	
+/*tint6 black headings on strong Cardiff red red */
+
+.tint6 h3, .tint6 h4, .tint6 h5, .tint6 h6 { color:#990033; }
+
+
+table.tint6, table.tint6 td, caption.tint6, tr.tint6, th.tint6, td.tint6, div.tint6, p.tint6 {
+	background: #e6f1d8;
+	border-color: #d8d8d8;
+	}
+
+table.tint6 th {
+	background: #d8d8d8;
+	border-color: #d8d8d8;
+	}
+
+
+div.divspacer {margin-bottom:.5em;}
+/*Forces a top alignment in the homepage images*/
+#content.Homepage img.floatLeft { margin:0 .5em .4em 0; }
+#content.Homepage .medic-welcome p { margin: 0 0 0.5em 0; }
+/*END TINT classes*/
+/*Right-hand column styles*/
+#sub div.relatedItem {background:#d7e0fb; border:1px solid #cdd8fa;}
+/* Green version of related links box
+#sub div.relatedItem {background:#e6f1d8; border:1px solid #daebc3;}
+*/
+#sub h4 {color:#0a2c91;}
+#sub a.external { 
+		background:url(/media/images/icon_world.gif) left 2px no-repeat; 
+		padding: 0 0 0 18px;
+		/*white-space:no-wrap breaks long links in #sub sagba*/
+	}
+#content.Generic_Page ul.none {width:99%;}
+/*Temp fix CSS for contact snippet*/
+#content .contact_snippet_details_4 div.jobtitle span.job-title-label {
+	display:block;
+	width:7em;
+	clear:left;
+	font-weight:bold;
+	float:left;
+	}
+#content .contact_snippet_details_4 div.jobtitle span.job-title {
+	display:block;
+	width:auto;
+	float:left;
+	}
+#content .contact_snippet_details_4 .jobtitle { float:left;}
+#content .contact_snippet_details_4 .contact-details {clear:left; width:100%;}

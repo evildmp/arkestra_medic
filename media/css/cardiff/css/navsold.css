@@ -1,0 +1,543 @@
+/* this is for the styling of all nav elements , #nav_main, #nav_local, #nav_horiz, #breadcrumb and #lang_select*/
+	/*#nav_main definitions. Also includes styling for tabbed menus for global use.*/
+	#nav_main {
+		background-color:white;
+	}
+	#nav_main ul {
+		font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+		font-weight: normal;
+		text-transform:uppercase;	
+		font-size: 0.9em;
+		display:inline;
+		width: 76%;
+		float:left;
+		padding:10px 0px 0px 7px;
+		list-style:none;
+		white-space:nowrap;
+	}
+	#nav_main li {
+		display: inline;
+		margin: 0;
+		padding-right:10px;
+	}
+	
+	/* Search form - new styles Oct 2009 sagba */
+	#nav_main form#cse-search-box {
+		width:21%;
+		margin:0;
+		padding:0.6em 0 0 0;
+		float:right;
+		white-space:nowrap;
+	}
+	#nav_main form#cse-search-box input#q {
+		font-size: 0.9em;	
+		margin:0 0 0 0;
+		padding:0.1em;
+		display: inline;
+		width: 11em;
+		border:1px solid #b3b3b3;
+		position:absolute;
+		top:0.8em;
+		right:3.3em;
+	}
+		#nav_main form#cse-search-box input#submit {
+		margin:0;
+		padding:0;
+		display: inline;
+		position:absolute;
+		top:0.7em;
+		right:0.1em;
+	}
+		
+	#nav_main form {
+		margin:0;
+		padding:0.6em 0 0 0;
+		float:right;
+		width: 17%;
+		white-space:nowrap;
+	}
+	/*Welsh version of the search box area - accomodates the larger button required.*/
+	#nav_main form.nav_search_cy {
+		margin:0;
+		padding:0.6em 0 0 0;
+		float:right;
+		width: 20%;
+		white-space:nowrap;
+	}
+	#nav_main fieldset  {
+		border:none;	
+		margin:0;
+		padding:0;	
+		float:right;
+	}
+	#nav_main input {
+		font-size: 0.9em;	
+		margin:0;
+		padding:0;
+		display: inline;
+	}	
+	#nav_main a, #nav_main a:link, #nav_main a:active {
+		color:#333;
+		text-decoration: none;
+	}
+	#nav_main a:visited {
+		color: #333;
+	}
+	#nav_main a:hover {
+		color:#933;
+		text-decoration: underline;
+	}
+	/*Go button definitions*/
+	#nav_main form input#go {
+		width:31px;
+		height:20px;
+		border:none;
+		vertical-align:middle;
+	}
+	#nav_main form.nav_search_cy input#go {
+		width:44px;
+		height:20px;
+		border:none;
+		vertical-align:middle;
+	}
+	/*#END nav_main definitions*/
+ 
+	/*#nav_local definitions*/		
+	#nav_local {
+		/*borders may cause rendering anomalies for #nav_main in IE due to IE box-model problems*/
+		/*border: 1px solid black;*/
+	}	
+	#nav_local a:link, #nav_local a:visited ,#nav_local a:hover, #nav_local a:active {
+	/*this makes all the anchors act as block elements for purposes of mouse-over effects*/
+		display: block;
+		/*to get around the IE whitespace bug, a hack has been put in _tools\default.css, giving anchors a height of 1px - but only for IE.*/
+		text-decoration: none;
+		font-size: 1em;	
+	}		
+	#nav_local ul {	
+		margin: 0;
+		padding:0;
+		list-style:none;
+	}
+	#nav_local li {
+		font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+		font-weight: bold;
+		margin:0;
+		padding:0;
+	}
+	/*level 1 nav_local*/
+ 
+	#nav_local a.subsite_head:link{
+		padding: 0.2em 0 0.2em 1em;
+		background: #8998a7 url(../images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #fff;
+	}
+	#nav_local  a.subsite_head:visited {
+		padding: 0.2em 0 0.2em 1em;
+		background: #8998a7 url(../images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #fff;
+	}
+	#nav_local a.subsite_head:hover {
+		padding: 0.2em 0 0.2em 1em;
+		background: #a3b2c2 url(../images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #fff;
+	}
+	#nav_local a.subsite_head:active {
+		padding: 0.2em 0 0.2em 1em;
+		background: #becede url(../images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #333;
+	}
+		/*level 2 nav_local*/
+		#nav_local ul li ul li {
+			border-bottom:1px solid #fff;
+		}
+		#nav_local ul li ul li a:link{
+			background-color: #DAE9FA;
+			border: 1px solid #DAE9FA;
+			padding: .2em 0 .2em 1em;		
+			color: #333;
+		}
+		#nav_local ul li ul li a:visited{
+			background-color: #DAE9FA;
+			border: 1px solid #DAE9FA;
+			padding: .2em 0 .2em 1em;
+			color: #333;
+		}
+		#nav_local ul li ul li a:hover{
+			background-color: #f1ffff;
+			border: 1px solid #8998a7;
+			padding: .2em 0 .2em 1em;		
+			color: #333;
+		}
+		#nav_local ul li ul li a:active {
+			background-color: #DAE9FA;
+			border: 1px solid #DAE9FA;
+			padding: .2em 0 .2em 1em;		
+			color: #333;
+		}
+		#nav_local ul li ul li a.current:link{
+				background: #DAE9FA url(../images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #DAE9FA;
+				color:#990033;
+			}
+		#nav_local ul li ul li a.current:visited{
+				background: #DAE9FA url(../images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #DAE9FA;
+				color:#990033;
+			}
+		#nav_local ul li ul li a.current:hover{
+				background: #f1ffff url(../images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #8998a7;
+				color:#990033;
+			}
+		#nav_local ul li ul li a.current:active {
+				background: #f1ffff url(../images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #8998a7;
+				color:#990033;
+			}
+			/*level 3 nav_local*/
+			/*main anchors*/
+		#nav_local ul li ul li ul li {
+			border-bottom:none;
+		}					
+			#nav_local ul li ul li ul li a:link{
+				background: #e3f3ff url(../images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #e3f3ff;
+				padding: .2em 0 .2em 1.5em;		
+				color: #333;
+			}
+			#nav_local ul li ul li ul li a:visited{
+				background: #e3f3ff url(../images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #e3f3ff;
+				padding: .2em 0 .2em 1.5em;	
+				color: #333;
+			}
+			#nav_local ul li ul li ul li a:hover{
+				background: #f1ffff url(../images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #DAE9FA;
+				padding: .2em 0 .2em 1.5em;		
+				color: #333;		
+			}
+			#nav_local ul li ul li ul li a:active {
+				background: #e3f3ff url(../images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #e3f3ff;
+				padding: .2em 0 .2em 1.5em;	
+				color: #333;
+			}
+			/*END main anchors*/
+			/*.current anchors*/
+			#nav_local ul li ul li ul li a.current:link{
+					background: #e3f3ff url(../images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			#nav_local ul li ul li ul li a.current:visited{
+					background: #e3f3ff url(../images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			#nav_local ul li ul li ul li a.current:hover{
+					background: #e3f3ff url(../images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			#nav_local ul li ul li ul li a.current:active {
+					background: #e3f3ff url(../images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			/*.END current anchors*/			
+				/*level 4 nav_local*/
+				/*main anchors*/
+				#nav_local ul li ul li ul li ul li{
+					border-bottom:none;
+					font-weight:normal;
+				}
+				#nav_local ul li ul li ul li ul li a:link {
+					background: #e3f3ff url(../images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#333;				
+					padding: .2em 0 .2em 2em;				
+				}
+				#nav_local ul li ul li ul li ul li a:visited{
+					background: #e3f3ff url(../images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#333;				
+					padding: .2em 0 .2em 2em;				
+				}
+				#nav_local ul li ul li ul li ul li a:hover{
+					background: #fff url(../images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #DAE9FA;
+					color:#333;				
+					padding: .2em 0 .2em 2em;				
+				}
+				#nav_local ul li ul li ul li ul li a:active {
+					background: #e3f3ff url(../images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#333;				
+					padding: .2em 0 .2em 2em;
+				}
+				/*END main anchors*/				
+				/*.current anchors*/		
+				#nav_local ul li ul li ul li ul li a.current:link{
+					background: #e3f3ff url(../images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#990033;					
+				}
+				#nav_local ul li ul li ul li ul li a.current:visited{
+					background: #e3f3ff url(../images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#990033;					
+				}
+				#nav_local ul li ul li ul li ul li a.current:hover{
+					background: #fff url(../images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #DAE9FA;
+					color:#990033;					
+				}
+				#nav_local ul li ul li ul li ul li a.current:active {
+					background: #e3f3ff url(../images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#990033;				
+				}
+				/*END .current anchors*/
+					/*level 5 nav_local sagba 150107*/
+					/*main anchors*/
+					#nav_local ul li ul li ul li ul li ul li{
+						border-bottom:none;
+						font-weight:normal;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:link {
+						background: #e3f3ff url(../images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:visited{
+						background: #e3f3ff url(../images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:hover{
+						background: #fff url(../images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #DAE9FA;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:active {
+						background: #e3f3ff url(../images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					/*END main anchors*/		
+					/*level 5 .current anchors*/
+					#nav_local ul li ul li ul li ul li ul li a.current:link{
+						background: #e3f3ff url(../images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#990033;					
+					}
+					#nav_local ul li ul li ul li ul li ul li a.current:visited{
+						background: #e3f3ff url(../images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#990033;					
+					}
+					#nav_local ul li ul li ul li ul li ul li a.current:hover{
+						background: #fff url(../images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #DAE9FA;
+						color:#990033;					
+					}
+					#nav_local ul li ul li ul li ul li ul li a.current:active {
+						background: #e3f3ff url(../images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#990033;				
+					}
+					/*END .current anchors*/
+	/*END #nav_local definitions*/
+	/*#nav_horiz definitions*/
+	#nav_horiz {
+		font-family:Arial, Helvetica, sans-serif;
+		background-color: #F5F5F5;
+	}
+	#nav_horiz ul {
+		list-style:none;
+		}
+	#nav_horiz li, #nav_horiz ul {
+		font-weight:bold;		
+		display:inline;
+		padding:0;
+		margin:0 0.5em;	
+	}	
+	#nav_horiz a:link, #nav_horiz a:visited ,#nav_horiz a:hover, #nav_horiz a:active {
+		color:#333;
+		text-decoration: none;
+	}
+	/* end #nav_horiz definitions*/
+	/*#breadcrumb definitions*/
+	#breadcrumb {display:none;}
+/*
+	#breadcrumb a:link, #breadcrumb a:visited {
+		color: #7399c4;
+	}
+*/
+/*	#breadcrumb a:hover, #breadcrumb a:active {
+		text-decoration: none;
+	}
+*/
+/*image replacement for &gt; sign*/
+/*	#breadcrumb .gt { 
+		font-size: 0;
+		color:#fff;
+		background: url(../images/arrow_breadcrumb.gif) top center no-repeat;
+		padding: 4px 6px 4px 3px;
+	}
+*/
+	/*END #breadcrumb definitions*/
+	/*#lang_select definitions*/
+	#lang_select {
+	position:absolute;
+		top:6em; /*a hack is necessary to make this work in IE6=<. See hacks.css*/
+		font-family:Arial, Helvetica, sans-serif;
+		text-align:right;
+		padding: 0 .5em 0 .5em;
+	}
+ 
+	#lang_select a {
+		font-size:0.9em;
+	}
+	#lang_select a:link, #lang_select a:visited ,#lang_select a:hover, #lang_select a:active {
+		color:#903;
+		text-decoration: none;
+	}	
+	/*END #lang_select definitions*/	
+ 
+/*#tab_menu section. This provides the layout for a horizontal tabbed menu using the 'sliding doors' method. (http://www.alistapart.com/articles/slidingdoors/)*/
+	ul#tab_menu {
+		border-bottom: 7px solid #707070;
+		float:left;
+		width: 100%; /* width of entire menu */
+		margin: 0 0 .5em 0; /*margin underneath menu*/
+		padding: 0;
+		list-style: none;
+	}
+	ul#tab_menu li {
+		background:url(../images/tabmenu_bg_inactive_rt.gif) no-repeat right top;
+		float:left;
+		margin: 0 2px 0 0; /*gap between menu tabs*/
+		padding:0;
+	}
+	ul#tab_menu a {
+		background:url(../images/tabmenu_bg_inactive_lt.gif) no-repeat left top;
+		display:block;
+		padding: 0.1em 1.2em;/*padding within tab*/	
+	}
+	ul#tab_menu  .active strong {
+		color:#fff;
+		display:block;
+		padding: 0.1em 1.2em;		
+	}
+	ul#tab_menu .active {
+		background:url(../images/tabmenu_bg_active_rt.gif) no-repeat right top;
+	}
+	ul#tab_menu .active strong {
+		background:url(../images/tabmenu_bg_active_lt.gif) no-repeat left top;
+	}
+	ul#tab_menu a, 
+	ul#tab_menu li a:link, 
+	ul#tab_menu li a:hover, 
+	ul#tab_menu li a:visited, 
+	ul#tab_menu li a:active{
+		color:#fff;
+		text-decoration:none;
+	}
+/*end #tab_menu section*/
+/*modifications to tab_menu for building content types*/
+	#content.Building ul#tab_menu {
+		border-bottom: 2px solid #6565AB;
+		float:left;
+		margin:0 0 0.5em 0;
+	}
+	#content.Building ul#tab_menu li {
+		background-image:url(../../_core/images/map_menu_bg_inactive_rt.gif);
+		margin: 0 2px 0 0; /*gap between menu tabs*/
+	}
+ 
+	#content.Building ul#tab_menu a, #content.building ul#tab_menu .active strong {
+		background-image:url(../../_core/images/map_menu_bg_inactive_lt.gif);
+	}
+	#content.Building ul#tab_menu .active {
+		background-image:url(../../_core/images/map_menu_bg_active_rt.gif);
+	}
+	#content.Building ul#tab_menu .active strong {
+		background-image:url(../../_core/images/map_menu_bg_active_lt.gif);
+	}
+/*STANDARD LINK STYLES*/
+	a:link, a:visited, a:hover, a:active{ color: #00f; }
+	a:link { text-decoration:none; }
+	a:visited { text-decoration:none; }
+	a:hover { text-decoration:underline; }
+	a:active { text-decoration:underline; }
+/*END STANDARD*/
+/*RSS Feed links*/
+span.rssfeed a {
+	background:url(../images/button_rss.gif) no-repeat 0 0;
+	padding:0 0 0 50px;
+	display:block;
+	height:1.8em;
+	vertical-align:middle;
+	font-size:.9em;
+	}
+span.rssfeedatom a {
+	background:url(../images/button_rss_atom.gif) no-repeat 0 0;
+	padding:0 0 0 53px;
+	display:block;
+	height:1.8em;
+	vertical-align:middle;
+	font-size:.9em;
+	}
+#sub span.rssfeed a {
+	background:url(../images/button_rss.gif) no-repeat 0 0;
+	padding:18px 0 0 0 ;
+	margin:0 0 1em 0;
+	display:block;
+	height:auto;
+	vertical-align:middle;
+	font-size:.9em;
+	}
+#sub span.rssfeedatom a {
+	background:url(../images/button_rss_atom.gif) no-repeat 0 0;
+	padding:18px 0 0 0;
+	margin:0 0 1em 0;
+	display:block;
+	height:auto;
+	vertical-align:middle;
+	font-size:.9em;
+	}
+/*Used for manual addition of RSS link (e.g. Homepage link) care required*/
+span.rss a {
+	background:url(../images/button_rss.gif) no-repeat top right;
+	padding:.3em 50px .3em 0;
+	vertical-align:middle;
+	font-size:.9em;
+	}
+span.rss-atom a {
+	background:url(../images/button_rss_atom.gif) no-repeat top right;
+	padding:.3em 53px .3em 0;
+	vertical-align:middle;
+	font-size:.9em;
+	}
+/*END RSS*/
+	a.title-with-link {
+		float:left;
+		font-size:.9em;
+		clear:left;
+		width:100%;
+		}
+/*Lock Icon*/
+a.lock:link,
+a.lock:hover,
+a.lock:active,
+a.lock:visited {
+	background:url(../images/icon_lock.gif) left 2px no-repeat;
+	padding:0.1em 0 0 15px;
+	}

@@ -1,0 +1,38 @@
+{% extends "cardiff.html" %}
+{% block specific_cardiff_styles %}
+	@import url("/media/css/medic/css/contentsubold.css");
+	@import url("/media/css/medic/css/headfoot.css");
+	@import url("/media/css/medic/css/navsold.css");
+{% endblock specific_cardiff_styles %}	
+
+{% block body %}
+<body class="medic">
+{% endblock %}
+
+
+
+{% block banner %}
+	<div class="clearfix" id="header">
+		<a href="/" title="Cardiff University | Prifysgol Caerdydd">
+		<img alt="Cardiff University | Prifysgol Caerdydd" src="/media/images/cu_logo.gif" /></a>
+		<div id="bannerImg"></div>
+
+		<h1 title="School of Medicine"><span></span>School of Medicine</h1>
+		<p class="h1subhead"></p>
+	</div>
+{% endblock %}
+
+
+
+{% block horizontal_navigation %}	    
+		<div id="nav_horiz">
+			<ul>
+				<li><a href="/en/">School Home</a></li>
+				<li><a href="/en/about-us/">About Us</a></li>
+				<li><a href="/en/degree-programmes/">Degree Programmes</a></li>
+				<li><a href="/en/research/">Research</a></li>
+				<li><a href="/en/entity/cardiff-university-school-medicine/news-and-events/">News &amp; Events</a></li>
+				<li><a href="/en/entity/cardiff-university-school-medicine/contacts-and-people/">Contacts &amp; People</a></li>
+			</ul>
+		 </div>
+{% endblock %}

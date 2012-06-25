@@ -1,0 +1,145 @@
+body	{
+    width: 800px; 
+    padding: 0 20px 20px; 
+    margin: auto; 
+    background: #927eb1 url(/media/clinicalresearchfacility/images/body_background.png) repeat-x bottom fixed;
+    font-family: "Garamond Narrow", Garamond, "Hoefler Text", Palatino, Georgia, serif;
+    line-height: 1.4;
+}
+
+p   {margin: 1em 0;}
+
+h1, h2, h3, h4, h5, h6  {margin-bottom: 0; color: #4b2683; font-family: "Gill Sans", "Gill Sans MT", sans-serif;}
+h2  {font-size: 1.5em; margin-top: 1em; font-weight: bold; text-align: center;}
+h3  {font-size: 1.15em; margin-top: 1em;font-weight: 100; border-bottom: 1px solid #cac1dc;}
+
+#outer-wrapper    {background: white  url(/media/clinicalresearchfacility/images/crflogo.png) no-repeat;
+     margin: 20px 0; padding: 0;   
+
+    border: 1px solid black;
+    padding: 250px 32px 0;
+    }
+
+#inner-wrapper    {
+    padding: 0 0 0;
+    border-top: 1px solid #4b2683;
+    
+    }    
+
+/* lists in general */
+
+ul.fancy li   {list-style: square inside;}
+li.grouper  {font-variant: small-caps; font-weight: bold;}
+li ul   {font-variant: normal; font-weight: normal;}
+
+/* local menu */
+
+ul.menu	{ /* the whole thing */
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;    
+    background: #d4cbe2;
+	padding: 8px;
+	margin: 0;
+	text-align: left;
+	font-size: 72%;
+	} 
+	
+li.menu_item	{ /* all items */
+	display: inline; 
+	width: 100%;
+	padding: 0 0 8px; 
+	margin-right: 0; 
+	list-style-type: none; 
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+
+ul.menu ul { /* 2nd level list */
+    display: inline; 
+    text-align: right; 
+    float: right; 
+    margin: 0; 
+    padding: 0; 
+}
+	
+ul.menu ul li { /* 2nd level items */
+    padding-left: 8px; 
+   	position: relative; /* for the absolute drop-down */
+    background: #d4cbe2;
+}
+
+ul.menu ul ul { /* 3rd level list */
+	display: none;
+	margin: 0;
+    text-align: left;
+	position: absolute;
+    left: 0;
+    width: 100%;
+	padding: 7px 0 0;
+}
+
+ul.menu ul li:hover ul {
+	display: block;
+}
+
+ul.menu ul  ul li {
+    display: list-item;
+	padding-top: 8px;
+	border-top: 1px solid white;
+}
+
+li.menu_item a	{
+    color: #4b2683;
+	text-decoration: none; 
+	border: none;
+	margin: 0; 
+	padding: 0; 
+}
+	
+li.menu_item a:hover	{
+	color: #4858ff; 
+	}
+
+/* links */
+
+a, a:visited    {color: #4858ff;}
+
+/* typography */
+
+p.standout:first-line,
+p.standout   {
+    color: #812576;
+}
+
+/* drop caps */   
+        
+p.drop-cap:first-letter  {
+    font-family: Garamond, "Hoefler Text", Palatino, Georgia, serif;
+    color: #812576;
+    line-height: 1;
+}
+
+/* footer */
+
+div.footer {
+    margin-top: 25px;
+    font-size: 80%; 
+    font-style: italic;
+    color: #777;
+    text-align: justify;
+    border-top: 1px solid #4b2683;
+    padding: 15px 10px 0; 
+    list-style: none;
+    }
+
+div.footer ul  {padding: 0; margin: 0;}
+
+.footer li    {display: inline; padding-right: 25px; margin: 0;}
+.footer li.last {padding-right: 0;}
+.footer a, .footer a:visited {text-decoration: none; border: none;
+    }
+.footer a:hover {text-decoration: underline;}
+.footer img {border: none;}
+
+/* miscellaneous */
+
+cite    {font-style: normal;}

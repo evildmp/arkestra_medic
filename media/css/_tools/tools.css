@@ -1,0 +1,47 @@
+/*TINT classes*/
+/*START tint1 class. To add new tint classes, copy all the classes below, to ensure that table styling also works*/
+	p.tint1, table.tint1, table.tint1 td, caption.tint1, tr.tint1, th.tint1, td.tint1, div.tint1 { 
+		background:#eee; 
+		border-color: #9b9b9b;
+		/*color: black;*/
+	}
+	table.tint1 th {/*this is to ensure that th border colours are tint-defined in Mozilla and Opera, without over-writing background-colour*/
+		border-color: #9b9b9b;
+	}
+/*END tint1 class*/	
+	
+	p.tint2, table.tint2, table.tint2 td, caption.tint2, tr.tint2, th.tint2, td.tint2, div.tint2 { 
+		background:#e0e0e0;
+		border-color: #8e8e8e;
+	}
+	table.tint2 th {
+		border-color: #8e8e8e;
+	}
+		
+	table.tint3, table.tint3 td, caption.tint3, tr.tint3, th.tint3, td.tint3, div.tint3 { 
+		background:#ccc; 
+		border-color: #7c7c7c;	
+	}
+	table.tint3 th {
+		border-color: #7c7c7c;
+	}	
+	p.tint4, table.tint4, table.tint4 td, caption.tint4, tr.tint4, th.tint4, td.tint4, div.tint4 { 
+		background:#cae3ff; 
+		border-color: #7991ab;
+	}
+	table.tint4 th {
+		border-color: #7991ab;
+	}
+	div.tint5 {
+		background:#e6f8e5;
+		border-color:#dbebd9;
+	}
+	div.tint6 {
+		background:#e6edf5;
+		border-color: #e2ebf3;
+	}
+	div.tint7 {
+		background:#ffffe0;
+		border-color: #ffebd6;
+	}
+/*END TINT classes*/ 

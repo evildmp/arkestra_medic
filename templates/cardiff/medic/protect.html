@@ -1,0 +1,43 @@
+{% load cache cms_tags menu_tags %}
+{% load typogrify_tags %}
+{% load humanize %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ lang }}" xml:lang="{{ lang }}" >
+<head>
+<title>{% page_attribute page_title %}</title>
+<link href="/media/css/protect/protect.css" rel="stylesheet" type="text/css" title="Default" media="screen" />
+<link href="/media/css/fixes.css" rel="stylesheet" type="text/css" title="Default" media="screen" />
+
+</head>
+
+<body>
+
+    <p class="access">
+        <a href="#top">Skip to content</a><br /><a  href="#nav_local">Skip to navigation menu</a>
+    </p>
+
+
+    <div id="container">
+        <div id="menubox">
+            <ul class="menu">{% show_menu 1 100 0 1 "cms/sartremenu.html" %}
+            </ul>
+        </div>
+        <div id="page_content">
+{% if not.request.current_page.soft_root %}<h1>{% page_attribute page_title %}</h1>{% endif %}
+
+{% placeholder body %}
+
+        </div>
+    </div>				
+    <div class="footer">The PROTECT website is maintained by Cardiff University School of Medicine.
+
+
+</div>
+
+
+
+
+</body>
+</html>

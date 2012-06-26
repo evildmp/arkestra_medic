@@ -222,7 +222,6 @@ INSTALLED_APPS = (
     'arkestra_utilities',
     'cms',
     'menus',
-    'appmedia',
     'cms.plugins.text',
     'cms.plugins.snippet',
     # 'menupreview',

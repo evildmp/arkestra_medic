@@ -1,8 +1,8 @@
-smedia/
-media/filer/
-media/filer_thumbnails/
-media/rendered_video/
-static/
+arkestra_medic/smedia/
+arkestra_medic/media/filer/
+arkestra_medic/media/filer_thumbnails/
+arkestra_medic/media/rendered_video/
+arkestra_medic/static/
 
 sekrit_settings.py
 settings.py.backup.py

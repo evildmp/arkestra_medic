@@ -7,8 +7,9 @@ gettext = lambda s: s
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
+THUMBNAIL_DEBUG = False # if True, will cause template syntax errors for missing images
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),

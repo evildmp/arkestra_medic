@@ -234,7 +234,7 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     # 'menupreview',
     'sekizai',
-    'djcelery',     # will need to be enabled for celery processing
+    # 'djcelery',     # will need to be enabled for celery processing
     
     # Arkestra applications
     

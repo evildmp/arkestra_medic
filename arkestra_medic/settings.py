@@ -1,6 +1,6 @@
 # Django settings for arkestra_medic project.
 
-from sekrit_settings import *
+# settings marked "change this!" must be changed
 
 import os
 gettext = lambda s: s 
@@ -17,16 +17,24 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-#        'NAME': '',                      # Or path to database file if using sqlite3.
-#       'USER': '',                      # Not used with sqlite3.
-#       'PASSWORD': '',                  # Not used with sqlite3.
-#       'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-#       'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-#   }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': '<name of database>',           # name of database - change this!
+        'USER': '<name of database user>',      # name of database user - change this!
+        'PASSWORD': '<database user password>', # database user password - change this!
+        'HOST': '/var/run/mysqld/mysqld.sock',  # must match the socket setting in /etc/mysql/my.cnf                     
+        'PORT': '',                             # we're not using a port
+    }
+}
+
+# we're turning the cache off - it's not really required
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -35,11 +43,13 @@ MANAGERS = ADMINS
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/London'
+DATE_FORMAT = "jS F Y"
+TIME_FORMAT = "H\.i"
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 SITE_ID = 1
 
@@ -95,8 +105,8 @@ STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-# Make this unique, and don't share it with anybody.
-# SECRET_KEY = '7g8^r53fr1xsen(2qzolj-z1k%(1#+8w(5e(84zh8btw*-*z6n'
+# Make this unique, and don't share it with anybody - change this!
+SECRET_KEY = '7g8^r53fr1xsen(2qzolj-z1k%(1#+8w(5e(84zh8btw*-*z6n'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -165,6 +175,52 @@ AUTH_PROFILE_MODULE = 'contacts_and_people.Person'
 
 ENABLE_CONTACTS_AND_PEOPLE_AUTH_ADMIN_INTEGRATION=True
 
+
+# ------------------------ authentication
+
+import ldap
+from django_auth_ldap.config import LDAPSearch
+
+AUTH_LDAP_SERVER_URI = "ldap://zldap1.cf.ac.uk"
+AUTH_LDAP_BIND_DN = ""
+AUTH_LDAP_BIND_PASSWORD = ""
+AUTH_LDAP_USER_SEARCH = LDAPSearch("t=faraway",
+    ldap.SCOPE_SUBTREE, "(uid=%(user)s)")
+
+# Populate the Django user from the LDAP directory.
+AUTH_LDAP_USER_ATTR_MAP = {
+    "first_name": "givenName",
+    "last_name": "sn",
+    "email": "mail"
+}
+
+# This is the default, but I like to be explicit.
+AUTH_LDAP_ALWAYS_UPDATE_USER = True
+# LOGIN_REDIRECT_URL = "/admin/"
+# LOGIN_URL = "/admin/"
+# old LDAP stuff
+"""
+LDAP_SERVER_URI = 'ldap://ldap.cf.ac.uk' 
+LDAP_SEARCHDN = 't=faraway' 
+LDAP_SCOPE = ldap.SCOPE_SUBTREE 
+LDAP_SEARCH_FILTER = 'cn=%s' 
+LDAP_UPDATE_FIELDS = True 
+LDAP_BIND_ATTRIBUTE = ''
+LDAP_FIRST_NAME = 'givenName'
+LDAP_LAST_NAME = 'sn'
+LDAP_EMAIL = 'mail'
+"""
+ 
+# ------------------------ Django Celery
+
+# import djcelery
+# djcelery.setup_loader()
+
+BROKER_HOST = "localhost"
+BROKER_PORT = 5672
+BROKER_USER = "guest"
+BROKER_PASSWORD = "guest"
+BROKER_VHOST = "/"
 
 # ------------------------ Django CMS
 

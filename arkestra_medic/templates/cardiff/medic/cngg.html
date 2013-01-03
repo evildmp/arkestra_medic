@@ -1,0 +1,22 @@
+{% extends "cardiff.html" %}{% load typogrify_tags %}
+
+{% block extrastyles %}
+	{{ block.super }}
+	<link href="/media/css/cngg/css/cngg.css" rel="stylesheet" type="text/css" />
+{% endblock extrastyles %}	
+
+{% block dept_class %}cngg{% endblock dept_class %}
+{% block nav_class %}no_nav_horiz{% endblock nav_class %}	
+
+{% block banner %}
+	<div class="clearfix" id="header">
+		<a href="http://www.cardiff.ac.uk/" title="Cardiff University | Prifysgol Caerdydd">
+		<img alt="Cardiff University | Prifysgol Caerdydd" src="/media/images/cu_logo.gif" /></a>
+		<div id="bannerImg"></div>
+
+	<h1 title="MRC Centre for Neuropsychiatric Genetics and Genomics"><span></span>MRC Centre for Neuropsychiatric Genetics and Genomics</h1>
+		<p class="h1subhead"></p>
+	</div>
+{% endblock %}
+
+{% block horizontal_navigation %}{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "cardiff.html" %}
+
+{% block styles %}
+<style media="screen" type="text/css"><!--
+		@import url("/media/css/_layout/vert/nav_horiz.css"); 
+		
+{% if request.current_page.soft_root %}@import url("/media/css/_layout/horiz/100.css");
+{% else %}@import url("/media/css/_layout/horiz/20_80.css");{% endif %}           
+		@import url("/media/css/_tools/hacks.css");
+		@import url("/media/css/_core/css/contentsub.css");
+		@import url("/media/css/_core/css/headfoot.css");
+		@import url("/media/css/_tools/tools.css");
+		@import url("/media/css/_core/css/navs.css");
+
+
+		@import url("http://cf.ac.uk/styles/biosi/css/contentsub.css");
+
+		@import url("http://cf.ac.uk/styles/biosi/css/headfoot.css");
+
+		@import url("http://cf.ac.uk/styles/biosi/css/navs.css");
+
+		@import url("/media/css/fixes.css");
+		@import url("/media/css/temporaryhacks.css");
+
+	--></style>
+{% endblock %}	
+
+{% block body %}
+<body class="biosi">
+{% endblock %}
+
+
+{% block banner %}
+	<div class="clearfix" id="header">
+		<a href="/" title="Cardiff University | Prifysgol Caerdydd">
+		<img alt="Cardiff University | Prifysgol Caerdydd" src="/media/images/cu_logo.gif" /></a>
+		<div id="bannerImg"></div>
+
+		<h1 title="School of Biosciences"><span></span>School of Biosciences</h1>
+		<p class="h1subhead"></p>
+	</div>
+{% endblock %}

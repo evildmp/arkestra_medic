@@ -1,0 +1,330 @@
+body.cngg #header {
+    background:#3e4cd6 url("/media/css/cngg/images/cngg-background.jpg") repeat-y left top;      
+	}
+
+body.cngg #bannerImg {
+	background: url("/media/css/cngg/images/cngg_banner.jpg") no-repeat right top;        
+	width:389px; 
+	height: 5.8em;
+	float: right;
+    }
+
+body.cngg #header h1 {
+	color:#0a2c91;
+	width:280px;
+	height:45px;
+	position:relative;
+	padding:14px 0 0 0;
+	margin:0;
+	font-size:0;
+	float:left;
+    }               
+    
+body.cngg #header h1 span {
+	background:url(/media/css/cngg/images/school-name.gif) no-repeat;
+	position:absolute;
+	width:100%;
+	height:100%;
+	}
+
+	body.cngg #header p.h1subhead {color:#fff; display:none;}
+
+/*
+	RESEARCH CENTRES
+*/
+	body.cngg #header.research-banner {
+		background:#b5b281 url(/media/css/cngg/images/research-banner-bg.gif) repeat-x top;
+		height:5.8em;
+	}
+/*Setting the logo background*/
+	body.cngg #header.research-banner span.logo {
+		display:block;
+		width:7em;
+		height:5.8em;
+		background:url(/media/css/cngg/images/research-logo-bg.gif) no-repeat 0 0;
+		float:left;
+	}
+	body.cngg #header.research-banner .floatLeftTop img{
+		margin:0;
+	}
+	body.cngg #header.research-banner .floatLeftTop {
+		float:left;
+	}
+	body.cngg #header .centre-name {float:left; clear:left;}
+	
+	
+/* tint1 black on pale */
+
+div.tint1, table.tint1, table.tint1 td, caption.tint1, tr.tint1, th.tint1, td.tint1 {
+	background: #9fafd8;
+	border-color: #cdd8fa;
+	/*color: black;*/
+	}
+
+div.tint1 h3 {color: #903;}
+
+table.tint1 th {
+	/*this is to ensure that th border colours are tint-defined in Mozilla and Opera, without over-writing background-colour*/
+	border-color: #cdd8fa;
+	background: #9fafd8;
+	}
+
+p.tint2, table.tint2, table.tint2 td, caption.tint2, tr.tint2, th.tint2, td.tint2, div.tint2 {
+  background: none repeat scroll 0 0 #E0E0E0;
+  border-color: #8E8E8E;
+}
+
+/* Global Elements
+-----------------------------------------------------------------------------*/
+.cngg h2 {
+    color: #993333;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+.cngg h3 {
+    color: #990033;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0.7em 0 0;
+    padding: 0;
+}
+.cngg h4 {
+    color: #990033;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin: 0.5em 0 0;
+    padding: 0;
+}
+
+.cngg hr {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 0 none;
+    clear: both;
+    color: #CCCCCC;
+    height: 1px;
+
+}
+
+.cngg dl {
+    line-height: 1.4em;
+    margin: 0 0 1.5em;
+}
+
+.cngg a:link, a:visited, a:hover, a:active {
+    color: #0000FF;
+}
+/* Lists - This was a fix for the missing "fancy"  class but i don't think you need it  
+-----------------------------------------------------------------------------
+.cngg ul.icons {
+    list-style: none ;
+    padding-left: 0;
+}
+.cngg ul.icons li {
+    list-style: none ;
+    padding-left: 15px;
+    background: url("/media/css/cngg/images/arrow_cu_right.gif") no-repeat;
+}
+*/
+/* News
+-----------------------------------------------------------------------------*/
+.cngg li.grouper {
+    color: #990033;
+    font-weight: bold;
+}
+
+.cngg .subtitle {
+    color: black;
+}
+
+.cngg .summary {
+    color: #000;
+}
+
+/* people and contacts
+-----------------------------------------------------------------------------*/
+.cngg ul.index li a {
+    background: none repeat scroll 0 0 #990033;
+    border: 1px solid black;
+    color: white;
+    display: block;
+    padding: 0.1em;
+    text-align: center;
+    width: 2.1em;
+}
+.cngg ul.index {
+    padding-left: 0;
+    
+}
+
+
+
+/*MEDIC #nav_local definitions*/
+/*uses default styles from styles/_core/nav.css with those below over-riding*/
+
+/* level 1 nav - white on black, hover white on red */
+#nav_local a.subsite_head:link, 
+#nav_local a.subsite_head:visited   {
+	background: #3E4ED7 url(/media/css/medic/images/cu_menu_top_corner.gif) right top no-repeat;
+	color: #fff;
+    }
+
+#nav_local a.subsite_head:hover,
+#nav_local a.subsite_head:active  {
+	background: #BD40A8 url(/media/css/medic/images/cu_menu_top_corner.gif) right top no-repeat;
+	color: #fff;
+    }
+
+/* level 2 nav black on grey, hover white on red, current white on dark grey */
+
+#nav_local ul li ul li a:link,
+#nav_local ul li ul li a:visited    {
+    background-color: #D2D5EF;
+    border-color: #D2D5EF;
+    }
+
+
+#nav_local ul li ul li a:hover,
+#nav_local ul li ul li a.current:hover,
+#nav_local ul li ul li a.current:active  {
+    background-color: #BD40A8;
+    border-color: #BD40A8;
+    color: #fffdfd;
+    }
+
+#nav_local ul li ul li a:active {
+    background-color: #fffdfd;
+    border-color: #fffdfd;
+    color: #BD40A8;
+    }
+
+#nav_local ul li ul li a.current:link,
+#nav_local ul li ul li a.current:visited    {
+	background-color: #637BE7;
+	border-color: #637BE7;
+	color: #fffdfd;
+    }
+    
+/*level 3 nav* black on light grey, hover white on red */
+
+#nav_local ul li ul li ul li a:link,
+#nav_local ul li ul li ul li a:visited,
+nav_local ul li ul li ul li a:active {
+    background-color: #E5E8F9;
+    border-color: #E5E8F9
+    }
+    
+
+#nav_local ul li ul li ul li a.current:link,
+#nav_local ul li ul li ul li a.current:visited  {
+    background-color: #E5E8F9;
+    border-color: #E5E8F9;
+    color: #BD40A8;
+    }
+    #nav_local ul li ul li ul li a:hover,
+    #nav_local ul li ul li ul li a.current:hover    {
+    	background-color: #BD40A8;
+    	border-color: #BD40A8;
+    	color: #fffdfd;
+        }
+ 
+#nav_local ul li ul li ul li a.current:active {
+    background-color: #fffdfd;
+    border-color: #fffdfd;
+    color: #BD40A8;
+    }
+
+
+    
+	/*level 4 nav*/
+
+	#nav_local ul li ul li ul li ul li a:link {
+		background-color: #eee;
+		border-color: #fff;			
+	}
+				#nav_local ul li ul li ul li ul li a:visited{
+					background-color: #eee;
+					border-color: #fff;			
+				}
+				#nav_local ul li ul li ul li ul li a:hover{
+					background-color: #eee;
+					border-color: #fff;			
+				}
+				#nav_local ul li ul li ul li ul li a:active {
+					background-color: #eee;
+					border-color: #fff;	
+				}
+				/*END main anchors*/				
+				/*.current anchors*/		
+				#nav_local ul li ul li ul li ul li a.current:link{
+					background-color: #f0f0f0;
+					border-color: #f0f3fe;	
+				}
+				#nav_local ul li ul li ul li ul li a.current:visited{
+					background-color: #f0f0f0;
+					border-color: #f0f3fe;		
+				}
+				#nav_local ul li ul li ul li ul li a.current:hover{
+					background-color: #fff;
+					border-color: #f0f3fe;	
+				}
+				#nav_local ul li ul li ul li ul li a.current:active {
+					background-color: #f0f0f0;
+					border-color: #f0f3fe;	
+				}
+				/*END .current anchors*/
+				/*level 5 nav*/
+				/*main anchors*/
+				#nav_local ul li ul li ul li ul li ul li a:link {
+					background-color: #fff;
+					border-color: #e8edfd;			
+				}
+				#nav_local ul li ul li ul li ul li ul li a:visited{
+					background-color: #fff;
+					border-color: #e8edfd;			
+				}
+				#nav_local ul li ul li ul li ul li ul li a:hover{
+					background-color: #fff;
+					border-color: #dfe7ff;			
+				}
+				#nav_local ul li ul li ul li ul li ul li a:active {
+					background-color: #fff;
+					border-color: #dfe7ff;	
+				}
+				/*END main anchors*/				
+				/*.current anchors*/		
+				#nav_local ul li ul li ul li ul li ul li a.current:link{
+					background-color: #f0f3fe;
+					border-color: #f0f3fe;	
+				}
+				#nav_local ul li ul li ul li ul li ul li a.current:visited{
+					background-color: #f0f3fe;
+					border-color: #f0f3fe;		
+				}
+				#nav_local ul li ul li ul li ul li ul li a.current:hover{
+					background-color: #fff;
+					border-color: #dfe7ff;	
+				}
+				#nav_local ul li ul li ul li ul li ul li a.current:active {
+					background-color: #fff;
+					border-color: #dfe7ff;	
+				}
+				/*END .current anchors*/
+
+#nav_local ul li ul li ul li a.current:link {
+    background: url("/media/css/cngg/images/arrow_menu_current.gif") no-repeat scroll 0.8em 0.6em #E5E8F9;
+    border: 1px solid #E3F3FF;
+    color: #990033;
+}
+#nav_local ul li ul li a.current:link {
+    background: url("/media/css/cngg/images/arrow_menu_current.gif") no-repeat scroll 0.5em 0.6em #E5E8F9;
+    border: 1px solid #DAE9FA;
+    color: #990033;
+}
+#nav_local ul li ul li ul li a:link {
+    background: url("/media/css/cngg/images/arrow_menu_current.gif") no-repeat scroll 0.8em 0.6em #E5E8F9;
+    border: 1px solid #E3F3FF;
+    color: #333333;
+    padding: 0.2em 0 0.2em 1.5em;
+}

@@ -1,0 +1,56 @@
+/*
+	CLAWS header and footer specific styles
+*/
+body.cngg #header {
+		background:#3e4cd6 url(/media/css/cngg/images/cngg-background.jpg) repeat-y left top;
+	}
+	body.cngg #bannerImg {
+		background:url(/media/css/cngg/images/cngg_banner.jpg) no-repeat right top;
+		width:389px;
+	}
+	body.cngg #header h1 {
+		color:#0a2c91;
+		width:300px;
+		height:45px;
+		position:relative;
+		padding:14px 0 0 0;
+		margin:0;
+		font-size:0;
+		float:left;
+		}
+	body.cngg #header h1 span {
+		background:url(/media/css/cngg/images/school-name.gif) no-repeat;
+		position:absolute;
+		width:100%;
+		height:100%;
+		}
+
+	body.cngg #header p.h1subhead {color:#fff; display:none;}
+
+/*
+	RESEARCH CENTRES
+*/
+	body.cngg #header.research-banner {
+		background:#b5b281 url(/media/css/cngg/images/research-banner-bg.gif) repeat-x top;
+		height:5.8em;
+	}
+/*Setting the logo background*/
+	body.cngg #header.research-banner span.logo {
+		display:block;
+		width:7em;
+		height:5.8em;
+		background:url(/media/css/cngg/images/research-logo-bg.gif) no-repeat 0 0;
+		float:left;
+	}
+	body.cngg #header.research-banner .floatLeftTop img{
+		margin:0;
+	}
+	body.cngg #header.research-banner .floatLeftTop {
+		float:left;
+	}
+	body.cngg #header .centre-name {float:left; clear:left;}
+	
+	
+	
+	
+

@@ -1,0 +1,132 @@
+body	{
+    line-height: 1.5; 
+    background: url("/media/css/mothersofafrica/texture.png") #eee;
+    width: 830px;
+    padding: 20px 0 20px;
+    margin: auto;
+    font-family: georgia;
+    }
+
+div.surface {
+    background: url("/media/css/mothersofafrica/canvas.jpg") white;
+    padding: 40px;
+    box-shadow: 2px 2px 8px 4px rgba(6,6,6,.5);
+}
+
+div#outer-wrapper
+	{
+    background: url(/media/css/mothersofafrica/header.png) no-repeat top center;
+    padding-top: 150px;
+    border: 1px solid black;
+    width: 750px; 
+	}
+
+.standout.strapline {margin: 0; padding: 0;}
+
+p   {margin: 0 0 1em;}
+h3  {color: #ff9900;}
+ul  {list-style: square; padding-left: 1em;}
+
+div#inner-wrapper
+	{
+	background-color: #FFF;
+	padding: 20px 20px .2em;
+	}
+
+
+
+p.standout, 
+p.big-quotes
+    {
+    font-size:177%; 
+    line-height: 1.5;
+    font-family:"Hoefler Text", "Didot", Georgia, serif;
+    padding-right:25px;
+    padding-bottom: 1em;
+    margin: 0;
+    }
+
+p.standout:first-line,
+p.big-quotes:first-line   {
+    color: #fb673c;
+}
+
+/* local menu */
+
+ul.menu	{
+	padding: 5px 30px;
+	margin: 0 -39px 0 -41px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: left ;
+	margin-top: 0;
+    background: #fc0;
+    border-width: 1px 30px;
+	
+	} 
+	
+ul.menu ul {
+    display: inline; 
+    text-align: right; 
+    float: right; 
+    margin: 0; 
+    padding: 0;
+    }
+	
+li.menu_item	{
+	display: inline; 
+	width: 100%;
+	padding: 0; 
+	
+	margin-right: 0; 
+	list-style-type: none; 
+	font-family: georgia; 
+	font-weight: normal;
+   	font-size: 100%;
+	}
+
+ul.menu ul li {padding-left: 1em;}
+	
+li.menu_item a	{
+	text-decoration: none; 
+	border: none;
+	margin: 0; 
+	padding: 0; 
+	color: #900;
+	}
+	
+li.menu_item a:hover	{
+	color: #f95011; 
+	}
+
+/* lists */
+
+li.grouper {
+    font-style: italic;
+    }
+
+li.grouper li {font-style: normal;}
+
+div.date    {font-style: italic; color: gray;} 
+
+.access	{position: absolute; left: -10000px;}
+
+.columns2 .column.menucolumn { w idth: 19%;}
+.columns2 .column.bodycolumn { width: 100%;}
+
+.images-right span.image, span.image.right  {margin-left: 15px; margin-right: 15px;}
+
+ul.footer {
+    margin: 0;
+    list-style: none;
+    padding: 5px;
+    background: #ff9900;
+    font-weight: bold;
+    font-family: helvetica;
+    font-size: 80%;}
+
+ul.footer li    {display: inline; font-size: 90%; padding: 0 2em 0 0; margin: 0; }
+ul.footer a, ul.footer a:visited {text-decoration: none; color: white;}
+ul.footer a:hover {text-decoration: underline;} 
+ul.footer li.arkestra {float: right;}
+ul.footer .arkestra a {font-family: helvetica;}

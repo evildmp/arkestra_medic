@@ -1,0 +1,107 @@
+{% extends "arkestra.html" %}
+{% load cache cms_tags menu_tags insert_tags %}
+{% load humanize %}
+{% load link_tags %}
+{% load typogrify_tags %}
+
+{% block favicon %}
+{% endblock favicon %}
+
+{% block scripts %}<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18996201-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+{% endblock scripts %}
+
+{% block extrastyles %}
+<link href="/media/css/cardiff/css/ac.css" rel="stylesheet" type="text/css" />
+<link href="/media/css/cardiff/css/ac_navigation.css" rel="stylesheet" type="text/css" />
+<link href="/media/css/cardiff/css/ac_layout.css" rel="stylesheet" type="text/css" />
+<link href="/media/css/cardiff/css/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE 7]><link href="/media/css/cardiff/css/ie7.css" media="print" rel="stylesheet" type="text/css" /><![endif]-->
+{% endblock extrastyles %}
+
+{% block arkestra_default_styles %}{% endblock arkestra_default_styles %} 
+
+{% block body_attributes %}
+	class="cardiff {% block dept_class %}{% endblock dept_class %}{% block col_class %}{% if current_page.flags %}{% if current_page.flags.no_local_menu %}{% if links %} col_80_20 {% else %} col_100 {% endif %}{% else %}{% if links %} col_20_60_20 local_menu {% else %} col_20_80 local_menu {% endif %}{% endif %}{% endif %}{% if is_menu_node %} col_20_80 local_menu {% endif %}{% endblock col_class %}{% block nav_class %}{% if current_page.flags.no_horizontal_menu %} no_nav_horiz {% else %} nav_horiz {% endif %} {% endblock nav_class %}" {% endblock body_attributes %}
+
+{% block body_content %}
+    {% with placeholder_width=570 adjust_width=current_page.flags.no_local_menu  width_adjuster="absolute" width_adjustment=750 main_item_width=490 person_description_width=360 generic_main_width=490 sidebar_image_size="230x230" sidebar_map_size="230x180" person_image_size="360x360" place_image_size="490x380" entity_image_size="273x273" lightbox_max_dimension=600 %}
+    	<div id="outer-wrapper" class="expands">
+{% include "cardiff-main-navigation.html" %}
+    		{% block skip %}
+    			<p class="access">
+    				<a class="access" href="#top">Skip to content</a><br class="access" /><a class="access" href="#nav_local">Skip to navigation menu</a>
+    			</p>
+    		{% endblock skip %}
+    
+    		{% block banner %}
+    			{% include "cardiff-banner.html" %}
+    		{% endblock %}
+
+    		<div class="clearfix" id="wrapper">
+
+    			{% block language %}
+    			{% endblock language %}
+
+    			{% block title_body_and_sub %}
+
+                        {% block horizontal_navigation %}
+    	                {% endblock horizontal_navigation %}
+    			    {% block content %}
+    				<div id="content" class="Generic_Page">
+                                   
+    				        <a id="top"></a>
+                                        <div class="entry-content">
+    				        {% block pagetitle %}
+    							{% if not current_page.flags.no_page_title %}
+    					           	{% filter typogrify %}<h{{PAGE_TITLE_HEADING_LEVEL}}>{% page_attribute title %}</h{{PAGE_TITLE_HEADING_LEVEL}}>{% endfilter %}
+    							{% endif %}
+    				        {% endblock pagetitle %}
+
+    				        {% block main_page_body %}
+        						    {% insert "newsflash" %}
+									{% placeholder body %}
+    				        {% endblock main_page_body %}
+                                        </div> <!-- END .entry-content -->
+    			    </div><!-- END #content -->
+                            {% endblock content %}
+    			    {% block sub %}
+    			        {% if links %}
+    			            <div id="sub">
+    							{% include "includes/link_list.html" %}	
+    			            </div>
+    			        {% endif %}
+    			    {% endblock sub %}
+    			{% endblock title_body_and_sub %}
+
+    			{% block nav_local %}
+    				<div id="nav_local">
+    					<ul>{% show_menu 0 5 0 1 "cms/cardiff_menu.html" "" "" "" "truncate" %}</ul>
+    				</div>	
+    			{% endblock nav_local %}
+
+    	   	    
+
+    	        
+
+    		</div><!-- End #wrapper -->
+    	</div><!-- End #outer-wrapper -->
+
+    	{% block footer %}
+    		{% include "cardiff-footer.html" %}
+    	{% endblock footer %}
+
+    {% endwith %}
+{% endblock body_content %}
+

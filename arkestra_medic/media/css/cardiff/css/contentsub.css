@@ -1,0 +1,1942 @@
+p.reduced-line-height {line-height: 1.4;}
+div#ugly_hack {font-size: 0.9em;}
+
+/*
+contentsub. This file contains styles for use within the #content and #sub sections. It includes core global styles too (ie, for the body tag). */
+/*STANDARD TAGS*/
+body {
+	color: #333;
+	background:url(/media/images/cu_page_bg.gif) top left repeat-x #efefef;
+	text-align: left;
+	font-family: Verdana, Geneva, Helvetica, sans-serif;
+	font-size: 76%;
+	line-height: 1em;
+}
+div {
+	font-size: 1em;
+	line-height:1.4em;
+}
+img {
+	border: 0;
+}
+blockquote {
+	line-height:1.4em;
+}
+blockquote p {
+	font-size:1em;
+}
+/* HEADINGS */
+/*H1 is defined in headfoot.css, as it should only be used once per page, and this will be in the banner area*/
+	h2 {
+		margin: 0 0 0.5em 0;
+		padding: 0;
+        color:#933;
+		font-size: 1.5em;
+        line-height: 1.5em;
+	}
+	h3 {
+		color: #903;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+		font-size: 1.3em;
+		line-height: 1.3em;
+	}
+	h4 {
+		color: #903;
+		margin: 0 0 0.25em 0;
+		padding: 0;
+		font-size: 1.1em;
+		line-height: 1.3em;
+	}
+	h5 {
+		color: #903;
+		margin: 0 0 0.25em 0;
+		padding: 0;
+		font-size: 1em;
+		line-height: 1em;
+	}
+	h6 {
+		color: #903;
+		margin: 0 0 0.25em 0;
+		padding: 0;
+		font-size: .9em;
+		line-height: 1.3em;
+	}
+
+p {
+	margin: 0 0 0.8em 0;
+	padding: 0;
+	line-height: 1.9;
+}
+pre {
+	font-family: monospace;
+	font-size: 1.0em;
+}
+strong, b {
+	font-weight: bold;
+}
+em, i {
+	font-style:italic;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+	white-space: pre;
+}
+blockquote {
+	margin-left:10px;
+}
+
+	/* unordered lists */
+	ul {
+		margin: 0 0 1.5em 0;
+		padding: 0;	
+		line-height:1.4em;
+	}
+
+	ul li {
+		margin: 0 0 0.25em 20px;
+		padding: 0;
+	}
+	/* END unordered lists */
+	
+	/* ordered lists */
+	ol {
+		line-height:1.4em;
+		margin: 0 0 1.5em 0;
+		padding: 0;
+		list-style-type:decimal;
+	}
+	ol li {
+		margin: 0 0 0.25em 2.5em;
+		padding: 0;
+	}
+	ol ol li{
+		font-size: 1.1em;
+		margin: 0 0 .25em 1.5em;
+		}
+	ol ol {
+		margin:0;
+		}
+	/* END ordered lists */
+		ul ul, 
+		ul ul ul, 
+		ul ul ul ul, 
+		ul ul ul ul ul { 
+			font-size:1.0em; 
+		}
+	/* definition lists */
+	dl {
+		line-height: 1.4em;
+		margin: 0 0 1.5em 0;
+		padding: 0;
+	}
+	dl dt {
+		font-weight: bold;
+		margin: 0.25em 0 0.25em 0;
+		padding: 0;
+	}
+	dl dd {
+		margin: 0 0 0 30px;
+		padding: 0;
+	}
+
+	hr {
+		clear: both;
+		/* sagba 060708 */
+		color:#ccc;
+		background:#ccc;
+		border:0;
+		height:1px;
+	}
+/*SECTIONAL ID definitions*/
+
+	/*#content definitions*/
+	#content {
+		background-color:#fff;
+		/*borders may cause rendering anomalies for #nav_main in IE due to IE box-model problems*/
+		/*border: 1px solid black;*/
+	}
+	/*#wrapper definitions*/
+	#wrapper {
+		background-color: #fff;
+	}
+	/*END #wrapper definitions*/
+/*END SECTIONAL ID definitions*/	
+	/*Separate #sub colourway for headings*/
+	#sub h3, 
+	#sub h4, 
+	#sub h5, 
+	#sub h6 {
+		color: #000;
+		text-decoration:none;
+	}	
+/* END HEADINGS */
+
+/* LINKS. These default styles can be further refined for sectional ids below*/
+	/* External links inline style places external link icon at the right-hand end of the link */
+	#content a.external,
+	#sub a.external { 
+		background:url(/media/images/external_link.gif) left 2px no-repeat; 
+		padding: 0 0 0 18px;
+		/*white-space:no-wrap breaks long links in #sub sagba*/
+	}
+	#content a.linkIcon,
+	#sub a.linkIcon,
+	#content ul.linkIcon li a {
+		background:url(/media/images/arrow_cu_right.gif) left .5ex no-repeat;
+		padding: 0 0 0.1em 15px;
+		/* display: block;  what was this supposed to achieve?*/
+		}
+		/* sagba 041007 */
+			#content ul.linkIcon {
+
+				list-style:none;
+			}
+			#content ul.linkIcon li {
+				margin:0;
+				padding:0.1em 0;
+				list-style:none;
+			}
+	#content li a.linkIcon {background: none; padding: 0;}
+
+	/*Back to top link*/
+	a.backToTop {
+		background:url(/media/images/arrow_cu_up.gif) left 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	/*Print this page link style*/
+	a.printPage {
+		background: url(/media/images/icon_printer.gif) left 2px no-repeat;
+		padding: 0 0 0 19px;
+		}
+	/*Print this page link style in right-column - adds margin*/
+	#sub a.printPage {
+		background: url(/media/images/icon_printer.gif) left 2px no-repeat;
+		padding: 0 0 0 19px;
+		margin: .3em 0 0 .3em;
+		display:block;
+		}
+	/*Email this page link style*/
+	a.emailPage {
+		background: url(/media/images/icon_email.gif) left 4px no-repeat;
+		padding: 0 0 0 19px;
+		}
+	/*Email this page link style in right-column - adds margin*/
+	#sub a.emailPage {
+		background: url(/media/images/icon_email.gif) left 4px no-repeat;
+		padding: 0 0 0 19px;
+		margin: .3em 0 0 .3em;
+		display:block;
+		}
+		/* //Deprecated// - superceded by a.linkIcon */
+	img.linkIcon { 
+		margin: 0 .5em 0 0; 
+	}
+	/* Use where list items are not available */
+	a.pdf {
+		background:url(/media/images/document_icon_pdf.gif) left 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	a.doc, a.rtf, a.txt {
+		background:url(/media/images/document_icon_doc.gif) 2px 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	a.zip {
+		background:url(/media/images/document_icon_zip.gif) left 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	a.jpg {
+		background:url(/media/images/document_icon_jpg.gif) left 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	a.ppt, a.pps {
+		background:url(/media/images/document_icon_ppt.gif) left 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	a.mp3 {
+		background:url(/media/images/document_icon_mp3.gif) left 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	a.mov, a.mpg, a.wmv {
+		background:url(/media/images/document_icon_mpg.gif) left 1px no-repeat;
+		padding: 0 0 0 15px;
+		}
+	/* For use on links with an icon to the left of the text - pads the image within the link */
+
+	/* END definition lists */	
+
+/* class based lists*/
+
+/* .none class list*/
+	ul.none {
+		list-style-type:none; 
+		list-style-image:none; 
+		margin:0; 
+		padding:0; 
+		clear:both;
+	}
+	ul.none li {
+		list-style-type:none; 
+		list-style-image:none; 
+		margin:0; 
+		padding:0;
+	}
+	/* END .none list*/
+
+	/* A-Z indices (1 PAGE VERSION) 100107 sagba */
+	ul.az1pg {
+		list-style-image: url(/media/images/az_arrow_cu_right.gif);
+		list-style-position: outside;
+		margin:0 .3em 0 1.7em;
+		padding:0.1em 0 0 0;
+		clear:both;
+	}
+	ul.az1pg li {
+		list-style-type:none; 
+		margin:0 0 0.3em 0.3em;
+		padding:0;
+	}
+	ul.az1pg ul {
+		margin:0;
+		padding:0;
+	}
+	ul.az1pg ul li {
+		list-style-type:none; 
+		list-style-image:none; 
+		margin:0.3em 0 0.3em 1em; 
+		padding:0;
+	}
+	.hidden {
+		display:none;
+	}
+
+	/* END A-Z indices */
+	
+		/*PAGINATION STYLES*/
+		ul.pagination {
+			margin: .5em;
+		}
+		
+		ul.pagination li { 
+			margin: 0 .1em;
+			display:inline;
+		}
+		
+		/*A-Z Pagination styles content*/
+		ul.paginationAZ {
+			margin: .5em 0;
+		}
+	
+		ul.paginationAZ li {
+			margin: 0 .4em .4em 0;
+			display:inline;
+			float:left;
+		}
+		
+		ul.paginationAZ li a {
+			display: block;
+			width: 2.5em;
+			padding: .2em;
+		}				
+		/* Used to indicate current page of AZ index */
+		/* Style for adjusting width of 0-9 button */
+		ul.paginationAZ li.azWide a {
+			display:block;
+			width:2.8em;
+			padding:.2em 0;
+		}
+		/*END PAGINATION STYLES*/
+		
+		/* NEWS STYLES*/
+/*	sagba 201206
+		dl.newsList dt { 
+			clear:both;
+			margin:0;
+			padding:0;
+		}
+		
+		dl.newsList dd { 
+			margin:0; 
+			padding:0; 
+		}
+*/
+	/*Tighten up the paragraph spacing in the news list snippets*/
+/*	sagba 201206
+		dl.newsList p{
+			margin: 0 0 0.3em 0;
+		}
+			
+		ul.newsList,
+		ul.newsList li { 
+			margin: 0; 
+			clear:both; 
+			padding: 0;
+		}
+		/* NEWS STYLES
+		ul.newsList,
+		ul.newsList li { 
+			list-style-type:none; 
+			list-style-image:none; 
+		}
+/*		Ensures the image aligns tightly to top of heading 
+		.newsList img.floatLeft{
+			margin: 0 .5em .5em 0;
+		}
+		/* END NEWS STYLES*/
+/*
+	NEWS Styles 20/12/06 sagba
+	re-worked to work with non DL based items
+*/
+	#content div.news, 
+	#content span.news {
+ 		display:block;
+		float:left;
+		width:100%;
+		clear:left;
+		margin:0 0 .5em 0;
+		}
+	#content div.news img {
+ 		float:left;
+		margin:0 .5em .5em 0;
+		}
+	#content div.news p {
+		margin: 0.2em 0 0 0;
+	}
+	div.news a {
+		font-size:.9em;
+		}
+	span.news a {
+		font-size:.9em;
+	}
+	span.news p a {
+		font-size:1em;
+	}
+	#content span.news p {
+		margin:0.2em 0 0 0;
+	}
+	#content span.news p.date {
+		margin-bottom:.5em;
+	}
+	/*FIXES for Auto-index styling sagba 120207*/
+	ul.none li div.news {clear:left;}
+	li div.news p, li div.news a {font-size:1em;}
+	ul.none li {width:100%; clear:left;}
+		/* For auto indexes in the right column 150207 sagba */
+			#sub ul.none ul {margin:0;}
+			#sub ul.none {margin:0; padding:0;}
+			#sub ul.none li {margin:0; padding:0;}
+			#sub .featuredItem ul.none ul li {margin:0.3em 0; padding:0.2em 0 0 0;}
+			#sub .featuredItem ul.none ul li .news p {margin:0 0 0.3em 0;}
+	/*END Fixes*/
+/*
+	END NEW NEWS STYLES
+*/
+		/*JOB OPPORTUNITIES*/
+		#content dl.vacancyList dt { 
+			clear:both; 
+		}
+		
+		#content  dl.vacancyList dd { 
+			margin:.3em .3em .3em 1em; 
+			padding:0; 
+		}
+		/*END JOB OPPORTUNITIES*/	
+		/* Corporate documents snippet lists*/
+			.corporateDoc dt {margin:0; padding:0;}
+			.corporateDoc dd {margin:0; padding:0;}
+			.corporateDoc ul {margin:0; padding:0;}
+			.corporateDoc ul li {margin:0 0 0 17px; padding:0 0 .3em 0;}		
+		/* END Corporate documents snippet lists*/
+		
+		/*Related items heading*/
+		.relatedItem ul, 
+		.relatedItem li { 
+			margin:.3em 0 .3em .3em; 
+		}
+		/*END Featured and Related items*/
+		
+		/* Styles for 'full' image link and list */
+		/*When in 'sub' slot
+		.imgFullSub ul {margin:0 0.5em 0.5em 0; padding:0;}
+		.imgFullSub li {margin:0 0 0 17px;}
+		/* END Styles for 'full' image link and list */		
+/* end class-based lists */
+/* END LISTS */
+/*General floats - use with care */
+	.floatLeft {float:left;}
+	.floatRight {float:right;}
+	.clearLeft {clear:left;}
+/*content types, snippets, etc*/
+		/* CORPORATE DOCUMENT styles */
+		/*Featured and Related item styles*/
+		.featuredItem, 
+		.relatedItem { 
+			padding:.3em; 
+			margin:0 0 .3em 0; 
+		}
+		.featuredItem img,
+		.featuredItem img.floatLeft { 
+			float:left; 
+			margin:0 .3em .3em 0; 
+		}
+		.featuredItem img.floatRight {
+			margin:0 0 .3em .3em;
+		}
+		/* .date { 
+			margin:.3em .3em .3em 0; */
+		}
+		/*IMAGE FLOATS*/
+		#content img.floatLeft { 
+			float:left; 
+			margin:.5em .5em .5em 0; 
+		}
+		#content img.floatRight { 
+			float:right; 
+			margin:.5em 0 .5em .5em; 
+		}
+		/*Captioned image float left - width is set in an inline style within the content area */
+		#content div.floatCaptionLeft { 
+			float:left; 
+			margin:.3em .3em .3em 0; 
+		}
+		#content div.floatCaptionLeft p { 
+			margin: 0 .3em .3em .3em;
+		}
+		/*Captioned image float right - width is set in an inline style within the content area */
+		#content div.floatCaptionRight { 
+			float:right; 
+			margin:.3em 0 .3em .3em; 
+		}
+		#content div.floatCaptionRight p { 
+			margin: 0 .3em .3em .3em;
+		}
+		/*END IMAGE FLOATS*/
+		/*A-Z index styles*/
+		.azHeading {
+			padding:.1em .3em;
+			clear:both; /*Fixes it following the A-Z navigation buttons*/
+			/*return to top in A-Z list content*/
+		}
+		div.azHeading {
+			padding: .3em; 
+			margin:.5em 0; 
+		}
+		/*END A-Z index styles*/
+/*CASE STUDY STYLES*/
+	/* Content area pull-quote style */
+	#content div.quote {
+		padding:.5em;
+		}
+	/* Right-column styling */
+	#sub div.quote {
+		padding:0.3em;
+		margin-bottom:0.3em;
+		}
+
+/*EVENT Snippet styles*/
+	.event_snippet li {clear:both;}
+	.event_snippet .field_name {font-weight:bold;}
+	
+	#content .event_snippet {font-size:.9em; /*fix for alignment issues in IE sagba*/ width:99%;}
+	#content .event_snippet p {font-size:1em;}
+	div.event_snippet {float:left; clear:left;}
+	div.event_snippet span.event-location {display:block; width:100%; padding:.3em 0;}
+	#content div.event_snippet img.floatLeft {margin:0.3em 0.5em 0.5em 0;}
+
+/* BUILDING Styles (incl. MAP) */
+	#content.Building div.building_directions {
+		background:#ECF5FF; float:left; width:50%; padding:.5em;
+	}
+	#content.Building div.building_summary {
+		background:#ECF5FF; float:left; width:50%; padding:.5em;
+	}
+	#content.Building div.building_gallery {
+		background:#ECF5FF; float:left; width:50%; padding:.5em;
+	}
+	#content.Building div.building_history {
+		background:#ECF5FF; float:left; width:50%; padding:.5em;
+	}
+	#content.Building div.building_directions form.building_directions_form { margin:0.3em 0;}
+	#content.Building div.building_directions form.building_directions_form label {font-size:.9em; display:block; margin:0 0 .3em 0;}
+	#content.Building div.building_directions form.building_directions_form input {font-size:.9em; margin:0 .3em .3em 0;}
+	/*Browse by map styles */
+	#content.Building div.browse_map {
+		background:#fff; float:left; width:50%; padding:0;
+	}
+	#content.Building div.browse_map h4{ color:#222; font-size:1em;}
+	#content.Building div.browse_map h3{ border-bottom:1px solid #990033; padding:0; font-size:1em;}
+	#content.Building div.browse_map table#map_building_list { border:#fff; padding:0;}
+	#content.Building div.browse_map table#map_building_list td { border:#fff; padding:0.2em;}
+	#content.Building div.browse_map table#map_building_list th { display:none;}
+	/*Find by facility type - listing */
+	#content.Building div.building_az_facility ul.az {
+		list-style-image:none;
+		padding:0;
+		clear:both;
+		font-weight:bold;
+	}
+
+	#content.Building div.building_az_facility ul.az li {
+		list-style-type:none; 
+		margin:0.5em 0 0.3em 0.3em; 
+		padding:0;
+		border-bottom:1px solid #ccc;
+	}
+
+	#content.Building div.building_az_facility ul.az ul {
+		padding:0;
+	}
+	#content.Building div.building_az_facility ul.az ul li {
+		list-style-type:square;
+		list-style-position: outside;
+		margin:0.1em .3em 0 2.2em;
+		padding:0 0 .5em 0;
+		border-bottom:none;
+	}
+	#content.Building div.building_az_facility ul.az ul em {
+		font-weight:normal;
+	}
+	#content.Building div.building_az_facility ul.az ul li a {font-weight:normal;}
+	/* Building A-Z listing */
+	#content.Building div.building_az ul.az {
+		list-style-image: url(/media/images/arrow_cu_right.gif);
+		list-style-position: outside;
+		margin:0.1em .3em 0 1.7em;
+		padding:0;
+		clear:both;
+	}
+
+	#content.Building div.building_az ul.az li {
+		list-style-type:none; 
+		margin:0em 0 0.5em 0.2em; 
+		padding:0;
+	}
+
+	#content.Building div.building_az ul.az ul {
+		padding:0;
+	}
+	#content.Building div.building_az ul.az ul li {
+		list-style-position: outside;
+		padding:0 0 .5em 0;
+	}
+	#content.Building div.building_az ul.az ul em {
+		font-weight:normal;
+	}
+	#content.Building div.building_az_facility ul.az ul li a {font-weight:normal;}
+	/*Horizontal nav styling for the MAP areas*/
+		body.maps div#nav_horiz {background:#509350;}
+		body.maps div#nav_horiz ul li ul{
+			display: none;
+			position: absolute; 
+			top: 1.3em;
+			left: 4.7em;
+			border-top:2px solid #509350;
+		}
+		body.maps div#nav_horiz li > ul {
+			top: auto;
+			left: auto;
+		}
+		body.maps div#nav_horiz li:hover ul { display: block; background:#99CC99;}
+		li.over ul { display: block; background:#99CC99;}
+		body.maps div#nav_horiz ul li ul li{
+			margin:0;
+			padding:0.2em 0.5em;
+			display:block;
+			border-bottom:1px solid #fff;
+		}
+/*sagba 150207*/
+#content.Building div.additional_info {clear:left;}
+#content.Building img.floatLeft {margin:0 0.5em 0.5em 0;}
+/*end 150207*/
+/* END BUILDING Styles (incl. MAP) */
+
+/*content types, snippets, etc*/
+	/* ADVERT styles */
+
+			/*Right-column*/
+		#sub div.advImg { 
+			margin:.5em 0 0 0;
+			padding:0;
+		}
+			/*Content area*/
+		#content div.advImg { 
+			margin:.5em 0 0 0; 
+			float:left; margin:.5em .5em 0 0;
+		}		
+		/* HTML Ad both*/
+		div.advHtml {
+			background:#fff;
+			margin: 0 0 .5em 0; 
+			padding:0 0 .3em 0; 
+			clear:both;
+		}
+
+		div.advHtml h4 { 
+			margin:.3em .3em 0 .3em; 
+			font-size:0.9em; 
+		}
+
+		div.advHtml p { 
+			margin:.3em .3em 0 .3em; 
+		}
+
+		div.advHtml a img { 
+			margin: 0 .5em 0 0; /* Pads the image within the link */
+		}
+
+		/* Graphic Ad Lrg */
+
+	/* END ADVERT styles */
+
+/* CORPORATE DOCUMENT styles */
+	/*Featured and Related item styles*/
+		.featuredItem, 
+		.relatedItem { 
+			background:#fff; 
+		}
+		#sub div.relatedItem { 
+			background:#fff; 
+			border:none;
+		}
+		/*Related items heading*/
+		.relatedItem h4 { 
+			font-size:1em;
+		}
+		.relatedItem ul,
+		.relatedItem li { 
+			list-style-image:none;
+			list-style-type:none;
+		}
+		/*Related items file type icons*/
+		.relatedItem li.pdf,
+		.relatedItem li.doc,
+		.relatedItem li.jpg,
+		.relatedItem li.zip {
+			list-style-position:outside; 
+			margin:.3em 0 .3em 15px; 		
+		}
+		.relatedItem li.pdf { 
+			list-style-image:url(/media/images/document_icon_pdf.gif); 
+		}
+		.relatedItem li.doc { 
+			list-style-image:url(/media/images/document_icon_doc.gif); 
+		}
+		.relatedItem li.jpg { 
+			list-style-image:url(/media/images/document_icon_jpg.gif); 
+		}
+		.relatedItem li.zip { 
+			list-style-image:url(/media/images/document_icon_zip.gif); 
+		}
+		
+		#sub dd {margin-left: 1em;}
+		/*END Featured and Related items*/
+		/*Document type lists - places appropriate icon adjacent the list item - for use in any unordered list */
+		li.pdf,
+		li.doc,
+		li.jpg,
+		li.zip {
+			list-style-position: outside;
+		}
+		li.pdf { 
+			list-style-image:url(/media/images/document_icon_pdf.gif);
+		}
+		li.doc { 
+			list-style-image:url(/media/images/document_icon_doc.gif);
+		}
+		li.jpg { 
+			list-style-image:url(/media/images/document_icon_jpg.gif); 
+		}
+		li.zip { 
+			list-style-image:url(/media/images/document_icon_zip.gif);
+		}
+		/*END Document type lists*/
+		/* #content .date,
+		#sub .date { 
+			color:#999;  
+			line-height:1em;
+		} */
+		.author { 
+			font-style:italic; 
+		}
+		/*Intro paragraph style*/
+		.intro { 
+			font-weight:bold; 
+		}
+		/*IMAGE FLOATS - image with caption area*/
+		div.floatCaptionLeft, 
+		div.floatCaptionRight {
+			background:#eee;
+		}
+		/*END IMAGE FLOATS*/
+		/*PAGINATION STYLES*/
+		ul.pagination {
+			text-align:center;
+		}
+		ul.pagination li {
+			list-style-position:outside; 
+		}
+		li.prev { 
+			background: url(/media/images/arrow_cu_left.gif) no-repeat left 1px;
+			padding:0 0 0 1.5em;
+			list-style-position:outside;
+			list-style-type:none;
+		}
+		li.next { 
+			background: url(/media/images/arrow_cu_right.gif) no-repeat right 1px;
+			padding:0 1.45em 0 0 ;
+			list-style-position:outside;
+			list-style-type:none;
+		}
+		/*For inactive links (first and last page list items)*/
+		li.prevOff { 
+			background: url(/media/images/arrow_cu_left_off.gif) no-repeat left 1px;
+			padding:0 0 0 1.5em;
+			list-style-position:outside;
+			list-style-type:none;
+			color:#999;
+		}
+		li.nextOff { 
+			background: url(/media/images/arrow_cu_right_off.gif) no-repeat right 1px;
+			padding:0 1.45em 0 0 ;
+			list-style-position:outside;
+			list-style-type:none;
+			color:#999;
+		}
+		/*A-Z Pagination styles content*/
+		ul.paginationAZ {
+			font-weight:bold;
+		}
+		ul.paginationAZ li {
+			list-style-position:outside;
+			border:1px solid #e7e7e7;
+			background:#f2f2f2;
+			text-align:center;
+			font-size:1.1em;
+		}
+		ul.paginationAZ li a:hover {
+			background-color:#DFE2FF;
+		}
+		/* Used to indicate current page of AZ index */
+		ul.paginationAZ li a.current {
+			background-color:#990033;
+			color:#FFF;
+		}
+		/*END PAGINATION STYLES*/
+		.subTitle { 
+			font-size:.8em; 
+			line-height:.8em; 
+		}
+		/*A-Z index styles*/
+		.azHeading {
+			background-color: #eee;
+		}
+		div.azHeading {
+			text-align:right; 
+			font-size:.9em; 
+			background-color:#fff;
+		}
+		/*END A-Z index styles*/
+
+/*Casestudy or other Quote related items */
+	/*Main content area*/
+	#content div.quote {
+		background:#e0e0e0;
+	}
+	/*sagba 040107*/
+	#content div.quote p { float:left; display:inline; }
+	#content div.quote { float:left; }
+	/**/
+	/*Right-column variant*/
+	#sub div.quote {
+		background:#e0e0e0;
+	}
+/* Table of content styles - Support document internal navigation styles */
+	#toc1 {background:url(/media/images/toc_corner_1.gif) top left no-repeat; padding:8px 0 0 0;}
+	#toc2 {background:url(/media/images/toc_corner_2.gif) top right no-repeat;}
+	#toc3 {background:url(/media/images/toc_corner_3.gif) bottom right no-repeat; padding: 0 0 1px 0;}
+	#toc4 {background:url(/media/images/toc_corner_4.gif) bottom left no-repeat;padding: 0 0 9px 0;}
+	#toc4 h4 {padding:.3em 0 0 0;}
+	#tocWrap {margin: .5em 0;}
+	#tocWrap strong {color:#990033;}
+/* Page tools div - Print this page, email this page etc. */
+#sub #pageTools {	/*background-color:#eee;*/	}
+/*Alert box - used for important alerts or translation issues*/
+	#content div.alertbox {border:1px dashed #990033; background:#eee; margin: .5em; padding:.3em .3em 0 .3em;}
+	/* Separate style for right-column version */
+	#sub div.alertbox {border:1px dashed #990033; background:#eee; margin: 0 0 .5em 0; padding:.3em .3em 0 .3em;}	
+
+/* BUILDING Styles */
+	#content.Building ul {
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	#content.Building li {
+		margin-left: 0.8em;
+	}
+
+	/*Summary box background*/
+	#content.Building .building_summary{background:#ECF5FF;}
+	/*Special image caption handling*/
+	#content.Building div.floatCaptionLeft {background-color:#DCE8F6;}	
+	#content.Building .building_poi h4{clear:both; border-bottom:1px solid #990033; padding:0 0 .3em 0; color:#990033;}
+	#content.Building table#map_building_list td {background:#FFFFFF;}
+	#content.Building .building_number {font-size:.6em; font-weight:normal; color:#000000;}
+	#content.Building .building_summary {float:left; width:50%; padding:.5em;}
+	#content.Building #map_area {float:right; width:350px;}
+	#content.Building #map_marker {display:inline; position:relative;}
+	#content.Building #map_mini {}
+	#content.Building table#map_building_list {width:90%;}
+	#content.Building table#map_building_list th#map_building_num {width:40%;}
+/*END BUILDING Styles (incl. MAP) */
+
+/* CONTACT styling. Also uses tab_menu styling from navs.css*/
+
+	.Contact .other_info ul ,
+	.Contact .selected_publications ul, 
+	.Contact .selected_projects ul{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	.Contact .other_info li,
+	.Contact .selected_publications li,
+	.Contact .selected_projects li {
+		font-weight: normal;
+		color: #000;
+		padding-left: 15px;
+		background:url(/media/images/research_bullet.gif) 0px 3px no-repeat;
+		margin-left: 0.8em;
+	}
+
+	.Contact .other_info h4,
+	.Contact .researcher_qualifications h4,
+	.Contact .research_interests h4,
+	.Contact .selected_publications h4,
+	.Contact .selected_projects h4,
+	.Contact .research_related_links h4,
+	.Contact .career_profile h4,
+	.Contact .awards_prizes h4, 
+	.Contact .membs_external h4,
+	.Contact .notable_achievements h4,
+	.Contact .presentations h4,
+	.Contact .teaching_profile h4 {	
+		font-size: 1em;
+		font-weight: bold;
+		width: 100%;
+		color:#903;
+		background-color:#dedede;
+		clear:both;
+		text-indent: 0.8em;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;				
+	}	
+	/*REMOVE once Contact template has been updated*/
+	.Contact h4.name span.qualifications {
+		font-size: 0.8em;
+		font-weight: normal;
+		color: #000;
+	}
+	.Contact .researcher_qualifications {
+		clear:left;
+	}
+/*this section contains styles for information under the 'OVERVIEW' tab*/	
+	.Contact hr {
+		width: 95%;
+	}
+	/*sagba 061206 - forces the image in the slot to float right*/
+	.Contact div.professionalDetails img {
+		float: right;
+	}
+
+/*professional and contact*/	
+	.Contact h3.contactType { background:none;}
+	.Contact h4.name {background:none;}
+	/*'Table' style layout for research homepage*/
+	.Contact span.jobtitle {clear:left;}
+	.Contact div.professionalDetails {display:block;}
+
+	.Contact div.professionalDetails span.job-title-label,
+	.Contact div.professionalDetails div.school span.school-label,
+	.Contact div.professionalDetails div.resgroup span.contact-research-group,
+	.Contact div.contactDetails span.email-label,
+	.Contact div.contactDetails span.tel-label,
+	.Contact div.contactDetails span.fax-label,
+	.Contact div.contactDetails span.ext-label,
+	.Contact div.contactDetails span.add-label,
+	.Contact div.contactDetails span.address-label
+		{
+			width:12em;
+			display:block;
+			float:left;
+			clear:left;
+			font-weight:bold;
+			padding:.2em 0;
+			margin:0;
+			font-size:.9em;
+		}
+	.Contact div.professionalDetails div.jobtitle span.job-title,
+	.Contact div.professionalDetails span.school,
+	.Contact div.professionalDetails span.schoolname,
+	.Contact div.professionalDetails div.resgroup span.research_grp,
+	.Contact div.contactDetails span.email,
+	.Contact div.contactDetails span.telephone,
+	.Contact div.contactDetails span.fax,
+	.Contact div.contactDetails span.extension,
+	.Contact div.contactDetails span.location,
+	.Contact div.contactDetails span.additional-contact-info
+		{
+			display:block;
+			float:left;
+			width:auto; 
+			font-size:.9em;
+			padding:.2em 0;
+		}
+/*sagba 181206*/
+	.Contact div.contactDetails span.location {float: left; width:40em;}
+/**/
+	.Contact div.professionalDetails div.jobtitle span.job-title {
+		width:29em;
+	}
+	.Contact div.contactDetails span.address
+				{
+			display:block;
+			float:left;
+			/*sagba 181206 (replaces auto)*/
+			width:23em;
+			padding:.2em 0;
+		}
+	/*makes each pairing a block level element*/
+	.Contact div.contactDetails span.contact-block {clear:left; display:block;}
+	
+	.Contact .professionalDetails .position, 
+	.Contact .professionalDetails .school, 
+	.Contact .professionalDetails .research_grp, 
+	.Contact .contact .telephone, 
+	.Contact .contact .fax, 
+	.Contact .contact .email, 
+	.Contact .contact .address,
+	.Contact .projects .proj_title, 
+	.Contact .projects .proj_sponsor, 
+	.Contact .projects .proj_value, 
+	.Contact .projects .proj_duration {
+		font-weight: normal;
+	}
+
+	.Contact .publications .bookjournal {
+		font-style: italic;
+	}
+	
+	.Contact .publications .publ_date,
+	.Contact .projects {
+		font-weight:normal;
+	}
+
+/*END professional and contact*/
+	
+	/*.research_interests block*/
+		.Contact .research_interests {
+			clear: both;
+			display: block;
+			margin-bottom: 1em;
+			margin-top:.5em;
+		}
+		
+		.Contact .research_interests p,
+		.Contact .researcher_qualifications p {
+			margin: 0 1.0em .8em 1.0em;
+		}
+	/*END .research_interests block*/
+	
+	/*.selected_publications block. NOTE this is styled differently to all_publications*/
+		.Contact .selected_publications {		
+			display: block;
+			width: 49%;	
+			float: left;
+			margin-bottom: 1em;
+		}
+	.Contact .selected_publications ul {
+			background-color:#f2f6f8;
+	}
+	.Contact .selected_publications p,
+	.Contact .selected_projects p
+		{		
+			margin: 0 0 .5em .5em;
+		}
+
+	/*END .selected_publications block*/
+	/*Block stylings on the research homepage type*/
+	.Contact .researcher_qualifications,
+	.Contact div.selected_publications,
+	.Contact div.selected_projects,
+	.Contact div.research_interests,
+	.Contact div.other_info,
+	.Contact div.career_profile,
+	.Contact div.awards_prizes, 
+	.Contact div.membs_external,
+	.Contact div.notable_achievements,
+	.Contact div.presentations,
+	.Contact div.teaching_profile,
+	.Contact div.research_related_links {
+		background-color:#f2f6f8;
+		border: 1px solid #d4d4d4;
+	}
+	.Contact div.research_related_links,
+	.Contact div.other_info {
+		clear:both;
+		margin:0 0 0.5em 0;
+	}
+	/*.selected_projects block. NOTE this is styled differently to all_projects*/
+		.Contact .selected_projects {
+			display: block;
+			width: 49%;
+			float: right;
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 1em;
+		}
+
+	/*END .selected_projects*/
+	
+	/*.other_info block*/
+	.Contact .other_info {
+		padding: 0;
+		clear:both;
+		display: block;
+		margin: 0 0 1em 0;
+	}
+	.Contact .other_info p{
+			margin: 0 1.0em .8em 1.0em;
+	}	
+	/* .other_info elements are in as a list to skirt IE rendering issues for the links, and because semantically a list is probably better*/
+	.Contact .other_info li {
+		list-style:none;
+	}
+	
+	/*.other_info block - on contact type*/
+	.Contact .other_info,
+	.Contact .personalwebsite {
+		padding: 0;
+		display: block;
+		margin: .5em 0 0 0;
+	}
+	.Contact .other_info .personalwebsite {
+		font-size:.9em;
+		padding:0 1em 0.5em 1em;
+	}
+	/*END .other_info block*/
+	/*Other info block as used in 'Contact' Content type when not a researcher*/
+	.Contact div.additional_info {
+		clear:both;
+		display:block;
+	}
+	.Contact .additional_info .personalwebsite {
+		font-size:.9em;
+		padding:0 0 0.5em 0;
+	}
+/*end 'OVERVIEW' tab*/
+
+/*this section contains styles for information under the 'PUBLICATIONS' tab*/
+	.Contact .all_publications li {
+		list-style:none;
+		margin-left: 0;
+		margin-bottom: 1em;
+	}
+/*end 'PUBLICATIONS' tab*/
+
+/*this section contains styles for information under the 'PROJECTS' tab*/
+	.Contact .all_projects li {
+		list-style:none;
+		margin-left: 0;
+		margin-bottom: 1em;
+	}
+/*end 'PROJECTS' tab*/
+		
+/*this section contains styles for information under the 'BIOGRAPHY' tab*/
+/*currently all blocks are styled similarly, but have been given different class names to allow for modification*/
+		.Contact .career_profile, 
+		.Contact .awards_prizes, 
+		.Contact .membs_external,
+		.Contact .notable_achievements,
+		.Contact .presentations, 
+		.Contact .teaching_profile  {
+			clear: both;
+			display: block;
+			margin-bottom: 1em;
+		}		
+		.Contact .career_profile p, 
+		.Contact .awards_prizes p, 
+		.Contact .membs_external p,
+		.Contact .notable_achievements p,
+		.Contact .presentations p, 
+		.Contact .teaching_profile p {
+			background-color:#f2f6f8;
+			padding: 0.5em;
+		}	
+/*end 'BIOGRAPHY' tab*/
+	.Contact .all_projects {display:block; float:left}
+	.Contact .all_publications {display:block; float:left;}
+	.Contact .all_publications ul {width:auto;}
+	.Contact .all_publications .publications .authors .author {font-weight:bold;}
+	.Contact .research_grp_publications .authors,
+	.Contact .research_grp_publication .authors,
+	.Research_Publication .research_grp_publication .authors { font-style:italic;}
+	.Contact .research_grp_publications span.title { font-weight:bold;}
+	.Contact .research_grp_publications {display:block; float:left;}
+	.Contact .research_grp_publications li { padding:0 0 .5em 0;background:none;}
+/* sagba fixes for output of publications on publications tab of Researcher 12/12/06 */
+	.Contact div.all_publications .publications li p {font-size:1em; margin:0; padding:0;}
+	.Contact div.all_publications .publications li {margin:0 0 .7em 0; padding:0;}
+
+	.Contact div.all_projects ul.projects li {margin:.5em 0 0 0;}
+	/*Displays the strong tags as labels (forming a neater layout) */
+	.Contact div.all_projects ul.projects strong {display:block; float:left; width:7em;}
+	/*end fixes 12/12/06*/
+	
+/*sagba 13/12/06*/
+		div.contact_point_snippet_4 {display:block; float:left; clear:left; width:100%;}
+		div.contact_point_snippet_4 span.contact-block {clear:left; display:block;}
+		div.contact_point_snippet_4 span.contact-block .email-label,
+		div.contact_point_snippet_4 span.contact-block .tel-label
+		{
+			width:5em;
+			display:block;
+			float:left;
+			clear:left;
+			font-weight:bold;
+			padding:.2em 0;
+			margin:0;
+			font-size:.9em;
+		}
+		div.contact_point_snippet_4 span.contact-block .email,
+		div.contact_point_snippet_4 span.contact-block .telephone
+		{
+			display:block;
+			float:left;
+			padding:.2em 0;
+			margin:0;
+			font-size:.9em;
+		}
+/**/
+/*100107 sagba*/
+	span.contact_snippet_name {font-size:.9em}
+	p span.contact_snippet_name {font-size:1em}
+	div.contact_snippet_details_1,
+	div.contact_snippet_details_2,
+	div.contact_snippet_details_3,
+	div.contact_snippet_details_4 {
+		font-size:.9em; clear:left; float:left; width:100%; margin:0 0 .5em 0;
+	}
+		/*Fix for when used in Resaerch Group page template*/
+		.Research_Group .research_grp_leader div.contact_snippet_details_4,
+		.Research_Group .research_grp_staff div.contact_snippet_details_4 {
+			float:none;
+		}
+		/**/
+	div.contact_snippet_details_1 h4,
+	div.contact_snippet_details_2 h4,
+	div.contact_snippet_details_3 h4,
+	div.contact_snippet_details_4 h4 {
+		margin:0;
+	}
+	div.contact_snippet_details_1 span.contact-block,
+	div.contact_snippet_details_2 span.contact-block,
+	div.contact_snippet_details_3 span.contact-block,
+	div.contact_snippet_details_4 span.contact-block {
+		display:block;
+		float:left;
+		clear:left;
+		width:100%;
+	}
+	div.contact_snippet_details_1 span.email-label,
+	div.contact_snippet_details_2 span.email-label,
+	div.contact_snippet_details_3 span.email-label,
+	div.contact_snippet_details_1 span.tel-label,
+	div.contact_snippet_details_2 span.tel-label,
+	div.contact_snippet_details_3 span.tel-label,
+	div.contact_snippet_details_1 span.ext-label,
+	div.contact_snippet_details_2 span.ext-label,
+	div.contact_snippet_details_3 span.ext-label,
+	div.contact_snippet_details_2 span.location-label,
+	div.contact_snippet_details_3 span.location-label,
+	div.contact_snippet_details_4 span.email-label,
+	div.contact_snippet_details_4 span.tel-label,
+	div.contact_snippet_details_4 span.ext-label,
+	div.contact_snippet_details_1 span.job-title-label,
+	div.contact_snippet_details_3 span.job-title-label {
+		font-weight:bold;
+		display:block;
+		width: 7em;
+		float:left;
+		clear:left;
+		padding:.1em 0;
+	}
+	div.contact_snippet_details_1 span.email,
+	div.contact_snippet_details_2 span.email,
+	div.contact_snippet_details_3 span.email,
+	div.contact_snippet_details_1 span.telephone,
+	div.contact_snippet_details_2 span.telephone,
+	div.contact_snippet_details_3 span.telephone,
+	div.contact_snippet_details_1 span.extension,
+	div.contact_snippet_details_2 span.extension,
+	div.contact_snippet_details_3 span.extension,
+	div.contact_snippet_details_2 span.location,
+	div.contact_snippet_details_3 span.location,
+	div.contact_snippet_details_4 span.email,
+	div.contact_snippet_details_4 span.telephone,
+	div.contact_snippet_details_4 span.extension,
+	div.contact_snippet_details_1 span.job-title,
+	div.contact_snippet_details_3 span.job-title {
+	 	display:block;
+		padding:.1em 0;
+		float:left;
+				
+	}
+	div.contact_snippet_details_2 span.location,
+	div.contact_snippet_details_3 span.location
+		{float:left;}
+	/*Fix for images not set to float by user*/
+	div.contact_snippet_details_4 img {float:left; margin:.3em .3em 0 0;}
+	div.contact_snippet_details_4 div.contact-details {float:left; margin:.1em 0;}
+	div.contact_snippet_details_3 p.BuildingAddress {font-size:1em;}
+	div.contact_snippet_details_3 span.location p.BuildingAddress {font-size:1em; margin:0; padding:0;}
+/**/
+	
+/*RESEARCH GROUP*/
+	/*Publications styles*/
+	#content ul.research_grp_publications li {clear:both;}
+	#content div.all_projects ul.projects li span.proj_title {font-weight:bold;}
+/*Studentship*/
+	/*'Table' style layout*/
+	#content.Studentship div.studentship-details {display:block; clear:both; width:100%; float:left; margin:0 0 .5em 0;}
+	#content.Studentship div.studentship-details span.location-label,
+	#content.Studentship div.studentship-details span.funding-label,
+	#content.Studentship div.studentship-details span.duration-label,
+	#content.Studentship div.studentship-details span.closing-date-label
+		{
+			display:block;
+			width:14em;
+			float:left;
+			clear:left;
+			font-size:.9em;
+			font-weight:bold;
+			padding:.2em 0;
+		}
+	#content.Studentship div.studentship-details span.location,
+	#content.Studentship div.studentship-details span.funding,
+	#content.Studentship div.studentship-details span.duration,
+	#content.Studentship div.studentship-details span.closing-date
+		{
+			display:block;
+			width:auto;
+			float:left;
+			font-size:.9em;
+		}
+	#content.Studentship div.studentship-details div.studentship-block {display:block; clear:left;}
+	#content.Studentship h3.studentship-type {font-size:1em;}
+	/*Contact point snippet*/
+	div.snippet_contact_point_1 div.contact_point_address {float:left; display:block; clear:both; width:100%;}
+	div.contact_point_snippet_1 {display:block; clear:both; float:left; width:100%;}
+	div.contact_point_snippet_1 div.info-pair {display:block; float:left; clear:left; width:100%;}
+	div.contact_point_snippet_1 div.info-pair span.email-label,
+	div.contact_point_snippet_1 div.info-pair span.tel-label,
+	div.contact_point_snippet_1 div.info-pair span.ext-label,
+	div.contact_point_snippet_1 div.info-pair span.fax-label,
+	div.contact_point_snippet_1 div.info-pair span.additional-contact-info,
+	div.snippet_contact_point_1 div.contact_point_address span.contact-point-address-label,
+	div.snippet_contact_point_1 div.contact_point_address div.contact-point-address-label
+		{
+			display:block;
+			width:9em;
+			float:left;
+			font-size:0.9em;
+			font-weight:bold;
+			padding:.2em 0;
+		}
+	div.contact_point_snippet_1 div.info-pair span.email,
+	div.contact_point_snippet_1 div.info-pair span.telephone,
+	div.contact_point_snippet_1 div.info-pair span.extension,
+	div.contact_point_snippet_1 div.info-pair span.fax
+		{
+			font-size:0.9em;
+			padding:.2em 0;
+			display:block;
+		}
+	div.snippet_contact_point_1 div.contact_point_address span.contact-point-address,
+	div.snippet_contact_point_1 div.contact_point_address div.contact-point-address { display:block; float:left;}
+	p.BuildingAddress {font-size:.9em; margin:0; padding:0;}
+	div.snippet_contact_point_1 .contact_point_address .location,
+	div.contact_point_snippet_2 .location,
+	div.contact_point_snippet_3 .location
+	 {font-size:.9em;}
+	 /*aigns address with label*/
+	.snippet_contact_point_1 .contact_point_address .contact-point-address {margin:0.2em 0 0.5em 0;}
+	.additional_info p.label {font-weight:bold; margin:0}
+	.BuildingAddress {display:block;}
+	#directions {float:left; clear:left;}
+	div.contact_point_snippet_1,
+	div.contact_point_snippet_2,
+	div.contact_point_snippet_3,
+	div.contact_point_snippet_4
+		{display:block;}
+	/*Vacancy detail page styles*/
+	#content.Vacancy div.vacancy_detail {display:block; width:100%; float:left;}
+	#content.Vacancy div.vacancy_detail div.vacancy-info {display:block; float:left; clear:left;}
+	#content.Vacancy div.vacancy_detail span.vacancy-reference-label,
+	#content.Vacancy div.vacancy_detail span.vacancy-closing-date-label,
+	#content.Vacancy div.vacancy_detail span.vacancy-type-label,
+	#content.Vacancy div.vacancy_detail span.vacancy-salary-label,
+	#content.Vacancy div.vacancy_detail span.vacancy-location-label
+		{
+			display:block;
+			width:9em;
+			float:left;
+			font-size:0.9em;
+			font-weight:bold;
+			padding:.2em 0;
+
+		}
+	#content.Vacancy div.vacancy_detail span.vacancy-reference-number,
+	#content.Vacancy div.vacancy_detail span.vacancy-closing-date,
+	#content.Vacancy div.vacancy_detail span.vacancy-type,
+	#content.Vacancy div.vacancy_detail span.vacancy-salary
+		{
+			font-size:.9em;
+			padding:.2em 0;
+		}
+	#content.Vacancy div.vacancy_detail span.vacancy-location
+		{
+			display:block;
+			float:left;
+			font-size:.9em;
+			padding:.2em 0;
+		}
+	#content.Vacancy div.vacancy_detail span.vacancy-location p
+		{
+			font-size:1em;
+		}
+	#examination_details {display:block; width:100%; float:left; clear:both;}
+	#examination_details div.examination_title {width:15em; float:left;}
+	#examination_details div.examination_date {width:5em; float:left;}
+	#examination_details div.examination_duration {width:5em; float:left;}
+	#examination_details div.examination_location {width:10em; float:left;}
+	#examination_details div.examination_title span.examination-title-label,
+	#examination_details div.examination_date span.examination-date-label,
+	#examination_details div.examination_duration span.examination-duration-label,
+	#examination_details div.examination_location span.examination-location-label
+	{
+		display:block;
+		padding:.5em .3em;
+		font-size:.9em;
+		background:#eee;
+	}
+	#examination_details div.examination_title span.examination-title,
+	#examination_details div.examination_date span.examination-date,
+	#examination_details div.examination_duration span.examination-duration,
+	#examination_details div.examination_location span.examination-location
+	{
+		display:block;
+		padding:.3em 0 .5em .3em;
+		font-size:.9em;
+	}
+	/*BANNER STYLES FOR ERROR PAGES*/
+	body.error div#bannerImg {background:none;}
+	body.error div#header {border:1px solid #e5bfcc; background:none; width: 63.5em; margin-top: 2.4em; height: 5.7em;}
+	body.error #nav_main { background:none; }
+	body.error div#header h1 {color:#000; font-weight:normal; font-size:2.2em;}
+	body.error h2.errorpagetitle {font-weight:normal; font-size:1.4em; color:#903; margin-top:.7em;}
+	/*ERROR Heading*/
+	div.error div#bannerImg {background:none;}
+	div.error {border:1px solid #e5bfcc; background:none; width: 63.5em; margin-top: 2.4em; height: 5.7em;}
+	div.error #nav_main { background:none; }
+	div.error h1 {color:#000; font-weight:normal; font-size:2.2em;}
+	body.error h2.errorpagetitle {font-weight:normal; font-size:1.4em; color:#903; margin-top:.7em;}
+	.errorBG div#header {background:none;}
+/**/
+/* FORM styles */
+/**/
+/*BA 101006*/
+	form {margin: 0; padding: 0;}
+	label {display:block; clear: left;}
+	fieldset {margin: 0 0 .5em 0;
+		/**/
+			width: 98%; /* Fix for non-expanding fieldset when using floated form elements in iCab, Safari, Opera. */
+			float: left;
+		/**/
+		}
+	legend {padding: .3em .5em; background: #fff; margin: 0;}
+	optgroup {font-style: normal; font-weight: normal;}
+	
+	form.inlinelabel label,
+	form.inlinelabel input,
+	form.inlinelabel select,
+	form.inlinelabel textarea,
+	form.blocklabel label,
+	form.blocklabel input,
+	form.blocklabel select,
+	form.blocklabel textarea {font-family: Geneva, Helvetica, Verdana, Arial, sans-serif; font-size: .9em;}
+	
+	form.hidelegend legend{display: none;}
+	
+	form.inlinelabel label{float:left; clear: left;}
+	form.inlinelabel input {float: left;}
+	form.inlinelabel label.inlinelabel {float:left; clear: none; margin: .3em 0 0 .3em;}
+	form.blocklabel input,
+	form.blocklabel select,
+	form.blocklabel textarea {float: left;}
+	
+	form.label10 label {width:10%; margin: .3em 0;}
+	form.label20 label {width:20%; margin: .3em 0;}
+	form.label25 label {width:25%; margin: .3em 0;}
+	form.label33 label {width:33%; margin: .3em 0;}
+	form.label40 label {width:40%; margin: .3em 0;}
+	form.label50 label {width:50%; margin: .3em 0;}
+	form.labelbold label {font-weight: bold;}
+	form.inlinelabel label.full,
+	form.blocklabel label.full,
+	label.full {width: 90%;}
+	
+	form.hidefieldset fieldset {border: none; width:98%;}
+	form.showfieldset fieldset {border: 1px solid #e5f0fb; background: #eef5fd;}
+/*Temp fix for IE's inability to display the fieldset background properly - BA */
+	form.showfieldset legend {display: none;}
+/*END temp fix for IE */	
+	form.fieldsetpad00 fieldset {padding: 0;}
+	form.fieldsetpad03 fieldset {padding: .3em;}
+	form.fieldsetpad05 fieldset {padding: .5em;}
+	form.fieldsetpad07 fieldset {padding: .7em;}
+	form.fieldsetpad10 fieldset {padding: 1.0em;}
+	/*Field widths*/
+	input.field10, select.field10, textarea.field10 {width: 10%;}
+	input.field15, select.field15, textarea.field15 {width: 15%;}
+	input.field25, select.field25, textarea.field25 {width: 25%;}
+	input.field33, select.field33, textarea.field33 {width: 33%;}
+	input.field40, select.field40, textarea.field40 {width: 40%;}
+	input.field50, select.field50, textarea.field50 {width: 50%;}
+	input.field60, select.field60, textarea.field60 {width: 60%;}
+	input.field70, select.field70, textarea.field70 {width: 70%;}
+	input.field75, select.field75, textarea.field75 {width: 75%;}
+	input.field80, select.field80, textarea.field80 {width: 80%;}
+	input.field90, select.field90, textarea.field90 {width: 90%;}
+	input.field98, select.field98, textarea.field98 {width: 98%;}
+	
+	input.fieldmarginhoriz03 {margin: 0 .3em;}
+	input.fieldmarginhoriz05 {margin: 0 .5em;}
+	input.fieldmarginhoriz07 {margin: 0 .7em;}
+	input.fieldmarginhoriz10 {margin: 0 1.0em;}
+	
+	form.fieldmarginvert01 input,
+	form.fieldmarginvert01 select,
+	form.fieldmarginvert01 textarea {margin-top: .1em; margin-bottom: .1em;}
+	form.fieldmarginvert01 label {margin: .3em 0;}
+	form.fieldmarginvert03 input,
+	form.fieldmarginvert03 select,
+	form.fieldmarginvert03 textarea {margin-top: .3em; margin-bottom: .3em;}
+	form.fieldmarginvert03 label {margin: .6em 0;}
+	form.fieldmarginvert05 input,
+	form.fieldmarginvert05 select,
+	form.fieldmarginvert05 textarea {margin-top: .5em; margin-bottom: .5em;}
+	form.fieldmarginvert05 label {margin: .9em 0;}
+
+	/*apply to span surrounding the * character */
+	span.required {color:#cc0033}
+	
+	/*Room Booking layout styles*/
+	/*sagba 020107*/
+	div.room_details {
+		width:100%;
+		float:left;
+		clear:both;
+		margin:1em 0 0.5em 0;
+		font-size:.9em;
+	}
+	div.room_details span.label {
+		display:block;
+		float:left;
+		clear:left;
+		width:10.5em;
+		font-weight:bold;
+		padding:0 0.5em .3em 0;
+	}
+	div.room_details span.data {
+		display:block;
+		float:left;
+		padding:0 0.5em .3em 0;
+	}
+	div.other_info{float:left; clear:both; width:100%;}
+	div.other_info a {font-size:.9em;}
+	div.other_info p a {font-size:1em;}
+	/*END Room Booking layout styles*/
+	
+	/*sagba 040107*/
+	div.course_snippet {
+		margin:0 0 .5em 0;
+	}
+	div.course_snippet a {font-size:.9em;}
+	div.course_snippet p a {font-size:1em;}
+	span.course_title {font-size:.9em;}
+/*Page snippet styling of title link*/
+/*Makes all instances of a page snippet title bold*/
+.page_snippet a {font-weight:bold;}
+.page_snippet p a {font-weight:normal;}
+/**/
+body.CU_DEVAR .Homepage {overflow:hidden;}
+
+/**/
+/*
+NEW CONTACT STYLES
+*/
+.Contact_New h2.name {
+	margin:0;
+}
+.Contact_New p.qualifications {
+		font-weight: normal;
+		color: #000;
+	}
+
+.Contact_New .overview {
+			clear: both;
+			display: block;
+			margin-bottom: 1em;
+			margin-top:.5em;
+	}
+		
+.Contact_New .overview p {
+		margin: 0 .8em .8em .8em;
+	}
+.Contact_New .overview h3,
+.Contact_New .overview h4 {
+		font-size: 1em;
+		font-weight: bold;
+		width: 100%;
+		color: #903;
+		background-color:#dedede;
+		clear:both;
+		text-indent: 0.8em;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		margin:0 0 .5em 0;
+	}
+.Contact_New div.overview h5,
+.Contact_New div.overview h6,
+.Contact_New .research_related_links h5,
+.Contact_New .research_related_links h6,
+.Contact_New .personal-site {
+		text-indent:.8em;
+	}
+.Contact_New div.overview {
+		background-color:#f2f6f8;
+		border: 1px solid #d4d4d4;
+	}
+.Contact_New .research_grp ul {font-size:1em; margin:0; padding:0;}
+.Contact_New .research_grp ul li { margin:0; padding:0 0 .3em 0;}
+.Contact_New .research_related_links ul.none {margin-left:.8em;}
+.Contact_New .research_related_links ul.none li {margin:0 0 .3em 0;}
+
+.Contact_New .contact-block .address .contact_point_snippet_2 h4 {font-size:.9em; color:#000;}
+.Contact_New .contact-block .address .contact_point_snippet_2 .location {margin:0;}
+
+/**/
+
+.Contact_New .other_info ul ,
+	.Contact_New .selected_publications ul, 
+	.Contact_New .selected_projects ul{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	.Contact_New .other_info li,
+	.Contact_New .selected_publications li,
+	.Contact_New .selected_projects li {
+		font-weight: normal;
+		color: #000;
+		padding-left: 15px;
+		background:url(/media/images/research_bullet.gif) 0px 3px no-repeat;
+		margin-left: 0.8em;
+	}
+
+	.Contact_New .other_info h4,
+	.Contact_New .researcher_qualifications h4,
+	.Contact_New .research_interests h4,
+	.Contact_New .selected_publications h4,
+	.Contact_New .selected_projects h4,
+	.Contact_New .research_related_links h4,
+	.Contact_New .career_profile h4,
+	.Contact_New .awards_prizes h4, 
+	.Contact_New .membs_external h4,
+	.Contact_New .notable_achievements h4,
+	.Contact_New .presentations h4,
+	.Contact_New .teaching_profile h4 {	
+		font-size: 1em;
+		font-weight: bold;
+		width: 100%;
+		color:#903;
+		background-color:#dedede;
+		clear:both;
+		text-indent: 0.8em;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;				
+	}	
+	/*REMOVE once Contact template has been updated*/
+	.Contact_New h4.name span.qualifications {
+		font-size: 0.8em;
+		font-weight: normal;
+		color: #000;
+	}
+	.Contact_New .researcher_qualifications {
+		clear:left;
+	}
+/*this section contains styles for information under the 'OVERVIEW' tab*/	
+	.Contact_New hr {
+		width: 95%;
+	}
+	/*sagba 061206 - forces the image in the slot to float right*/
+	.Contact_New div.professionalDetails img {
+		float: right;
+	}
+
+/*professional and contact*/	
+	.Contact_New h3.contactType { background:none;}
+	.Contact_New h4.name {background:none;}
+	/*'Table' style layout for research homepage*/
+	.Contact_New span.jobtitle {clear:left;}
+	.Contact_New div.professionalDetails {display:block;}
+
+	.Contact_New div.professionalDetails span.job-title-label,
+	.Contact_New div.professionalDetails div.school span.school-label,
+	.Contact_New div.professionalDetails div.resgroup span.contact-research-group,
+	.Contact_New div.contactDetails span.email-label,
+	.Contact_New div.contactDetails span.tel-label,
+	.Contact_New div.contactDetails span.fax-label,
+	.Contact_New div.contactDetails span.ext-label,
+	.Contact_New div.contactDetails span.add-label,
+	.Contact_New div.contactDetails span.address-label
+		{
+			width:12em;
+			display:block;
+			float:left;
+			clear:left;
+			font-weight:bold;
+			padding:.2em 0;
+			margin:0;
+			font-size:.9em;
+		}
+	.Contact_New div.professionalDetails div.jobtitle span.job-title,
+	.Contact_New div.professionalDetails span.school,
+	.Contact_New div.professionalDetails span.schoolname,
+	.Contact_New div.professionalDetails div.resgroup span.research_grp,
+	.Contact_New div.contactDetails span.email,
+	.Contact_New div.contactDetails span.telephone,
+	.Contact_New div.contactDetails span.fax,
+	.Contact_New div.contactDetails span.extension,
+	.Contact_New div.contactDetails span.location,
+	.Contact_New div.contactDetails span.additional-contact-info
+		{
+			display:block;
+			float:left;
+			width:auto; 
+			font-size:.9em;
+			padding:.2em 0;
+		}
+/*sagba 181206*/
+	.Contact_New div.contactDetails span.location {float: left; width:29em;}
+/**/
+	.Contact_New div.professionalDetails div.jobtitle span.job-title {
+		width:29em;
+	}
+	.Contact_New div.contactDetails span.address
+				{
+			display:block;
+			float:left;
+			/*sagba 181206 (replaces auto)*/
+			width:23em;
+			padding:.2em 0;
+		}
+	/*makes each pairing a block level element*/
+	.Contact_New div.contactDetails span.contact-block {clear:left; display:block;}
+	
+	.Contact_New .professionalDetails .position, 
+	.Contact_New .professionalDetails .school, 
+	.Contact_New .professionalDetails .research_grp, 
+	.Contact_New .contact .telephone, 
+	.Contact_New .contact .fax, 
+	.Contact_New .contact .email, 
+	.Contact_New .contact .address,
+	.Contact_New .projects .proj_title, 
+	.Contact_New .projects .proj_sponsor, 
+	.Contact_New .projects .proj_value, 
+	.Contact_New .projects .proj_duration {
+		font-weight: normal;
+	}
+
+	.Contact_New .publications .bookjournal {
+		font-style: italic;
+	}
+	
+	.Contact_New .publications .publ_date,
+	.Contact_New .projects {
+		font-weight:normal;
+	}
+
+/*END professional and contact*/
+	
+	/*.research_interests block*/
+		.Contact_New .research_interests {
+			clear: both;
+			display: block;
+			margin-bottom: 1em;
+			margin-top:.5em;
+		}
+		
+		.Contact_New .research_interests p,
+		.Contact_New .researcher_qualifications p {
+			margin: 0 1.0em .8em 1.0em;
+		}
+	/*END .research_interests block*/
+	
+	/*.selected_publications block. NOTE this is styled differently to all_publications*/
+		.Contact_New .selected_publications {		
+			display: block;
+			width: 49%;	
+			float: left;
+			margin-bottom: 1em;
+		}
+	.Contact_New .selected_publications ul {
+			background-color:#f2f6f8;
+	}
+	.Contact_New .selected_publications p,
+	.Contact_New .selected_projects p
+		{		
+			margin: 0 0 .5em .5em;
+		}
+
+	/*END .selected_publications block*/
+	/*Block stylings on the research homepage type*/
+	.Contact_New .researcher_qualifications,
+	.Contact_New div.selected_publications,
+	.Contact_New div.selected_projects,
+	.Contact_New div.research_interests,
+	.Contact_New div.other_info,
+	.Contact_New div.career_profile,
+	.Contact_New div.awards_prizes, 
+	.Contact_New div.membs_external,
+	.Contact_New div.notable_achievements,
+	.Contact_New div.presentations,
+	.Contact_New div.teaching_profile,
+	.Contact_New div.research_related_links {
+		background-color:#f2f6f8;
+		border: 1px solid #d4d4d4;
+	}
+	.Contact_New div.research_related_links,
+	.Contact_New div.other_info {
+		clear:both;
+		margin:0 0 0.5em 0;
+	}
+	/*.selected_projects block. NOTE this is styled differently to all_projects*/
+		.Contact_New .selected_projects {
+			display: block;
+			width: 49%;
+			float: right;
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 1em;
+		}
+
+	/*END .selected_projects*/
+	
+	/*.other_info block*/
+	.Contact_New .other_info {
+		padding: 0;
+		clear:both;
+		display: block;
+		margin: 0 0 1em 0;
+	}
+	.Contact_New .other_info p{
+			margin: 0 1.0em .8em 1.0em;
+	}	
+	/* .other_info elements are in as a list to skirt IE rendering issues for the links, and because semantically a list is probably better*/
+	.Contact_New .other_info li {
+		list-style:none;
+	}
+	
+	/*.other_info block - on contact type*/
+	.Contact_New .other_info,
+	.Contact_New .personalwebsite {
+		padding: 0;
+		display: block;
+		margin: .5em 0 0 0;
+	}
+	.Contact_New .personalwebsite {
+		font-size:.9em;
+		padding:0 1em 0.5em 1em;
+	}
+	/*END .other_info block*/
+	/*Other info block as used in 'Contact' Content type when not a researcher*/
+	.Contact_New div.additional_info {
+		clear:both;
+		display:block;
+	}
+	.Contact_New .additional_info .personalwebsite {
+		font-size:.9em;
+		padding:0 0 0.5em 0;
+	}
+/*end 'OVERVIEW' tab*/
+
+/*this section contains styles for information under the 'PUBLICATIONS' tab*/
+	.Contact_New .all_publications li {
+		list-style:none;
+		margin-left: 0;
+		margin-bottom: 1em;
+	}
+/*end 'PUBLICATIONS' tab*/
+
+/*this section contains styles for information under the 'PROJECTS' tab*/
+	.Contact_New .all_projects li {
+		list-style:none;
+		margin-left: 0;
+		margin-bottom: 1em;
+	}
+/*end 'PROJECTS' tab*/
+		
+/*this section contains styles for information under the 'BIOGRAPHY' tab*/
+/*currently all blocks are styled similarly, but have been given different class names to allow for modification*/
+		.Contact_New .career_profile, 
+		.Contact_New .awards_prizes, 
+		.Contact_New .membs_external,
+		.Contact_New .notable_achievements,
+		.Contact_New .presentations, 
+		.Contact_New .teaching_profile  {
+			clear: both;
+			display: block;
+			margin-bottom: 1em;
+		}		
+		.Contact_New .career_profile p, 
+		.Contact_New .awards_prizes p, 
+		.Contact_New .membs_external p,
+		.Contact_New .notable_achievements p,
+		.Contact_New .presentations p, 
+		.Contact_New .teaching_profile p {
+			background-color:#f2f6f8;
+			padding: 0.5em;
+		}	
+/*end 'BIOGRAPHY' tab*/
+	.Contact_New .all_projects {display:block; float:left}
+	.Contact_New .all_publications {display:block; float:left;}
+	.Contact_New .all_publications ul {width:auto;}
+	.Contact_New .all_publications .publications .authors .author {font-weight:bold;}
+	.Contact_New .research_grp_publications .authors,
+	.Contact_New .research_grp_publication .authors,
+	.Research_Publication .research_grp_publication .authors { font-style:italic;}
+	.Contact_New .research_grp_publications span.title { font-weight:bold;}
+	.Contact_New .research_grp_publications {display:block; float:left;}
+	.Contact_New .research_grp_publications li { padding:0 0 .5em 0;background:none;}
+/* sagba fixes for output of publications on publications tab of Researcher 12/12/06 */
+	.Contact_New div.all_publications .publications li p {font-size:1em; margin:0; padding:0;}
+	.Contact_New div.all_publications .publications li {margin:0 0 .7em 0; padding:0;}
+
+	.Contact_New div.all_projects ul.projects li {margin:.5em 0 0 0;}
+	/*Displays the strong tags as labels (forming a neater layout) */
+	.Contact_New div.all_projects ul.projects strong {display:block; float:left; width:7em;}
+	/*end fixes 12/12/06*/
+/*END NEW CONTACT STYLES*/

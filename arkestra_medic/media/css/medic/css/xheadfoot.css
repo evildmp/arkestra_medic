@@ -1,0 +1,58 @@
+/*
+	MEDIC header and footer specific styles
+*/
+body.medic #header {
+	background:#708ef1 url(/media/css/medic/images/schoolbanner3.jpg) no-repeat right top;
+	width: auto;
+	}
+
+body.medic #bannerImg {
+		/*background:url(../images/optom-eye.jpg) no-repeat right top;*/
+		background:none;
+	}
+	
+body.medic #header h1 {
+	background: none;
+	color:#708ef1;
+	width:327px;
+	height:23px;
+	position:relative;
+	padding:22px 0 0 0;
+	margin:0;
+	font-size:0;
+	float:left;
+	}
+	
+body.medic #header h1 span {
+	background: url(/media/css/medic/images/school-name.gif) no-repeat;
+		position:absolute;
+		width:417px;
+		height:42px;
+	}
+	
+body.medic #header p.h1subhead {color:#fff; display:none;}
+
+/*
+	RESEARCH CENTRES
+	used for IRGs (Interdisciplinary Research Groups)
+*/
+	body.medic #header.research-banner {
+		background:#ccc url(/media/css/medic/images/research-banner-bg.gif) repeat-x top;
+		height:5.8em;
+	}
+/*Setting the logo background*/
+	body.medic #header.research-banner span.logo {
+		display:block;
+		width:7em;
+		height:5.8em;
+		background:url(/media/css/medic/images/research-logo-bg.gif) no-repeat 0 0;
+		float:left;
+	}
+	body.medic #header.research-banner .floatLeftTop img{
+		margin:0;
+	}
+	body.medic #header.research-banner .floatLeftTop {
+		float:left;
+		width:50%;
+	}
+	body.medic #header .centre-name {float:left; clear:left; height:42px;}

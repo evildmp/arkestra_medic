@@ -1,0 +1,38 @@
+/* tools\default.css 
+	This file defines universal tools that can be used over the entire site.
+	Additionally, any browser hacks should be included in this file, but only for specific named classes or divs.*/
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 63.6em;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/*HACK for vertical positioning of lang_select div. IE seems to position it correctly. Moz and Opera start the top positioning from underneath nav_main*/
+
+ html #lang_select {
+	*top: 8.55em; /*hack for both IE6 and IE7 combined*/
+}
+/* END vertical positioning hack */
+
+
+/* Hack to get round whitespace bug in IE for nav_local anchors - * html is for IE6, IE7 will probably need a hack in due course*/ 
+
+html #nav_local a,  { 
+		*min-height: 1px; /*this is for IE7*/
+}
+html #nav_local a,  { 
+		_height: 1px; /*this is for IE6*/
+}
+/* End whitespace hack */ 

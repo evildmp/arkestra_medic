@@ -1,0 +1,265 @@
+/* C21 CSS */
+.c21 #header {
+    background: #000;
+}
+
+.c21 #header h1 {
+    font-family: Arial,Helvetica,sans-serif;
+    background: none repeat scroll 0 0 transparent;
+    color: white;
+    float: left;
+    height: 23px;
+    margin: 0;
+    padding: 22px 0 0;
+    position: relative;
+    width: 417px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+h1, h3 {
+    color: black;
+    margin-bottom: 0.25em;
+}
+h3 {
+    color: #990033;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0.7em 0 0;
+    padding: 0;
+}
+h2 {
+    color: #990033;
+}
+h2 {
+    color: #993333;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+ul {
+    margin-bottom: 1em;
+}
+
+/* Tints
+------------------------------------------------------------------------------*/
+.tint, .tint1, .tint2, .tint3, .tint4, .tint5, .tint6, .background-pale, .background-mid, .background-red, .background-strong-red, .background-strong-blue, .background-strong-green, .outline, .outline-red {    padding: 1em;
+}
+.c21 p.tint1, .c21 table.tint1, .c21 table.tint1 td, .c21 caption.tint1,
+.c21 tr.tint1, .c21 th.tint1, .c21 td.tint1, .c21 div.tint1 {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #9B9B9B;
+}
+.c21 .tint2, .c21 table.tint2, .c21 table.tint2 td, .c21 caption.tint2,
+.c21 tr.tint2, .c21 th.tint2, .c21 td.tint2, .c21 div.tint2 {
+    background: none repeat scroll 0 0 #E0E0E0;
+    border-color: #8E8E8E;
+}
+.c21 p.tint3, .c21 table.tint3, .c21 table.tint3 td, .c21 caption.tint3,
+.c21 tr.tint3, .c21 th.tint3, .c21 td.tint3, .c21 div.tint3 {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border-color: #7C7C7C;
+}
+.c21 table.background-strong-blue, .c21 table.background-strong-blue td, .c21 caption.background-strong-blue, .c21 tr.background-strong-blue, .c21 th.background-strong-blue, .c21 td.background-strong-blue, .c21 div.background-strong-blue, .c21 p.background-strong-blue {
+    background: none repeat scroll 0 0 #4F81BD;
+    border-color: #D8D8D8;
+    color: #EEEEEE;
+}
+.c21 .background-strong-blue h3, .c21 .background-strong-blue h4, .c21 .background-strong-blue h5, .c21  .background-strong-blue h6 {
+    color: #000;
+}
+.c21 table.background-strong-green, .c21 table.background-strong-green td, .c21 caption.background-strong-green, .c21 tr.background-strong-green, .c21 th.background-strong-green, .c21 td.background-strong-green, .c21 div.background-strong-green, .c21 p.background-strong-green {
+    background: none repeat scroll 0 0 #9BBB59;
+    border-color: #D8D8D8;
+    color: black;
+}
+/* Navigation
+------------------------------------------------------------------------------*/
+
+/*
+	MEDIC navigation specific styles
+	special colours:
+	
+	School of Medicine red:     #990033
+	pale red:                   #fffdfd
+	
+	
+*/
+	/*#nav_horiz definitions*/
+	.c21 #nav_horiz {
+		background-color:#222;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	.c21 #nav_horiz li, body.c21 #nav_horiz ul {
+		/*padding:0;*/
+		margin:0 /*0.5em*/;
+	}
+	.c21 #nav_horiz a:link, body.c21 #nav_horiz a:visited , body.c21 #nav_horiz a:hover, body.c21 #nav_horiz a:active {
+		color:#fff;
+	}
+	body.c21 #nav_horiz li {
+		border-left:1px solid #222;
+		padding:0 0.3em 0 0.7em;
+	}
+	/* end #nav_horiz definitions*/
+/*
+	#lang_select definitions
+*/
+	#lang_select a:link, #lang_select a:visited ,#lang_select a:hover, #lang_select a:active {
+		color:#fff;
+	}
+	
+/*#lang_select definitions*/
+	/*uses default styles*/
+
+
+/*MEDIC #nav_local definitions*/
+/*uses default styles from styles/_core/nav.css with those below over-riding*/
+
+/* level 1 nav - white on black, hover white on red */
+#nav_local a.subsite_head:link, 
+#nav_local a.subsite_head:visited   {
+	background: #000 url(/media/css/medic/images/cu_menu_top_corner.gif) right top no-repeat;
+	color: #fff;
+    }
+
+#nav_local a.subsite_head:hover,
+#nav_local a.subsite_head:active  {
+	background: #903 url(/media/css/medic/images/cu_menu_top_corner.gif) right top no-repeat;
+	color: #fff;
+    }
+
+/* level 2 nav black on grey, hover white on red, current white on dark grey */
+
+#nav_local ul li ul li a:link,
+#nav_local ul li ul li a:visited    {
+    background-color: #ccc;
+    border-color: #ccc;
+    }
+
+
+#nav_local ul li ul li a:hover,
+#nav_local ul li ul li a.current:hover,
+#nav_local ul li ul li a.current:active  {
+    background-color: #903;
+    border-color: #903;
+    color: #fffdfd;
+    }
+
+#nav_local ul li ul li a:active {
+    background-color: #fffdfd;
+    border-color: #fffdfd;
+    color: #903;
+    }
+
+#nav_local ul li ul li a.current:link,
+#nav_local ul li ul li a.current:visited    {
+	background-color: #777;
+	border-color: #777;
+	color: #fffdfd;
+    }
+    
+/*level 3 nav* black on light grey, hover white on red */
+
+#nav_local ul li ul li ul li a:link,
+#nav_local ul li ul li ul li a:visited,
+nav_local ul li ul li ul li a:active {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8
+    }
+    
+
+#nav_local ul li ul li ul li a.current:link,
+#nav_local ul li ul li ul li a.current:visited  {
+    background-color: #aaa;
+    border-color: #aaa;
+    color: #903;
+    }
+    #nav_local ul li ul li ul li a:hover,
+    #nav_local ul li ul li ul li a.current:hover    {
+    	background-color: #903;
+    	border-color: #903;
+    	color: #fffdfd;
+        }
+ 
+#nav_local ul li ul li ul li a.current:active {
+    background-color: #fffdfd;
+    border-color: #fffdfd;
+    color: #903;
+    }
+
+
+    
+
+	#nav_local ul li ul li ul li ul li a:link {
+		background-color: #eee;
+		border-color: #fff;			
+	}
+				#nav_local ul li ul li ul li ul li a:visited{
+					background-color: #eee;
+					border-color: #fff;			
+				}
+				#nav_local ul li ul li ul li ul li a:hover{
+					background-color: #eee;
+					border-color: #fff;			
+				}
+				#nav_local ul li ul li ul li ul li a:active {
+					background-color: #eee;
+					border-color: #fff;	
+				}
+				/*END main anchors*/				
+				/*.current anchors*/		
+				#nav_local ul li ul li ul li ul li a.current:link{
+					background-color: #f0f0f0;
+					border-color: #f0f3fe;	
+				}
+				#nav_local ul li ul li ul li ul li a.current:visited{
+					background-color: #f0f0f0;
+					border-color: #f0f3fe;		
+				}
+				#nav_local ul li ul li ul li ul li a.current:hover{
+					background-color: #fff;
+					border-color: #f0f3fe;	
+				}
+				#nav_local ul li ul li ul li ul li a.current:active {
+					background-color: #f0f0f0;
+					border-color: #f0f3fe;	
+				}
+				/*END .current anchors*/
+				/*level 5 nav*/
+				/*main anchors*/
+				#nav_local ul li ul li ul li ul li ul li a:link {
+					background-color: #fff;
+					border-color: #e8edfd;			
+				}
+				#nav_local ul li ul li ul li ul li ul li a:visited{
+					background-color: #fff;
+					border-color: #e8edfd;			
+				}
+				#nav_local ul li ul li ul li ul li ul li a:hover{
+					background-color: #fff;
+					border-color: #dfe7ff;			
+				}
+				#nav_local ul li ul li ul li ul li ul li a:active {
+					background-color: #fff;
+					border-color: #dfe7ff;	
+				}
+				/*END main anchors*/				
+				/*.current anchors*/		
+				#nav_local ul li ul li ul li ul li ul li a.current:link{
+					background-color: #f0f3fe;
+					border-color: #f0f3fe;	
+				}
+				#nav_local ul li ul li ul li ul li ul li a.current:visited{
+					background-color: #f0f3fe;
+					border-color: #f0f3fe;		
+				}
+				#nav_local ul li ul li ul li ul li ul li a.current:hover{
+					background-color: #fff;
+					border-color: #dfe7ff;	
+				}
+				#nav_local ul li ul li ul li ul li ul li a.current:active {
+					background-color: #fff;
+					border-color: #dfe7ff;	
+				}
+				/*END .current anchors*/

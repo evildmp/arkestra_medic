@@ -1,0 +1,26 @@
+{% extends "arkestra.html" %}
+{% load typogrify_tags menu_tags cms_tags %}       
+            
+{% block extrastyles %}
+	{{ block.super }}
+	<link href="/media/clinicalresearchfacility/css/clinicalresearchfacility.css" rel="stylesheet" type="text/css" />	
+{% endblock extrastyles %}
+
+{% block main_page_body %}
+	{% with placeholder_width=734 main_item_width=490 person_description_width=360 generic_main_width=230 sidebar_map_size="230x180" person_image_size="352x352" entity_image_size="353x352" lightbox_max_dimension=800 %}
+		{% placeholder body %}
+	{% endwith %}
+{% endblock main_page_body %}
+
+{% block menu %}<ul class = "menu">{% show_menu 0 100 0 2 "cms/horizontal_menu.html" %}</ul>{% endblock menu %}
+
+ 
+{% block footer %}
+<div class = "footer row">
+	<ul><li><a href = "http://www.wellcome.ac.uk/"><img src = "/media/clinicalresearchfacility/images/wellcomelogo.png" alt = "Supported by the Wellcome Trust" /></a></li>
+<li><a href = "http://medicine.cf.ac.uk/"><img src = "/media/clinicalresearchfacility/images/cardiffuniversitylogo.png" alt = "Cardiff University School of Medicine" /></a></li>
+<li><a href = "http://www.wales.nhs.uk/sitesplus/864/"><img src = "/media/clinicalresearchfacility/images/uhblogo.png" alt = "Cardiff and Vale University Health Board" /></a></li> 
+<li class="arkestra"><a href="http://www.cardiff.ac.uk/cookies">Cookies</a> on this website</li>
+<li class="arkestra">This website is powered by <a href="http://arkestra-project.org/">Arkestra</a>.</li></ul>
+</div>
+{% endblock footer %}    			

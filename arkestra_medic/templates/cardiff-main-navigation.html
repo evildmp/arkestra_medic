@@ -1,0 +1,27 @@
+{% load typogrify_tags %}
+{% block nav_main %}
+	{% filter typogrify %}
+	    <div id="nav_main" class="expands">
+	        <ul class="menu">
+	          <li><strong>Explore Cardiff University</strong></li>
+	          <li><a href="http://www.cardiff.ac.uk/">Home</a></li>
+	          <li><a href="http://www.cardiff.ac.uk/about/">About</a></li>
+	          <li><a href="http://www.cardiff.ac.uk/education/">Education</a></li>
+	          <li><a href="http://www.cardiff.ac.uk/research/">Research</a></li>
+	          <li><a href="http://www.cardiff.ac.uk/news/">News</a></li>
+	          <li><a href="http://www.cardiff.ac.uk/events/">Events</a></li>
+	          <li><a href="http://www.cardiff.ac.uk/az/">A-Z</a></li>
+	        </ul>
+	        <form action="http://www.cardiff.ac.uk/search/index.html" id="cse-search-box">
+			<div>
+	          <input type="hidden" name="cx" value="004497668956212682542:ltvwfafuryg" />
+	          <input type="hidden" name="cof" value="FORID:9" />
+	          <input type="hidden" name="ie" value="ISO-8859-1" />
+	          <input type="text" name="q" id="q" />
+	          <input name="submit" id="submit" type="image" value="Submit" src="http://www.cardiff.ac.uk/images/button_go.gif" alt="Search" />
+			</div>
+	        </form>
+	        <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+	    </div>
+	{% endfilter %}
+{% endblock nav_main %}  

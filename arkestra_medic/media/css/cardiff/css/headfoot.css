@@ -1,0 +1,193 @@
+/* defines styles for #header and #footer sections */
+
+	/* #header definitions */
+	/* #header definitions - default */
+	#header {
+		font-family:Arial, Helvetica, sans-serif;
+		background:url(/media/images/cu_default_banner_bg.gif) repeat-y right top #E8EDF3; 
+	}
+	#header h1 {
+		color: #903;	
+		margin: 0.3em 0 0 0;
+		padding: 5px 0 0 0;
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+	#header p.h1subhead {
+		margin: 0 0 0 0;
+		padding: 0;
+		font-size: 1em;
+		font-weight: bold;
+        line-height: 1.5em;
+	}	
+	#header img {
+		margin: 10px;
+		float:left;
+	}
+	#bannerImg {
+/*		background:url(/media/images/cu_default_banner.jpg) no-repeat top right;	sagba 260107 */
+		background:url(/media/images/welcome-to-cu-banner.jpg) no-repeat top right;
+		float:right;
+		margin:0;
+		padding:0;
+		width:329px;
+		height:5.8em; /*Replaces [71px] as the value for IE banner height fix sagba 260107 */
+	}
+	/* 110107 sagba */
+		/*For use by the Ephox editor entered headers*/
+			#header .floatLeft {float:left; display:inline; margin:10px 0 0 0;}
+		/*Used for the first line of type in the banner*/
+			#header .floatLeftTop img {float:left; margin:12px 0 0 0;}
+		/*Used for the second line of type in the banner*/
+			#header .floatLeftBase img {float:left; margin:0; clear:left;}
+		/*Used for the image in the banner*/
+			#header .floatRight {float:right; margin:0; padding:0; display:inline;}
+			#header .logo img {margin:10px; float:left;}
+			#header .banner-pair {float:left;}
+	/* END #header definitions */
+	/*#footer definitions*/
+	#footer {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+	}
+	#footer ul {
+		display: inline;
+		margin:0;
+		padding:0;
+	}
+	#footer li {
+		display: inline;
+		margin:0 .5em;
+	}
+	#footer li#copy {
+		margin-right:1.6em;
+	}
+	#footer div.top_return {
+		font-size:.9em;
+		text-align:right;
+		border-bottom:1px solid #ccc;
+		background-color:#fff;
+		padding:.5em;
+		margin: 0 0 .3em 0;
+	}
+	#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+	color: #333;
+	text-decoration:none;
+	}
+	/*Quick URL styles*/
+	/*#footer p { margin: 0.3em 0 0 14.8em;}
+	#footer .quickURL {color:#0099FF;}*/
+/*END #footer definitions*/
+
+/*
+	For... area banners
+	[sagba 310107			]
+	[amended sagba 090507	]
+*/
+	#header div.ugbanner,
+	#header div.pgbanner,
+	#header div.interbanner,
+	#header div.alumbanner,
+	#header div.business,
+	#header div.staff {
+		background-position:right top; background-repeat:repeat-y;
+		}
+	#header div.currentstudents {
+		background-position:right top; background-repeat:repeat-x;
+		}
+
+	#header div.ugbanner,
+	#header div.pgbanner,
+	#header div.interbanner,
+	#header div.alumbanner,
+	#header div.business,
+	#header div.staff,
+	#header div.staffnew,
+	#header div.currentstudents {
+		width:100%; height:5.8em; display: block;
+		}
+/* For... Undergrad banner background */
+	#header div.ugbanner {
+		background-image:url("/media/images/ug-bg.jpg"); background-color:#6aa7ea;
+		}
+/* For... Postgrad banner background */
+	#header div.pgbanner {
+		background-image:url("/media/images/pg-bg.jpg"); background-color:#87abd1;
+		}
+/* For... Inter banner background */
+	#header div.interbanner {
+		background-image:url("/media/images/ug-bg.jpg"); background-color:#6aa7ea;
+		}
+/* For... Alumni banner background */
+	#header div.alumbanner {
+		background-image:url("/media/images/alumni-bg.jpg"); background-color:#9e88d1;
+		}
+/* For... Business banner background */
+	#header div.business {
+		/*background-image:url("/media/images/business-bg.jpg");*/ background-color:#f2d4b8;
+		}
+/* For... Staff banner background */
+	#header div.staff {
+		/*background-image:url("/media/images/staff-bg.jpg");*/
+		background-color:#bed9bf;
+		}
+/*	new staff banner	10.03.08 sagba */
+	#header div.staffnew {background-color: #00c803;}
+/* For... Current Students banner background */
+	#header div.currentstudents { 
+		background-image:url("/media/images/currentstudents-bg.gif"); background-color: #8ec8db;
+	}
+
+	#header div.ugbanner .floatLeftBase,
+	#header div.pgbanner .floatLeftBase,
+	#header div.interbanner .floatLeftBase,
+	#header div.alumbanner .floatLeftBase,
+	#header div.business .floatLeftBase,
+	#header div.staff .floatLeftBase,
+	#header div.staffnew .floatLeftBase {
+		float:left; margin:0; clear:left;
+		}
+
+	#header div.ugbanner .floatLeftBase img,
+	#header div.pgbanner .floatLeftBase img,
+	#header div.interbanner .floatLeftBase img,
+	#header div.alumbanner .floatLeftBase img,
+	#header div.business .floatLeftBase img {
+		float:left; margin:0; clear:none;
+		}
+
+/*RESEARCH CENTRES*/
+	#header.research-banner {
+		background:#cfdbe7 url(/media/images/research-banner-bg.gif) repeat-x;
+		height:5.8em;
+	}
+/*Setting the logo background*/
+	#header.research-banner .logo {
+		display:block;
+		width:7em;
+		height:5.8em;
+		background:url(/media/images/research-logo-bg.gif) no-repeat 0 0;
+		float:left;
+	}
+	#header.research-banner .floatLeftTop img{
+		margin:0;
+	}
+	#header.research-banner .floatLeftTop {
+		float:left;
+	}
+	#header .centre-name {
+		float:left; clear:left;
+	}
+/**/
+	/*
+	Non School banners
+	*/
+/**/
+/*Graduation banner*/
+#header.graduation div.graduationbg {
+	background:url("/media/images/graduation-banner-bg.gif") repeat-x top left #eeeeef;
+	height:5.8em;
+}
+#header.graduation div.graduationbg div#bannerImg {
+	background:url("/media/images/graduation-banner-right.jpg") right top no-repeat;
+}

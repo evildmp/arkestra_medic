@@ -1,0 +1,332 @@
+/* removes the padding used for the horizontal menu */
+/* needs 1px of padding or the top menu moves because a margin colapses! */
+body.no_nav_horiz #wrapper  {
+    padding-top: 1px;
+}
+
+/*Navigation Styles*/
+/* Main Navigation */
+#nav_main{
+    width: 750px;
+}
+#nav_main ul{
+    margin: 0; /* overrides fixes.css*/
+    float: left;
+    margin-top: 5px;
+}
+#nav_main li{
+    float: left;
+    padding: 0 10px 0 0;
+    text-transform: uppercase;
+    font-family: Arial,Helvetica,Verdana,Geneva,sans-serif;
+    white-space: nowrap;
+}
+#nav_main a, #nav_main a:link, #nav_main a:active {
+    color: #333333;
+    font-size: 0.9em
+}
+#nav_main a:hover {
+    color: #993333;
+}
+#nav_main form#cse-search-box {
+    float: right;
+    margin: 0;
+    padding: 0.6em 0 0;
+    white-space: nowrap;
+    width: 21%;
+}
+#nav_main form#cse-search-box input#q {
+  display: inline;
+  font-size: 0.9em;
+  margin: 0;
+  width: 11em;
+}
+#cse-search-box #submit{
+    vertical-align: top;
+}
+/* Horiz Navigation */
+
+#nav_horiz{
+    width: 750px;
+    background: #ddd;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    
+  
+}
+#nav_horiz ul li{
+    float: left;
+    padding: 0 10px;
+    font-weight: bold;
+}
+#nav_horiz li a:hover,
+#nav_horiz li a:visited
+{
+  text-decoration: none;
+}
+#nav_local {
+		display:none;
+	}
+.local_menu #nav_local {
+		display:block;
+	}
+/*#nav_local definitions*/
+        #nav_local a.subsite_head:link {
+            background: url("/media/images/cu_menu_top_corner.gif") no-repeat scroll right top #8998A7;
+            color: #FFFFFF;
+            padding: 0.2em 0 0.2em 1em;
+}
+	#nav_local {
+		/*borders may cause rendering anomalies for #nav_main in IE due to IE box-model problems*/
+		/*border: 1px solid black;*/
+	}	
+	#nav_local a:link, #nav_local a:visited ,#nav_local a:hover, #nav_local a:active {
+	/*this makes all the anchors act as block elements for purposes of mouse-over effects*/
+		display: block;
+		/*to get around the IE whitespace bug, a hack has been put in _tools\default.css, giving anchors a height of 1px - but only for IE.*/
+		text-decoration: none;
+
+	}		
+	
+	#nav_local ul ul, #nav_local ul ul ul, #nav_local ul ul ul ul {font-size: 100%;}
+	
+	#nav_local ul {	
+		margin: 0;
+		padding:0;
+		list-style:none;
+	}
+	#nav_local li {
+		font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+		font-weight: bold;
+		margin:0;
+		padding:0;
+	}
+	/*level 1 nav_local*/
+
+	#nav_local a.subsite_head:link{
+		padding: 0.2em 0 0.2em 1em;
+		background: #8998a7 url(/media/images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #fff;
+	}
+	#nav_local  a.subsite_head:visited {
+		padding: 0.2em 0 0.2em 1em;
+		background: #8998a7 url(/media/images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #fff;
+	}
+	#nav_local a.subsite_head:hover {
+		padding: 0.2em 0 0.2em 1em;
+		background: #a3b2c2 url(/media/images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #fff;
+	}
+	#nav_local a.subsite_head:active {
+		padding: 0.2em 0 0.2em 1em;
+		background: #becede url(/media/images/cu_menu_top_corner.gif) right top no-repeat;
+		color: #333;
+	}
+		/*level 2 nav_local*/
+		#nav_local ul li ul li {
+			border-bottom:1px solid #fff;
+		}
+		#nav_local ul li ul li a:link{
+			background-color: #DAE9FA;
+			border: 1px solid #DAE9FA;
+			padding: .2em 0 .2em 1em;		
+			color: #333;
+		}
+		#nav_local ul li ul li a:visited{
+			background-color: #DAE9FA;
+			border: 1px solid #DAE9FA;
+			padding: .2em 0 .2em 1em;
+			color: #333;
+		}
+		#nav_local ul li ul li a:hover{
+			background-color: #f1ffff;
+			border: 1px solid #8998a7;
+			padding: .2em 0 .2em 1em;		
+			color: #333;
+		}
+		#nav_local ul li ul li a:active {
+			background-color: #DAE9FA;
+			border: 1px solid #DAE9FA;
+			padding: .2em 0 .2em 1em;		
+			color: #333;
+		}
+		#nav_local ul li ul li a.current:link{
+				background: #DAE9FA url(/media/images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #DAE9FA;
+				color:#990033;
+			}
+		#nav_local ul li ul li a.current:visited{
+				background: #DAE9FA url(/media/images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #DAE9FA;
+				color:#990033;
+			}
+		#nav_local ul li ul li a.current:hover{
+				background: #f1ffff url(/media/images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #8998a7;
+				color:#990033;
+			}
+		#nav_local ul li ul li a.current:active {
+				background: #f1ffff url(/media/images/arrow_menu_current.gif) 0.5em 0.6em no-repeat;
+				border: 1px solid #8998a7;
+				color:#990033;
+			}
+			/*level 3 nav_local*/
+			/*main anchors*/
+		#nav_local ul li ul li ul li {
+			border-bottom:none;
+		}					
+			#nav_local ul li ul li ul li a:link{
+				background: #e3f3ff url(/media/images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #e3f3ff;
+				padding: .2em 0 .2em 1.5em;		
+				color: #333;
+			}
+			#nav_local ul li ul li ul li a:visited{
+				background: #e3f3ff url(/media/images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #e3f3ff;
+				padding: .2em 0 .2em 1.5em;	
+				color: #333;
+			}
+			#nav_local ul li ul li ul li a:hover{
+				background: #f1ffff url(/media/images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #DAE9FA;
+				padding: .2em 0 .2em 1.5em;		
+				color: #333;		
+			}
+			#nav_local ul li ul li ul li a:active {
+				background: #e3f3ff url(/media/images/arrow_menu.gif) 0.8em 0.6em no-repeat;
+				border: 1px solid #e3f3ff;
+				padding: .2em 0 .2em 1.5em;	
+				color: #333;
+			}
+			/*END main anchors*/
+			/*.current anchors*/
+			#nav_local ul li ul li ul li a.current:link{
+					background: #e3f3ff url(/media/images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			#nav_local ul li ul li ul li a.current:visited{
+					background: #e3f3ff url(/media/images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			#nav_local ul li ul li ul li a.current:hover{
+					background: #e3f3ff url(/media/images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			#nav_local ul li ul li ul li a.current:active {
+					background: #e3f3ff url(/media/images/arrow_menu_current.gif) 0.8em 0.6em no-repeat;
+					border: 1px solid #e3f3ff;
+					color:#990033;
+			}
+			/*.END current anchors*/			
+				/*level 4 nav_local*/
+				/*main anchors*/
+				#nav_local ul li ul li ul li ul li{
+					border-bottom:none;
+					font-weight:normal;
+				}
+				#nav_local ul li ul li ul li ul li a:link {
+					background: #e3f3ff url(/media/images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#333;				
+					padding: .2em 0 .2em 2em;				
+				}
+				#nav_local ul li ul li ul li ul li a:visited{
+					background: #e3f3ff url(/media/images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#333;				
+					padding: .2em 0 .2em 2em;				
+				}
+				#nav_local ul li ul li ul li ul li a:hover{
+					background: #fff url(/media/images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #DAE9FA;
+					color:#333;				
+					padding: .2em 0 .2em 2em;				
+				}
+				#nav_local ul li ul li ul li ul li a:active {
+					background: #e3f3ff url(/media/images/arrow_menu.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#333;				
+					padding: .2em 0 .2em 2em;
+				}
+				/*END main anchors*/				
+				/*.current anchors*/		
+				#nav_local ul li ul li ul li ul li a.current:link{
+					background: #e3f3ff url(/media/images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#990033;					
+				}
+				#nav_local ul li ul li ul li ul li a.current:visited{
+					background: #e3f3ff url(/media/images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#990033;					
+				}
+				#nav_local ul li ul li ul li ul li a.current:hover{
+					background: #fff url(/media/images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #DAE9FA;
+					color:#990033;					
+				}
+				#nav_local ul li ul li ul li ul li a.current:active {
+					background: #e3f3ff url(/media/images/arrow_menu_current.gif) 1.3em 0.6em no-repeat;
+					border:1px solid #e3f3ff;
+					color:#990033;				
+				}
+				/*END .current anchors*/
+					/*level 5 nav_local sagba 150107*/
+					/*main anchors*/
+					#nav_local ul li ul li ul li ul li ul li{
+						border-bottom:none;
+						font-weight:normal;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:link {
+						background: #e3f3ff url(/media/images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:visited{
+						background: #e3f3ff url(/media/images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:hover{
+						background: #fff url(/media/images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #DAE9FA;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					#nav_local ul li ul li ul li ul li ul li a:active {
+						background: #e3f3ff url(/media/images/arrow_menu.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#333;				
+						padding: .2em 0 .2em 2.5em;
+					}
+					/*END main anchors*/		
+					/*level 5 .current anchors*/
+					#nav_local ul li ul li ul li ul li ul li a.current:link{
+						background: #e3f3ff url(/media/images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#990033;					
+					}
+					#nav_local ul li ul li ul li ul li ul li a.current:visited{
+						background: #e3f3ff url(/media/images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#990033;					
+					}
+					#nav_local ul li ul li ul li ul li ul li a.current:hover{
+						background: #fff url(/media/images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #DAE9FA;
+						color:#990033;					
+					}
+					#nav_local ul li ul li ul li ul li ul li a.current:active {
+						background: #e3f3ff url(/media/images/arrow_menu_current.gif) 1.8em 0.6em no-repeat;
+						border:1px solid #e3f3ff;
+						color:#990033;				
+					}
+					/*END .current anchors*/
+	/*END #nav_local definitions*/

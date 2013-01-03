@@ -1,0 +1,12 @@
+ul.menu ul {
+    float: none;
+    z-index: 600;
+}
+
+ul.menu, ul.footer {
+    margin: 0;
+    }
+    
+ul.footer li.arkestra {
+    float: none;
+}

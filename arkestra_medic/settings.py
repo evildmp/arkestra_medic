@@ -232,19 +232,6 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.filters',
     )
 
-# ------------------------ Django Celery
-try:
-    import djcelery
-    djcelery.setup_loader()
-
-    BROKER_HOST = "localhost"
-    BROKER_PORT = 5672
-    BROKER_USER = "guest"
-    BROKER_PASSWORD = "guest"
-    BROKER_VHOST = "/"
-except ImportError:
-    pass
-
 
 # ------------------------ Django Filer
 
@@ -334,7 +321,7 @@ LANGUAGES = [
     ('en-us', 'Kind of English'),
 ]
 
-# CMS_MODERATOR = True
+CMS_MODERATOR = False
 # ------------------------ WYMeditor/SemanticEditor
 
 # these override the settings in cms.plugins.text.settings

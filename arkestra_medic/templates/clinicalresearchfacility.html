@@ -6,11 +6,11 @@
 	<link href="/media/clinicalresearchfacility/css/clinicalresearchfacility.css" rel="stylesheet" type="text/css" />	
 {% endblock extrastyles %}
 
-{% block main_page_body %}
+{% block body_content %}
 	{% with placeholder_width=734 main_item_width=490 person_description_width=360 generic_main_width=230 sidebar_map_size="230x180" person_image_size="352x352" entity_image_size="353x352"  lightbox_max_dimension=800 person_entity_map_size="330x200" %}
-		{% placeholder body %}
+        {{ block.super }}
 	{% endwith %}
-{% endblock main_page_body %}
+{% endblock body_content %}
 
 {% block menu %}<ul class = "menu">{% show_menu 0 100 0 2 "cms/horizontal_menu.html" %}</ul>{% endblock menu %}
 

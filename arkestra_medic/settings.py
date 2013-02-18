@@ -286,23 +286,23 @@ CMS_PAGE_FLAGS = (
 
 CMS_PLACEHOLDER_CONF = {                        
     'body': {
-        "plugins": (
-            'SemanticTextPlugin', 
-            'CMSVacanciesPlugin', 
-            'CMSNewsAndEventsPlugin', 
-            'SnippetPlugin', 
-            'LinksPlugin', 
-            'CMSPublicationsPlugin', 
-            'ImagePlugin', 
-            'ImageSetPublisher',
-            'FilerImagePlugin', 
-            'EntityDirectoryPluginPublisher', 
-            'CarouselPluginPublisher',
-            'FocusOnPluginPublisher',
-            'VideoPluginPublisher',
-            # 'HelloPlugin',
-            # 'LinkPlugin',
-            ),
+        # "plugins": (
+        #     'SemanticTextPlugin', 
+        #     'CMSVacanciesPlugin', 
+        #     'CMSNewsAndEventsPlugin', 
+        #     'SnippetPlugin', 
+        #     'LinksPlugin', 
+        #     'CMSPublicationsPlugin', 
+        #     'ImagePlugin', 
+        #     'ImageSetPublisher',
+        #     'FilerImagePlugin', 
+        #     'EntityDirectoryPluginPublisher', 
+        #     'CarouselPluginPublisher',
+        #     'FocusOnPluginPublisher',
+        #     'VideoPluginPublisher',
+        #     # 'HelloPlugin',
+        #     # 'LinkPlugin',
+        #     ),
         "extra_context": {            
             "width":"749",
             },
@@ -310,16 +310,16 @@ CMS_PLACEHOLDER_CONF = {
     },
 }
 
-# CMS_LANGUAGES = (
-# ('en', gettext('English')),
+CMS_LANGUAGES = (
+('en', gettext('English')),
 # ('it', gettext('Italiano')),
 # ('cy', gettext('Cymraeg')),
-# )
+)
 
-LANGUAGES = [
-    ('en', 'English'),
-    ('en-us', 'Kind of English'),
-]
+# LANGUAGES = [
+#     ('en', 'English'),
+#     ('en-us', 'Kind of English'),
+# ]
 
 CMS_MODERATOR = False
 # ------------------------ WYMeditor/SemanticEditor

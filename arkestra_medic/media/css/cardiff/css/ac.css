@@ -98,3 +98,28 @@ color: #333;
     opacity: 1; 
     outline: none;
     }
+    
+/* ================ map images =============== */
+
+.image.imageset.map a {
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 3px 3px 5px 1px #ccc;
+    }
+
+.personlist a img {
+    border-radius: 4px; 
+    overflow: hidden; 
+    box-shadow: 3px 3px 5px 1px #ccc;
+    }
+
+    
+.image.imageset.map img {
+    display: block;
+}
+
+.imageset a:link .link-arrow,
+.imageset a:visited .link-arrow {
+    right: 2px;
+    bottom: 4px;
+    }

@@ -127,7 +127,7 @@ MIDDLEWARE_CLASSES = (
     # 'cms.middleware.multilingual.MultilingualURLMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
-    # 'cms.middleware.toolbar.ToolbarMiddleware',    
+    'cms.middleware.toolbar.ToolbarMiddleware',    
 )
 
 ROOT_URLCONF = 'arkestra_medic.urls'
@@ -178,7 +178,9 @@ INSTALLED_APPS = (
     'typogrify',
     'filer',    
     'widgetry',  
-    'south',         
+    # 'south',         
+    'form_designer',
+    'form_designer.contrib.cms_plugins.form_designer_form',         
     # 'adminsortable',
 
     # core Django applications

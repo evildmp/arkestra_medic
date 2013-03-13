@@ -178,7 +178,7 @@ INSTALLED_APPS = (
     'typogrify',
     'filer',    
     'widgetry',  
-    # 'south',         
+    'south',         
     'form_designer',
     'form_designer.contrib.cms_plugins.form_designer_form',         
     # 'adminsortable',
@@ -352,6 +352,12 @@ WYM_CONTAINERS = ",\n".join([
    "{'name': 'BLOCKQUOTE', 'title': 'Blockquote', 'css': 'wym_containers_blockquote'}",
    # "{'name': 'TH', 'title': 'Table_Header', 'css': 'wym_containers_th'}", # not ready for this yet
 ])
+
+VIDEO_HOSTING_SERVICES = {
+    "vimeo": {"name": "Vimeo", "template": "embedded_video/vimeo.html"},
+    "youtube": {"name": "YouTube", "template": "embedded_video/youtube.html"},
+    "cardiff": {"name": "Cardiff PLayer", "template": "embedded_video/cardiffplayer.html"},
+    }
 
 from arkestra_settings import *
 # import pdb; pdb.set_trace()

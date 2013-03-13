@@ -128,6 +128,8 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',    
+
+    'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
 )
 
 ROOT_URLCONF = 'arkestra_medic.urls'
@@ -196,6 +198,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django.contrib.humanize',
     'django.contrib.staticfiles',
+    'django.contrib.redirects',
 )
 
 # A sample logging configuration. The only tangible logging

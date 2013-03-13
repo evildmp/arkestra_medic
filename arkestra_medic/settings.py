@@ -359,7 +359,7 @@ WYM_CONTAINERS = ",\n".join([
 VIDEO_HOSTING_SERVICES = {
     "vimeo": {"name": "Vimeo", "template": "embedded_video/vimeo.html"},
     "youtube": {"name": "YouTube", "template": "embedded_video/youtube.html"},
-    "cardiff": {"name": "Cardiff PLayer", "template": "embedded_video/cardiffplayer.html"},
+    "cardiff": {"name": "Cardiff Player", "template": "embedded_video/cardiffplayer.html"},
     }
 
 from arkestra_settings import *

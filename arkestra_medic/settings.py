@@ -129,7 +129,8 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.toolbar.ToolbarMiddleware',    
 
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
-)
+    # 'form_designer.middleware.RedirectMiddleware'
+    )
 
 ROOT_URLCONF = 'arkestra_medic.urls'
 
@@ -152,7 +153,6 @@ INSTALLED_APPS = (
     'menus',
     # 'appmedia',
     'cms.plugins.text',
-    # 'cms.plugins.link',
     'cms.plugins.snippet',
     'sekizai',
     # 'djcelery',     # will need to be enabled for celery processing
@@ -183,7 +183,6 @@ INSTALLED_APPS = (
     'form_designer',
     'form_designer.contrib.cms_plugins.form_designer_form',  
     'treeadmin',       
-    # 'adminsortable',   
     'inspector',
 
     # core Django applications
@@ -200,6 +199,7 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     'django.contrib.staticfiles',
     'django.contrib.redirects',
+    'django.contrib.markup'
 )
 
 # A sample logging configuration. The only tangible logging

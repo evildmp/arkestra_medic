@@ -1,0 +1,22 @@
+{% extends "cardiff/medic.html" %}
+{% load sekizai_tags %}
+
+{% block extrastyles %}
+{{ block.super }}
+<link href="/media/css/cardiff/css/forms.css" media="screen" rel="stylesheet" type="text/css" />
+{% endblock extrastyles %}
+
+{% block title %}<title>{{ form_definition.title }}</title>{% endblock %}
+
+{% block nav_local %}{% endblock nav_local %}
+
+{% block content %}
+{% include form_template_name %}
+
+<script type="text/javascript">
+    var inputs = document.getElementsByTagName('input');
+    if (inputs.length) {
+        inputs[0].focus();
+    }
+</script>
+{% endblock %}   

@@ -1,0 +1,80 @@
+/* forms */
+
+/* the entire form */
+
+/* each row */
+form.arkestra-form div {
+    padding: 1.5em 0 0.5em;
+    clear: both;      
+    }                
+
+form.arkestra-form div:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+    
+/* left column of each row */
+
+form.arkestra-form label {
+    width: 33%;
+    display: block;
+    float: left; 
+    }
+
+form.arkestra-form label .label-text {
+    font-weight: bold;
+    }
+
+form.arkestra-form label .required {
+    font-style: italic;
+    display: block;
+    }
+
+/* right column of each row */
+form.arkestra-form .field {
+    width: 66%;
+    float: right; 
+    } 
+
+/* help text */
+
+form.arkestra-form  .help-text {
+    display: block; 
+    clear: both;
+    color: gray;     
+    }
+
+/* text input */
+form.arkestra-form input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px dashed #ccc;
+    padding: .3em 0;
+    margin: 0 0 .3em;
+    background: none;
+ }                       
+
+form.arkestra-form .field:hover input[type="text"] {
+    border-bottom: 1px solid black;
+    }
+
+form.arkestra-form input[type="text"]:focus {
+    border-bottom: 1px solid black;  
+    background: #f4f4f4;
+}  
+
+/* submit input */
+form.arkestra-form input[type="submit"] {
+    margin-top: 1em;
+    }
+
+/* error list */
+form.arkestra-form div.errors ul,
+form.arkestra-form div.errors ul li {
+    margin: 0;
+    padding-bottom: 0;
+    color: red;
+}

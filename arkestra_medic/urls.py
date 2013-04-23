@@ -7,19 +7,20 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^accounts/login/$', 'django.contrib.auth.views.login'),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
 
-    (r'^admin/doc/', include('django.contrib.admindocs.urls')),                                   
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),                                   
     
-    (r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
     
-    (r'^semantic/', include('semanticeditor.urls')),
-    (r"", include("contacts_and_people.urls")),
+    url(r'^semantic/', include('semanticeditor.urls')),
+    url(r"", include("contacts_and_people.urls")),
 
-    (r"", include("publications.urls")),
-        
+    url(r"", include("publications.urls")),
+
+    url(r'^forms/', include('form_designer.urls')),
     
-    (r'^jsi18n/(?P<packages>\S+?)/$', 'django.views.i18n.javascript_catalog'),
+    url(r'^jsi18n/(?P<packages>\S+?)/$', 'django.views.i18n.javascript_catalog'),
 )
 
 # if settings.DEBUG:
@@ -33,9 +34,13 @@ if settings.DEBUG:
     
 #redirect patterns must come before cms catch-all   
 urlpatterns += patterns('django.views.generic.simple',
-    (r'^pgt/', 'redirect_to', {'url':'/graduate-studies/',}),
+    url(r'^pgt/', 'redirect_to', {'url':'/graduate-studies/',}),
 )
  
+# urlpatterns = patterns('',
+#     (r'^forms/', include('form_designer.urls')),
+# )
+
 urlpatterns += patterns('',
     url('^autocomplete/$', 'widgetry.views.search', name='widgetry-search'),
     url(r'^', include('cms.urls')),

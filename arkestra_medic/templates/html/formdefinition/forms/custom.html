@@ -43,11 +43,11 @@
 	            <div class="{{ field.errors|yesno:"errors," }} {{ field.field.required|yesno:"required," }}">     
 	            	{{ field.errors }}
 	                <label for="{{ field.auto_id }}">
-			<span class="label-text">{{ field.label }}</span>
-				{% if field.field.required %}
-					<span class="required">required</span>    
-				{% endif %}
-		</label>
+            			<span class="label-text">{{ field.label }}</span>
+            				{% if field.field.required %}
+            					<span class="required">required</span>    
+            				{% endif %}
+            		</label>
 
 	                <span class="field">{{ field }}</span>
 	{% if field.help_text %}

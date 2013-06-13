@@ -48,7 +48,7 @@ dl dt{
 }
 
 ul {list-style: square; padding-left: 15px;}
-ol {list-style: decimal; padding-left: 30px;}
+ol {list-style: decimal; padding-left: 15px;}
 
 li  {padding-bottom: 1ex;}
 

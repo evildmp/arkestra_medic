@@ -38,10 +38,6 @@ urlpatterns += patterns('django.views.generic.simple',
     url(r'^pgt/', 'redirect_to', {'url':'/graduate-studies/',}),
 )
  
-# urlpatterns = patterns('',
-#     (r'^forms/', include('form_designer.urls')),
-# )
-
 urlpatterns += patterns('',
     url('^autocomplete/$', 'widgetry.views.search', name='widgetry-search'),
     url(r'^', include('cms.urls')),

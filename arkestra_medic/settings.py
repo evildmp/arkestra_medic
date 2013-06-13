@@ -131,6 +131,7 @@ MIDDLEWARE_CLASSES = (
 
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     # 'form_designer.middleware.RedirectMiddleware'
+    'pagination.middleware.PaginationMiddleware',
     )
 
 ROOT_URLCONF = 'arkestra_medic.urls'
@@ -187,6 +188,9 @@ INSTALLED_APPS = (
     'treeadmin',    
     # 'adminsortable',     
     'inspector',
+    'django_filters',
+    'django_easyfilters',
+    'pagination',
 
     # core Django applications
     # these should be last, so we can override their templates

@@ -1,0 +1,70 @@
+{% load friendly %}
+{% if form_success %}
+
+	{% if form_definition.title %}
+		<h{{ body_heading_level|default:"2" }}>{{ form_definition.title }}</h{{ body_heading_level|default:"2" }}>
+	{% endif %}
+	{% for message in messages %}
+		<p class="{{ mesage.tags }}">{{message}}</p>
+	{% endfor %}
+
+{% else %}
+
+	<form class="arkestra-form" name="{{ form_definition.name }}" action="{{ form_definition.action }}" method="{{ form_definition.method }}" enctype="multipart/form-data">
+
+    {% if messages %}
+    	<h{{ IN_BODY_HEADING_LEVEL }}>Response from included template</h{{ IN_BODY_HEADING_LEVEL }}>     
+    	{% for message in messages %}
+    		<p class="{{ mesage.tags }}">{{message}}</p>
+    	{% endfor %}
+    {% endif %}
+
+		{% if form_definition.title %}
+			<h{{ body_heading_level|default:"2" }}>{{ form_definition.title }}</h{{ body_heading_level|default:"2" }}>
+		{% endif %}
+	
+		{% if form_definition.body %}
+			<p>{{ form_definition.body|linebreaksbr }}</p>
+		{% endif %}       
+	
+	    {% for entry in logs %}
+			<h{{ IN_BODY_HEADING_LEVEL }}>Your submission</h{{ IN_BODY_HEADING_LEVEL }}>     
+	        {% for field in entry.data %}
+	        <p>
+	            <label for="">{{ field.label }}</label>
+	            {{ field.value|friendly }}
+	        </p>
+	        {% endfor %}
+	    {% endfor %}
+
+	    {% for field in form %}
+	        {% if not field.is_hidden %}
+
+	            <div class="{{ field.errors|yesno:"errors," }} {{ field.field.required|yesno:"required," }}">     
+	            	{{ field.errors }}
+	                <label for="{{ field.auto_id }}">
+            			<span class="label-text">{{ field.label }}</span>
+            				{% if field.field.required %}
+            					<span class="required">required</span>    
+            				{% endif %}
+            		</label>
+
+	                <span class="field">{{ field }}</span>
+	{% if field.help_text %}
+		<span class="help-text">{{ field.help_text|safe }}</span>
+	{% endif %}
+	
+	            </div>
+	        {% endif %}
+	    {% endfor %}
+    
+	    <p class="buttons"> 
+	    {% include "html/formdefinition/forms/includes/submit.html" %}
+	    </p>
+	    {% for field in form.hidden_fields %}
+	        {{ field }}
+	    {% endfor %}
+	    {% csrf_token %}
+	</form>
+
+{% endif %} 

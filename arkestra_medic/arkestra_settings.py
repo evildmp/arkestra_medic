@@ -28,6 +28,11 @@ MULTIPLE_ENTITY_MODE = True
 
 USE_CELERY_FOR_VIDEO_ENCODING = False
                                   
+VIDEO_HOSTING_SERVICES = {
+    "vimeo": {"name": "Vimeo", "template": "embedded_video/vimeo.html"},
+    "youtube": {"name": "YouTube (last resort only)", "template": "embedded_video/youtube.html"},
+    "cardiff": {"name": "Cardiff Player", "template": "embedded_video/cardiffplayer.html"},
+    }
 
 # ------------------------ Semantic editor
 

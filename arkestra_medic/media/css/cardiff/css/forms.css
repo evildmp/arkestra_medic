@@ -66,6 +66,17 @@ form.arkestra-form input[type="text"]:focus {
     background: #f4f4f4;
 }  
 
+/* text input */
+form.arkestra-form input[type="search"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px dashed #ccc;
+    padding: .3em 0;
+    margin: 0 0 .3em;
+    background: none;
+ }                       
+
+
 /* submit input */
 form.arkestra-form input[type="submit"] {
     margin-top: 1em;

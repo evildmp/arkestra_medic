@@ -7,7 +7,7 @@ body.no_nav_horiz #wrapper  {
 /*Navigation Styles*/
 /* Main Navigation */
 #nav_main{
-    width: 750px;
+    width: 940px;
 }
 #nav_main ul{
     margin: 0; /* overrides fixes.css*/
@@ -33,7 +33,7 @@ body.no_nav_horiz #wrapper  {
     margin: 0;
     padding: 0.6em 0 0;
     white-space: nowrap;
-    width: 21%;
+    width: auto;
 }
 #nav_main form#cse-search-box input#q {
   display: inline;
@@ -47,7 +47,7 @@ body.no_nav_horiz #wrapper  {
 /* Horiz Navigation */
 
 #nav_horiz{
-    width: 750px;
+     width: 940px;
     background: #ddd;
     padding: 5px 0;
     margin-bottom: 5px;

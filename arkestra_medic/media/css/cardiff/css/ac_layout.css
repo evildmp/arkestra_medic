@@ -13,7 +13,7 @@
 }
 
 #outer-wrapper{
-    width: 750px;
+    width: 940px;
     padding: 0px 10px 0px;
     margin: 0 auto ;
     background: #fff;
@@ -40,11 +40,11 @@ div#wrapper{
     margin-left: -160px;
     margin-right: 0;
     white-space: normal;
-    width: 750px;
+    width: 940px;
 }
 .col_20_80 #content .entry-content{
     margin-left: 0px;
-    width: 570px;
+    width: 770px;
     float: right;
 }
 .col_20_80 #breadcrumb {
@@ -79,7 +79,7 @@ body.medic #header p.h1subhead {
 #footer {
   font-family: Arial,Helvetica,sans-serif;
   margin: 0 auto;
-  width: 770px;
+  width: 960px;
   padding: 0 10px;
   height: 100px;
   clear: both;

@@ -30,6 +30,48 @@
 
 }
 
+.medic .tint3{
+    background: none repeat scroll 0 0 #22211F;
+    border-color: #D8D8D8;
+    color: #BFBEBE
+}
+.medic .tint3 a:link{
+    color: #eee;
+    text-decoration: underline;
+}
+.medic .tint3 a:hover,
+.medic .tint3 a:focus{
+    color: #fff;
+}
+.medic .tint3 a.title:link{
+    text-decoration: none;
+}
+.medic .tint3 .venue-line {
+    color: #BFBEBE;
+}
+.medic .tint3 h3{
+    color: #D3374A;
+}
+
+.medic .tint3.inverse{
+  background: none repeat scroll 0 0 #E9E9E9;
+  border-color: #D8D8D8;
+  color: #22211F
+}
+.medic .tint3.inverse a:link{
+  color: #22211F
+}
+.medic .tint3.inverse a:hover,
+.medic .tint3.inverse a:focus{
+    color: #000;
+}
+.medic .tint3.inverse .venue-line {
+    color: #22211F;
+}
+.medic .tint3.inverse h3{
+    color: #D3374A;
+}
+
 /* -------------------------------------------------------- header Styles */
  .medic #header {
   background: url("/media/css/medic/images/schoolbanner3.jpg") no-repeat scroll right top #708EF1;

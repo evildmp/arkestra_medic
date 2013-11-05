@@ -73,9 +73,9 @@
 }
 
 /* -------------------------------------------------------- header Styles */
- .medic #header {
-  background: url("/media/css/medic/images/schoolbanner3.jpg") no-repeat scroll right top #708EF1;
-  width: auto;
+.medic #header {
+  background-color: #708EF1;
+  background-image: url("/media/css/medic/images/header_blue.jpg")
 }
 .medic #header h1 {
   color: #708EF1;

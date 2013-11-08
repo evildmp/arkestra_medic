@@ -1,0 +1,9 @@
+{% extends "cardiff/medic.html" %}
+
+{% block extrastyles %}
+	{{ block.super }}
+	<link href="/media/css/medical_education/css/medical_education.css" rel="stylesheet" type="text/css" />
+{% endblock extrastyles %}
+
+{% block dept_class %} {{ block.super }} medical_education {% endblock dept_class %}
+

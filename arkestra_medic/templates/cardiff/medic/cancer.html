@@ -1,0 +1,9 @@
+{% extends "cardiff/medic.html" %}
+
+{% block extrastyles %}
+	{{ block.super }}
+	<link href="/media/css/cancer/css/cancer.css" rel="stylesheet" type="text/css" />
+{% endblock extrastyles %}
+
+{% block dept_class %} {{ block.super }} cancer {% endblock dept_class %}
+

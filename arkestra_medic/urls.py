@@ -9,18 +9,19 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
 
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),                                   
-    
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+
     url(r'^admin/', include(admin.site.urls)),
-    
+
     url(r'^semantic/', include('semanticeditor.urls')),
     url(r"", include("contacts_and_people.urls")),
 
     url(r"", include("publications.urls")),
 
-    url(r'^resources/', include('curated_resources.urls')),        
+    url(r'^resources/', include('curated_resources.urls')),
+    url(r'', include('clinical_trials.urls')),
     url(r'^forms/', include('form_designer.urls')),
-    
+
     url(r'^jsi18n/(?P<packages>\S+?)/$', 'django.views.i18n.javascript_catalog'),
 )
 
@@ -32,12 +33,12 @@ urlpatterns = patterns('',
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-    
-#redirect patterns must come before cms catch-all   
+
+#redirect patterns must come before cms catch-all
 urlpatterns += patterns('django.views.generic.simple',
     url(r'^pgt/', 'redirect_to', {'url':'/graduate-studies/',}),
 )
- 
+
 # urlpatterns = patterns('',
 #     (r'^forms/', include('form_designer.urls')),
 # )

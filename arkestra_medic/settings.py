@@ -86,7 +86,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # 'legacy_finders.LegacyAppDirectoriesFinder',    
+    # 'legacy_finders.LegacyAppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
@@ -126,7 +126,7 @@ MIDDLEWARE_CLASSES = (
     # 'cms.middleware.multilingual.MultilingualURLMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',    
+    'cms.middleware.toolbar.ToolbarMiddleware',
 
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     # 'form_designer.middleware.RedirectMiddleware'
@@ -148,7 +148,7 @@ TEMPLATE_DIRS = (
 INSTALLED_APPS = (
 
      # Django CMS applications
-    
+
     'arkestra_utilities',
     'cms',
     'menus',
@@ -157,9 +157,9 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     'sekizai',
     # 'djcelery',     # will need to be enabled for celery processing
-    
+
     # Arkestra applications
-    
+
     'contacts_and_people',
     'vacancies_and_studentships',
     'news_and_events',
@@ -170,28 +170,29 @@ INSTALLED_APPS = (
     'housekeeping',
     'publications',
     'symplectic',
-    'curated_resources',   
-    
+    'curated_resources',
+    'clinical_trials',
+
     # other applications
-    
+
     'polymorphic',
     'semanticeditor',
     'mptt',
     'easy_thumbnails',
     'typogrify',
-    'filer',    
-    'widgetry',  
-    'south',         
+    'filer',
+    'widgetry',
+    # 'south',
     'form_designer',
-    'form_designer.contrib.cms_plugins.form_designer_form',  
-    'treeadmin',    
+    'form_designer.contrib.cms_plugins.form_designer_form',
+    'treeadmin',
     'inspector',
     'django_easyfilters',
     'pagination',
 
     # core Django applications
     # these should be last, so we can override their templates
-    
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -281,6 +282,15 @@ CMS_TEMPLATES = (
     #('cardiff/arkestra.html', gettext('Arkestra')),
     # ('institute.html', gettext('Institute of Mediaeval Medicine')),
     ('cardiff/medic.html', gettext('School of Medicine')),
+    ('cardiff/medic/cancer.html', gettext('Cancer & Genetics')),
+    ('cardiff/medic/experimental_medicine.html', gettext('IMEM')),
+    ('cardiff/medic/infection.html', gettext('I&I')),
+    ('cardiff/medic/medical_education.html', gettext('Medical Education')),
+    ('cardiff/medic/primary_care.html', gettext('Primary Care')),
+    ('cardiff/medic/psychological_medicine.html', gettext('Psychological Medicine')),
+    ('cardiff/medic/time.html', gettext('TIME')),
+
+
     ('cardiff/medic/cngg.html', gettext('CNGG')),
     ('cardiff/medic/fhwales.html', gettext('FH Wales')),
     ('cardiff/medic/c21.html', gettext('C21')),
@@ -294,26 +304,26 @@ CMS_PAGE_FLAGS = (
     ('no_page_title', "Don't display page title") ,
     )
 
-CMS_PLACEHOLDER_CONF = {                        
+CMS_PLACEHOLDER_CONF = {
     'body': {
         # "plugins": (
-        #     'SemanticTextPlugin', 
-        #     'CMSVacanciesPlugin', 
-        #     'CMSNewsAndEventsPlugin', 
-        #     'SnippetPlugin', 
-        #     'LinksPlugin', 
-        #     'CMSPublicationsPlugin', 
-        #     'ImagePlugin', 
+        #     'SemanticTextPlugin',
+        #     'CMSVacanciesPlugin',
+        #     'CMSNewsAndEventsPlugin',
+        #     'SnippetPlugin',
+        #     'LinksPlugin',
+        #     'CMSPublicationsPlugin',
+        #     'ImagePlugin',
         #     'ImageSetPublisher',
-        #     'FilerImagePlugin', 
-        #     'EntityDirectoryPluginPublisher', 
+        #     'FilerImagePlugin',
+        #     'EntityDirectoryPluginPublisher',
         #     'CarouselPluginPublisher',
         #     'FocusOnPluginPublisher',
         #     'VideoPluginPublisher',
         #     # 'HelloPlugin',
         #     # 'LinkPlugin',
         #     ),
-        "extra_context": {            
+        "extra_context": {
             "width":"749",
             },
         "name": gettext("body"),

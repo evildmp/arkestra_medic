@@ -1,0 +1,12 @@
+/* cancer Styles */
+/* -------------------------------------------------------- header Styles */
+.cancer #header {
+    background-color: #1d3891;
+    background-image: url("/media/css/medic/images/header_dark_blue.jpg")
+}
+.cancer #header h1 span {
+    background: url("/media/css/cancer/images/cancer_and_genetics.png") no-repeat scroll 0 0 transparent;
+}
+
+/* ----------------------------------------------------- nav_horiz Styles */
+

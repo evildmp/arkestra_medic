@@ -1,0 +1,4 @@
+-e git+git@github.com:evildmp/arkestra-publications.git@arkestra-refactor-compatibility#egg=arkestra-publications
+
+-e git+git@github.com:Raumkraut/django-form-designer.git#egg=django-form-designer
+

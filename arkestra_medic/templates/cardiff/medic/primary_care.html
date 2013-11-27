@@ -2,8 +2,8 @@
 
 {% block extrastyles %}
 	{{ block.super }}
-	<!-- <link href="/media/css/c21/css/c21.css" rel="stylesheet" type="text/css" /> -->
+	<link href="/media/css/primary_care/css/primary_care.css" rel="stylesheet" type="text/css" />
 {% endblock extrastyles %}
 
-{% block dept_class %}primary_care{% endblock dept_class %}
+{% block dept_class %} {{ block.super }} primary_care {% endblock dept_class %}
 

@@ -1,0 +1,12 @@
+/* infection */
+/* -------------------------------------------------------- header Styles */
+.infection #header {
+   background-color: #1d3891;
+  background-image: url("/media/css/medic/images/header_dark_blue.jpg")
+}
+
+.infection #header h1 span {
+    background: url("/media/css/infection/images/infection.png") no-repeat scroll 0 0 transparent;
+}
+/* ----------------------------------------------------- nav_horiz Styles */
+

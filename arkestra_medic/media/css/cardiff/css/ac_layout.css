@@ -57,10 +57,10 @@ div#wrapper{
 
 /* Header */
 #header{
-    width: 750px;
+    width: auto;
     height: 70px;
     background: #eee;
-    margin: 10px 0 0 0;
+    margin:0;
 }
 #header img{
     float: left;

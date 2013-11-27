@@ -2,8 +2,8 @@
 
 {% block extrastyles %}
 	{{ block.super }}
-	<!-- <link href="/media/css/c21/css/c21.css" rel="stylesheet" type="text/css" /> -->
+	<link href="/media/css/psychological_medicine/css/psychological_medicine.css" rel="stylesheet" type="text/css" />
 {% endblock extrastyles %}
 
-{% block dept_class %}psychological_medicine{% endblock dept_class %}
+{% block dept_class %} {{ block.super }} psychological_medicine {% endblock dept_class %}
 

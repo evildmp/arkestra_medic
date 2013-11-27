@@ -21,6 +21,19 @@ MANAGERS = ADMINS
 
 from sekrit_settings import *
 
+INTERNAL_IPS = ["82.8.42.31", "131.251.254.207", "10.121.64.22"]
+
+DEBUG_TOOLBAR_PANELS = (
+    # 'debug_toolbar.panels.version.VersionDebugPanel',
+    # 'debug_toolbar.panels.timer.TimerDebugPanel',
+    # 'debug_toolbar.panels.settings_vars.SettingsVarsDebugPanel',
+    # 'debug_toolbar.panels.headers.HeaderDebugPanel',
+    # 'debug_toolbar.panels.request_vars.RequestVarsDebugPanel',
+    # 'debug_toolbar.panels.template.TemplateDebugPanel',
+    'debug_toolbar.panels.sql.SQLDebugPanel',
+    # 'debug_toolbar.panels.signals.SignalDebugPanel',
+    # 'debug_toolbar.panels.logger.LoggingPanel',
+)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -115,6 +128,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -189,6 +203,7 @@ INSTALLED_APPS = (
     'inspector',
     'django_easyfilters',
     'pagination',
+    'debug_toolbar',
 
     # core Django applications
     # these should be last, so we can override their templates
@@ -283,16 +298,28 @@ CMS_TEMPLATES = (
     # ('institute.html', gettext('Institute of Mediaeval Medicine')),
     ('cardiff/medic.html', gettext('School of Medicine')),
     ('cardiff/medic/cancer.html', gettext('Cancer & Genetics')),
-    ('cardiff/medic/experimental_medicine.html', gettext('IMEM')),
-    ('cardiff/medic/infection.html', gettext('I&I')),
+    (
+        'cardiff/medic/experimental_medicine.html',
+        gettext('Molecular and Experimental Medicine')
+        ),
+    ('cardiff/medic/infection.html', gettext('Infection and Immunity')),
     ('cardiff/medic/medical_education.html', gettext('Medical Education')),
-    ('cardiff/medic/primary_care.html', gettext('Primary Care')),
-    ('cardiff/medic/psychological_medicine.html', gettext('Psychological Medicine')),
-    ('cardiff/medic/time.html', gettext('TIME')),
+    (
+        'cardiff/medic/primary_care.html',
+        gettext('Primary Care and Public Health')
+        ),
+    (
+        'cardiff/medic/psychological_medicine.html',
+        gettext('Psychological Medicine and Clinical Neurosciences')
+        ),
+    (
+        'cardiff/medic/time.html',
+        gettext('Translation, Innovation, Methodology & Engagement')
+        ),
 
 
     ('cardiff/medic/cngg.html', gettext('CNGG')),
-    ('cardiff/medic/fhwales.html', gettext('FH Wales')),
+    # ('cardiff/medic/fhwales.html', gettext('FH Wales')),
     ('cardiff/medic/c21.html', gettext('C21')),
     ('clinicalresearchfacility.html', gettext('Clinical Research Facility')),
     ('mothersofafrica.html', gettext('Mothers of Africa')),

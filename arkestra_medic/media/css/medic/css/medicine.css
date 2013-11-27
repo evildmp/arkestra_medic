@@ -73,19 +73,19 @@
 }
 
 /* -------------------------------------------------------- header Styles */
- .medic #header {
-  background: url("/media/css/medic/images/schoolbanner3.jpg") no-repeat scroll right top #708EF1;
-  width: auto;
+.medic #header {
+  background-color: #708EF1;
+  background-image: url("/media/css/medic/images/header_blue.jpg")
 }
 .medic #header h1 {
   color: #708EF1;
   font-size: 0;
 }
 .medic #header h1 span {
-  background: url("/media/css/medic/images/school-name.gif") no-repeat scroll 0 0 transparent;
+  background: url("/media/css/medic/images/school_of_medicine.png") no-repeat scroll 0 0 transparent;
   height: 42px;
   position: absolute;
-  width: 417px;
+  width: 900px;
 }
 
 /* ----------------------------------------------------- nav_horiz Styles */
@@ -113,7 +113,7 @@
 /*uses default styles from styles/_core/nav.css with those below over-riding*/
 
 /* level 1 nav */
-#nav_local a.subsite_head:link, 
+#nav_local a.subsite_head:link,
 #nav_local a.subsite_head:visited   {
 	background: #5165d1 url(/media/css/medic/images/cu_menu_top_corner.gif) right top no-repeat;
 	color: #fff;
@@ -123,11 +123,11 @@
 	background: #2c41b7 url(/media/css/medic/images/cu_menu_top_corner.gif) right top no-repeat;
 	color: #fff;
     }
-    
+
 #nav_local a.subsite_head:active  {
 	background: #4358cc url(/media/css/medic/images/cu_menu_top_corner.gif) right top no-repeat;
 	color: #fff;
-    }    
+    }
 
 /* level 2 nav */
 
@@ -152,8 +152,8 @@
     background-color: #dfe7ff;
     border-color: #dfe7ff;
     }
-    
-    
+
+
 /*level 3 nav */
 
 #nav_local ul li ul li ul li a:link,
@@ -167,7 +167,7 @@
     background-color: #f0f3fe;
     border-color: #dfe6fa;
     }
-    
+
 
 #nav_local ul li ul li ul li a.current:link,
 #nav_local ul li ul li ul li a.current:visited,
@@ -177,76 +177,76 @@
     border-color: #f0f3fe;
     }
 
- 
-    
+
+
 /*level 4 nav*/
 
 #nav_local ul li ul li ul li ul li a:link {
   background-color: #e8edfd;
-  border-color: #e8edfd;			
+  border-color: #e8edfd;
 }
 #nav_local ul li ul li ul li ul li a:visited{
   background-color: #e8edfd;
-  border-color: #e8edfd;			
+  border-color: #e8edfd;
 }
 #nav_local ul li ul li ul li ul li a:hover{
   background-color: #f0f3fe;
-  border-color: #dfe6fa;			
+  border-color: #dfe6fa;
 }
 #nav_local ul li ul li ul li ul li a:active {
   background-color: #f0f3fe;
-  border-color: #dfe6fa;	
+  border-color: #dfe6fa;
 }
 
 #nav_local ul li ul li ul li ul li a.current:link{
   background-color: #f0f3fe;
-  border-color: #f0f3fe;	
+  border-color: #f0f3fe;
 }
 #nav_local ul li ul li ul li ul li a.current:visited{
   background-color: #f0f3fe;
-  border-color: #f0f3fe;		
+  border-color: #f0f3fe;
 }
 #nav_local ul li ul li ul li ul li a.current:hover{
   background-color: #fff;
-  border-color: #f0f3fe;	
+  border-color: #f0f3fe;
 }
 #nav_local ul li ul li ul li ul li a.current:active {
   background-color: #f0f3fe;
-  border-color: #f0f3fe;	
+  border-color: #f0f3fe;
 }
 
-        
+
 /*level 5 nav*/
 #nav_local ul li ul li ul li ul li ul li a:link {
   background-color: #e8edfd;
-  border-color: #e8edfd;			
+  border-color: #e8edfd;
 }
 #nav_local ul li ul li ul li ul li ul li a:visited{
   background-color: #e8edfd;
-  border-color: #e8edfd;			
+  border-color: #e8edfd;
 }
 #nav_local ul li ul li ul li ul li ul li a:hover{
   background-color: #f0f3fe;
-  border-color: #dfe7ff;			
+  border-color: #dfe7ff;
 }
 #nav_local ul li ul li ul li ul li ul li a:active {
   background-color: #f0f3fe;
-  border-color: #dfe7ff;	
+  border-color: #dfe7ff;
 }
 #nav_local ul li ul li ul li ul li ul li a.current:link{
   background-color: #f0f3fe;
-  border-color: #f0f3fe;	
+  border-color: #f0f3fe;
 }
 #nav_local ul li ul li ul li ul li ul li a.current:visited{
   background-color: #f0f3fe;
-  border-color: #f0f3fe;		
+  border-color: #f0f3fe;
 }
 #nav_local ul li ul li ul li ul li ul li a.current:hover{
   background-color: #fff;
-  border-color: #dfe7ff;	
+  border-color: #dfe7ff;
 }
 #nav_local ul li ul li ul li ul li ul li a.current:active {
   background-color: #fff;
-  border-color: #dfe7ff;	
+  border-color: #dfe7ff;
 }
 

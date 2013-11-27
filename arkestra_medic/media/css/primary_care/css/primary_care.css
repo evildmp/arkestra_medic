@@ -1,0 +1,13 @@
+/* primary_care Styles */
+/* -------------------------------------------------------- header Styles */
+.primary_care #header {
+   background-color: #1d3891;
+  background-image: url("/media/css/medic/images/header_dark_blue.jpg")
+}
+
+.primary_care #header h1 span {
+    background: url("/media/css/primary_care/images/primary_care.png") no-repeat scroll 0 0 transparent;
+}
+
+/* ----------------------------------------------------- nav_horiz Styles */
+

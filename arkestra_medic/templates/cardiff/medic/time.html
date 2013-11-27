@@ -2,8 +2,8 @@
 
 {% block extrastyles %}
 	{{ block.super }}
-	<!-- <link href="/media/css/c21/css/c21.css" rel="stylesheet" type="text/css" /> -->
+	<link href="/media/css/time/css/time.css" rel="stylesheet" type="text/css" />
 {% endblock extrastyles %}
 
-{% block dept_class %}time{% endblock dept_class %}
+{% block dept_class %} {{ block.super }} time {% endblock dept_class %}
 

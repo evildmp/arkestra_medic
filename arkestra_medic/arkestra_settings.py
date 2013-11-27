@@ -75,6 +75,7 @@ from clinical_trials.menu import menu_dict as clinical_trials_menu
 news_and_events_menu["sub_menus"] = True
 contacts_and_people_menu["sub_menus"] = True
 vacancies_and_studentships_menu["sub_menus"] = True
+publications_menu["sub_menus"] = True
 
 ARKESTRA_MENUS = [
     news_and_events_menu,
@@ -86,3 +87,5 @@ ARKESTRA_MENUS = [
 
 
 PUBLICATIONS_CACHE_DURATION = 60 * 60 * 6
+
+PAGINATION_DEFAULT_WINDOW = 2

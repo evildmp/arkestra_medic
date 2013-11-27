@@ -1,0 +1,12 @@
+/* experimental_medicine */
+/* -------------------------------------------------------- header Styles */
+.experimental_medicine #header {
+   background-color: #1d3891;
+  background-image: url("/media/css/medic/images/header_dark_blue.jpg")
+}
+
+.experimental_medicine #header h1 span {
+    background: url("/media/css/experimental_medicine/images/experimental_medicine.png") no-repeat scroll 0 0 transparent;
+}
+/* ----------------------------------------------------- nav_horiz Styles */
+

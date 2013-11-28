@@ -30,7 +30,7 @@ DEBUG_TOOLBAR_PANELS = (
     # 'debug_toolbar.panels.headers.HeaderDebugPanel',
     # 'debug_toolbar.panels.request_vars.RequestVarsDebugPanel',
     # 'debug_toolbar.panels.template.TemplateDebugPanel',
-    'debug_toolbar.panels.sql.SQLDebugPanel',
+    # 'debug_toolbar.panels.sql.SQLDebugPanel',
     # 'debug_toolbar.panels.signals.SignalDebugPanel',
     # 'debug_toolbar.panels.logger.LoggingPanel',
 )
@@ -128,7 +128,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -184,8 +184,8 @@ INSTALLED_APPS = (
     'housekeeping',
     'publications',
     'symplectic',
-    'curated_resources',
-    'clinical_trials',
+    # 'curated_resources',
+    # 'clinical_trials',
 
     # other applications
 
@@ -203,7 +203,7 @@ INSTALLED_APPS = (
     'inspector',
     'django_easyfilters',
     'pagination',
-    'debug_toolbar',
+    # 'debug_toolbar',
 
     # core Django applications
     # these should be last, so we can override their templates

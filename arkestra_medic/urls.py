@@ -18,8 +18,8 @@ urlpatterns = patterns('',
 
     url(r"", include("publications.urls")),
 
-    url(r'^resources/', include('curated_resources.urls')),
-    url(r'', include('clinical_trials.urls')),
+    # url(r'^resources/', include('curated_resources.urls')),
+    # url(r'', include('clinical_trials.urls')),
     url(r'^forms/', include('form_designer.urls')),
 
     url(r'^jsi18n/(?P<packages>\S+?)/$', 'django.views.i18n.javascript_catalog'),

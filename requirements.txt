@@ -1,4 +1,8 @@
 -e git+git@github.com:evildmp/arkestra-publications.git@arkestra-refactor-compatibility#egg=arkestra-publications
-
 -e git+git@github.com:Raumkraut/django-form-designer.git#egg=django-form-designer
+-e git+git@github.com:evildmp/django-inspector.git#egg=django-inspector
+-e git+git@github.com:evildmp/django-cms.git@live-13-02-18#egg=django-cms
 
+django-auth-ldap
+python-memcached
+MySQL-python

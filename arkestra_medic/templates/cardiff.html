@@ -36,7 +36,7 @@
 	class="cardiff {% block dept_class %}{% endblock dept_class %}{% block col_class %}{% if current_page.flags %}{% if current_page.flags.no_local_menu %}{% if links %} col_80_20 {% else %} col_100 {% endif %}{% else %}{% if links %} col_20_60_20 local_menu {% else %} col_20_80 local_menu {% endif %}{% endif %}{% endif %}{% if is_menu_node %} col_20_80 local_menu {% endif %}{% endblock col_class %}{% block nav_class %}{% if current_page.flags.no_horizontal_menu %} no_nav_horiz {% else %} nav_horiz {% endif %} {% endblock nav_class %}" {% endblock body_attributes %}
 
 {% block body_content %}
-    {% with placeholder_width=770 adjust_width=current_page.flags.no_local_menu  width_adjuster="absolute" width_adjustment=940 main_item_width=490 person_description_width=360 generic_main_width=490 sidebar_image_size="230x230" sidebar_map_size="230x180" person_image_size="451x451" place_image_size="490x380" place_map_size="230x145" entity_image_size="273x273" lightbox_max_dimension=750 entity_map_size="369x246" person_map_size="451x300" person_thumbnail_size="40x40" body_heading_level=3 %}
+    {% with placeholder_width=770 adjust_width=current_page.flags.no_local_menu  width_adjuster="absolute" width_adjustment=940 main_item_width=490 person_description_width=360 researcher_description_width=940 generic_main_width=490 sidebar_image_size="230x230" sidebar_map_size="230x180" person_image_size="451x451" place_image_size="490x380" place_map_size="230x145" entity_image_size="273x273" lightbox_max_dimension=750 entity_map_size="369x246" person_map_size="451x300" person_thumbnail_size="40x40" body_heading_level=3 %}
 
     	<div id="outer-wrapper" class="expands">
 {% include "cardiff-main-navigation.html" %}

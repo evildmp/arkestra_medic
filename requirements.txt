@@ -6,3 +6,4 @@
 django-auth-ldap
 python-memcached
 MySQL-python
+django-debug-toolbar

@@ -1,0 +1,202 @@
+body	{
+    line-height: 1.5;
+    background: #eee;
+    width: 1024px;
+    padding: 20px 0 20px;
+    margin: auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+div.surface {
+    background: white;
+    padding: 10px;
+    box-shadow: 2px 2px 8px 4px rgba(6,6,6,.5);
+    }
+
+div#outer-wrapper {
+    background: url(/media/css/sewahsp/sewahsp-banner.jpg) no-repeat 125px 0;
+    padding-top: 100px;
+    width: 1004px;
+	}
+
+div#inner-wrapper {border-top: 2px solid black; margin-top: 0;
+    padding-top: 50px;}
+
+/* ---------------- menu ---------------- */
+
+div#nav_local   {
+    float: left;
+    width: 220px;
+    backgro und: #eee;
+}
+
+div#nav_local ul a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #324e1b;
+}
+
+div#nav_local ul a:hover	{
+	color: #7cc14b;
+	}
+
+div#nav_local ul {
+    list-style: none;
+}
+
+div#nav_local ul ul {
+    list-style: square;
+}
+
+/* ---------------- main body ---------------- */
+div#main-page-body  {
+    float: right;
+    width: 750px;
+    border-left: 2px solid #979797;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+div#main-page-body p  {
+    margin-bottom: 10px;
+}
+
+h2  {font-size: 170%; color: #324e1b; text-transform: uppercase;}
+h3  {font-size: 150%;}
+h4  {font-size: 120%;}
+h5  {font-size: 100%;}
+h6  {font-size: 90%;}
+
+ul.footer {
+    margin: 0;
+    list-style: none;
+    padding: 5px;
+    background: #7ab425;
+    font-weight: bold;
+    font-size: 80%;}
+
+/* ---------------- main body ---------------- */
+ul.footer li    {display: inline; font-size: 90%; padding: 0 2em 0 0; margin: 0; }
+ul.footer a, ul.footer a:visited {text-decoration: none; color: white;}
+ul.footer a:hover {text-decoration: underline;}
+ul.footer li.arkestra {float: right;}
+
+/* ---------------- lists ---------------- */
+dl dt{
+    font-weight: bold;
+    margin: 0.25em 0;
+    padding: 0;
+}
+
+ul {list-style: square; padding-left: 15px; margin-bottom: 10px;}
+ol {list-style: decimal; padding-left: 15px;  margin-bottom: 10px;}
+
+li  {padding-bottom: 1ex;}
+
+ul.plugin-list {padding-left: 0;}
+ul.menu {list-style: none; padding-left: 0}
+ul.menu li  {padding-bottom: 0;}
+
+ul.boxed, div.boxed-lists ul    {padding-left: 0;}
+ul.boxed li, div.boxed-lists li {
+    border: 1px solid #ccc;
+    background: #ecf1ff;
+    list-style:none;
+    padding: .5em;
+    margin: 0 0 1em;
+    }
+
+ul.boxed li li {border: none;}
+ul.boxed li dl {margin:0;}
+
+/* icons */
+ul.icons    {
+    list-style: square url(/media/images/arrow_cu_right.gif);
+    padding-left: 20px;
+}
+
+/* arkestra classes */
+.date {
+color: #666;
+font-weight: bold;
+}
+
+.venue-line {
+color: #333;
+}
+
+.venue  {
+    font-style: italic;
+}
+
+/* presentation editor styles */
+.border-top  {border-top: 1px solid #999; padding-top: 1ex;}
+
+.multiple-image-shadows:hover ul.multiple.imageset li.image.link { opacity: .4;}
+
+.multiple-image-shadows ul.multiple.imageset:hover li.image.link:hover    {
+    box-shadow: 2px 2px 3px 1px rgba(6,6,6,.5);
+    opacity: 1;
+    outline: none;
+    }
+
+/* Forms */
+
+form *{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+form.filter-form{
+    margin-bottom: 1em;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"],
+input[type="datetime-local"], input[type="date"], input[type="month"],
+input[type="time"], input[type="week"], input[type="number"],
+input[type="email"], input[type="url"], input[type="search"],
+input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus,
+input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus,
+input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus,
+input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus,
+input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0,  0.075) inset, 0 0px 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+
+select, textarea, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"],
+input[type="number"], input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"], input[type="color"],
+.uneditable-input {
+    border-radius: 4px 4px 4px 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+p.standout:first-line {
+    color: #7ab425;
+}

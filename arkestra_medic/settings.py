@@ -128,7 +128,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -196,14 +196,15 @@ INSTALLED_APPS = (
     'typogrify',
     'filer',
     'widgetry',
-    # 'south',
+    'south',
     'form_designer',
     'form_designer.contrib.cms_plugins.form_designer_form',
     'treeadmin',
     'inspector',
     'django_easyfilters',
     'pagination',
-    # 'debug_toolbar',
+    'debug_toolbar',
+    'inspector',
 
     # core Django applications
     # these should be last, so we can override their templates
@@ -323,6 +324,7 @@ CMS_TEMPLATES = (
     ('cardiff/medic/c21.html', gettext('C21')),
     ('clinicalresearchfacility.html', gettext('Clinical Research Facility')),
     ('mothersofafrica.html', gettext('Mothers of Africa')),
+    ('sewahsp.html', gettext('SEWAHSP')),
 )
 
 CMS_PAGE_FLAGS = (

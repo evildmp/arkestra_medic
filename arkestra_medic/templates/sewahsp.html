@@ -1,0 +1,40 @@
+{% extends "arkestra.html" %}
+{% load typogrify_tags insert_tags cms_tags menu_tags %}
+
+{% block site_styles %}
+    <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/sewahsp/sewahsp.css" />
+	<!--[if IE]><link href="{{ MEDIA_URL }}css/sewahsp/ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="{{ MEDIA_URL }}css/sewahsp/ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+{% endblock site_styles %}
+
+{% block body_content %}
+    <div class="surface">
+        {% filter amp|smartypants|caps|initial_quotes %}
+            {% with placeholder_width=750 main_item_width=490 person_description_width=360 generic_main_width="230x196" sidebar_map_size="230x180" person_image_size="352x352" entity_image_size="353x352" lightbox_max_dimension=800 person_entity_map_size="330x200" %}
+        		<div id="outer-wrapper">
+        			<div id="inner-wrapper" class="row">
+            			{% block nav_local %}
+            				<div id="nav_local">
+            					<ul>{% show_menu 0 5 0 1 "cms/cardiff_menu.html" "" "" "" %}</ul>
+            				</div>
+            			{% endblock nav_local %}
+        				{% block main_page_body %}
+            				<div id="main-page-body">
+                                {% filter amp|smartypants|caps|initial_quotes %}
+                                    <h{{PAGE_TITLE_HEADING_LEVEL}}>{% page_attribute title %}</h{{PAGE_TITLE_HEADING_LEVEL}}>
+            						{% insert "newsflash" %}
+            				   		{% placeholder body %}
+            					{% endfilter %}
+                            </div>
+        			  	{% endblock main_page_body %}
+        			</div>
+                {% block footer %}
+                    <ul class="footer">
+                    	<li><a href="http://www.cardiff.ac.uk/cookies">Cookies</a> on this website</li>
+                    	<li class="arkestra">This website is powered by <a href="http://arkestra-project.org/">Arkestra</a></li>
+                    </ul>
+                {% endblock footer %}
+        	</div>
+        {% endwith %}{% endfilter %}
+    </div>
+{% endblock body_content %}

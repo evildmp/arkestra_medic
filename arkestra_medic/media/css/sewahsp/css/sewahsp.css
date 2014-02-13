@@ -1,0 +1,14 @@
+/* experimental_medicine */
+/* -------------------------------------------------------- header Styles */
+.sewahsp #header {
+    background-color: white;
+    background-image: url("/media/css/sewahsp/images/sewahsp-banner.png");
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.sewahsp #header h1 span {
+    background: none;
+}
+/* ----------------------------------------------------- nav_horiz Styles */
+

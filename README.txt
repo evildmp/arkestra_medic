@@ -2,7 +2,7 @@
 
 * git clone git@github.com:evildmp/arkestra_medic.git
 
-* pip install -r requirements.txt
+* pip install -r arkestra_medic/requirements.txt
 
 * copy and modify the secret settings as required
 

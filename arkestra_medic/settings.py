@@ -21,7 +21,7 @@ MANAGERS = ADMINS
 
 from sekrit_settings import *
 
-INTERNAL_IPS = ["82.8.42.31", "131.251.254.207", "10.121.64.22"]
+# INTERNAL_IPS = ["82.8.42.31", "131.251.254.207", "10.121.64.22"]
 
 DEBUG_TOOLBAR_PANELS = (
     # 'debug_toolbar.panels.version.VersionDebugPanel',

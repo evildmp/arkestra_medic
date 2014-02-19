@@ -1,8 +1,8 @@
-* set up your virtualenv
+* create and activate your virtualenv
 
-* git clone git@github.com:evildmp/arkestra_medic.git
+* Clone this project: git clone git@github.com:evildmp/arkestra_medic.git
 
-* pip install -r arkestra_medic/requirements.txt
+* Install all the packages it needs: pip install -r arkestra_medic/requirements.txt
 
-* copy and modify the secret settings as required
+* copy and modify the secret settings file as required
 

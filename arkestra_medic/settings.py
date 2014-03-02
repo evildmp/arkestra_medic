@@ -185,7 +185,7 @@ INSTALLED_APPS = (
     'publications',
     'symplectic',
     # 'curated_resources',
-    # 'clinical_trials',
+    'arkestra_clinical_trials',
 
     # other applications
 

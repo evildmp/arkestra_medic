@@ -70,7 +70,7 @@ from publications.menu import menu_dict as publications_menu
 from news_and_events.menu import menu_dict as news_and_events_menu
 from contacts_and_people.menu import menu_dict as contacts_and_people_menu
 from vacancies_and_studentships.menu import menu_dict as vacancies_and_studentships_menu
-# from clinical_trials.menu import menu_dict as clinical_trials_menu
+# from clinical_trials.models import ClinicalTrialEntity
 
 news_and_events_menu["sub_menus"] = True
 contacts_and_people_menu["sub_menus"] = True
@@ -82,7 +82,7 @@ ARKESTRA_MENUS = [
     contacts_and_people_menu,
     vacancies_and_studentships_menu,
     publications_menu,
-    # clinical_trials_menu
+    'arkestra_clinical_trials.menu.TrialMenu',
     ]
 
 

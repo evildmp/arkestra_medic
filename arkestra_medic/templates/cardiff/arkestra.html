@@ -14,20 +14,20 @@
 
     			{% block main_page_body %}
     		        {% filter amp|smartypants|caps|initial_quotes %}
-{% with placeholder_width=760 main_item_width=490 person_description_width=360 generic_main_width="230x196" sidebar_map_size="230x180" person_image_size="352x352" entity_image_size="353x352" lightbox_max_dimension=800 %}
+{% with placeholder_width=760 person_description_width=360 generic_main_width="230x196" sidebar_map_size="230x180" person_image_size="352x352" entity_image_size="353x352" lightbox_max_dimension=800 %}
     					{% insert "newsflash" %}
     			 		{% placeholder body %}
 {% endwith %}
     				{% endfilter %}
     			{% endblock main_page_body %}
 
-    			</div>   
+    			</div>
 {% block footer %}
-{% endblock footer %}    			
+{% endblock footer %}
 
-			</div>		
+			</div>
 		</div>
-	</div> 
-</div>	   	
-{% endblock body_content %} 
+	</div>
+</div>
+{% endblock body_content %}
 

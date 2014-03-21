@@ -82,7 +82,7 @@ ARKESTRA_MENUS = [
     contacts_and_people_menu,
     vacancies_and_studentships_menu,
     publications_menu,
-    'arkestra_clinical_trials.menu.TrialMenu',
+    'arkestra_clinical_studies.menu.StudyMenu',
     ]
 
 

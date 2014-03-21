@@ -4,11 +4,11 @@ python-memcached
 MySQL-python
 django-debug-toolbar
 
--e git+git@github.com:evildmp/Arkestra.git@rework-menu-system#egg=arkestra
+-e git+git@github.com:evildmp/Arkestra.git@develop#egg=arkestra
 -e git+git@github.com:evildmp/django-cms.git@live-13-02-18#egg=django-cms
 
 -e git+git@github.com:evildmp/arkestra-publications.git#egg=arkestra-publications
--e git+git@github.com:evildmp/arkestra-clinical-trials.git#egg=arkestra-clinical-trials
+-e git+git@github.com:evildmp/arkestra-clinical-studies.git@renamed-studies#egg=arkestra-clinical-studies
 
 -e git+git@github.com:raumkraut/django-form-designer.git#egg=django-form-designer
 -e git+git@github.com:evildmp/django-inspector.git#egg=django-inspector

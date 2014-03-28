@@ -4,6 +4,8 @@ python-memcached
 MySQL-python
 django-debug-toolbar
 
+-e hg+https://bitbucket.org/spookylukey/django-easyfilters#egg=django-easyfilters
+
 -e git+git@github.com:evildmp/Arkestra.git@develop#egg=arkestra
 -e git+git@github.com:evildmp/django-cms.git@live-13-02-18#egg=django-cms
 

@@ -55,7 +55,9 @@
     							{% endif %}
     				        {% endblock pagetitle %}
 
-    				        {% block main_page_body %}
+                            {% block summary %}{% endblock summary %}
+
+                            {% block main_page_body %}
         						    {% insert "newsflash" %}
 									{% placeholder body %}
     				        {% endblock main_page_body %}

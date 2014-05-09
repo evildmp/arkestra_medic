@@ -48,6 +48,7 @@ PERMITTED_FILETYPES = {
     "pdf": "Portable Document Format",
     "txt": "Plain text",
     "doc": "MS Word (avoid using if possible)",
+    "docx": "MS Word (avoid using if possible)",
     "rtf": "Rich Text Format",
     "csv": "Comma-separated values",
     }

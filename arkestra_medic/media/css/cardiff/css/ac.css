@@ -12,7 +12,7 @@ a:link, a:visited, a:active {
 a:link:hover, a:visited:hover {
     text-decoration: underline;
 }
-p{
+p {
     line-height: 1.9;
     margin: 0 0 0.8em;
 }
@@ -53,6 +53,7 @@ ol {list-style: decimal; padding-left: 15px;}
 li  {padding-bottom: 1ex;}
 
 ul.plugin-list {padding-left: 0;}
+p.plugin-list-item {line-height: 1.7; padding-bottom: 1ex}
 ul.menu {list-style: none; padding-left: 0}
 ul.menu li  {padding-bottom: 0;}
 
@@ -75,6 +76,7 @@ ul.icons    {
 }
 
 /* arkestra classes */
+
 .date {
 color: #666;
 font-weight: bold;
@@ -186,7 +188,7 @@ form > div{
 
 /* temporary publications css */
 
-li span.publication-kind {
+span.publication-kind {
     background: black;
     color: white;
     padding: 1px 4px;
@@ -194,3 +196,13 @@ li span.publication-kind {
     font-size: 80%;
     border-radius: 2px;
 }
+
+/* styles for publications */
+
+cite.journal-article, cite.conference-proceedings {font-style: normal; }
+cite.journal    {font-style: italic;}
+.publication-details    {color: #777; display: block;}
+.publication-authors    {display: block;}
+ul.publications {list-style-type: none;}
+.publications li { margin-left: 0; padding-left: 0;}
+.publications dd, .publications li  {margin-bottom: .5em}

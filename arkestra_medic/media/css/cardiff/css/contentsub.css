@@ -90,7 +90,7 @@ blockquote {
 	/* unordered lists */
 	ul {
 		margin: 0 0 1.5em 0;
-		padding: 0;	
+		padding: 0;
 		line-height:1.4em;
 	}
 
@@ -99,7 +99,7 @@ blockquote {
 		padding: 0;
 	}
 	/* END unordered lists */
-	
+
 	/* ordered lists */
 	ol {
 		line-height:1.4em;
@@ -119,11 +119,11 @@ blockquote {
 		margin:0;
 		}
 	/* END ordered lists */
-		ul ul, 
-		ul ul ul, 
-		ul ul ul ul, 
-		ul ul ul ul ul { 
-			font-size:1.0em; 
+		ul ul,
+		ul ul ul,
+		ul ul ul ul,
+		ul ul ul ul ul {
+			font-size:1.0em;
 		}
 	/* definition lists */
 	dl {
@@ -162,22 +162,22 @@ blockquote {
 		background-color: #fff;
 	}
 	/*END #wrapper definitions*/
-/*END SECTIONAL ID definitions*/	
+/*END SECTIONAL ID definitions*/
 	/*Separate #sub colourway for headings*/
-	#sub h3, 
-	#sub h4, 
-	#sub h5, 
+	#sub h3,
+	#sub h4,
+	#sub h5,
 	#sub h6 {
 		color: #000;
 		text-decoration:none;
-	}	
+	}
 /* END HEADINGS */
 
 /* LINKS. These default styles can be further refined for sectional ids below*/
 	/* External links inline style places external link icon at the right-hand end of the link */
 	#content a.external,
-	#sub a.external { 
-		background:url(/media/images/external_link.gif) left 2px no-repeat; 
+	#sub a.external {
+		background:url(/media/images/external_link.gif) left 2px no-repeat;
 		padding: 0 0 0 18px;
 		/*white-space:no-wrap breaks long links in #sub sagba*/
 	}
@@ -230,8 +230,8 @@ blockquote {
 		display:block;
 		}
 		/* //Deprecated// - superceded by a.linkIcon */
-	img.linkIcon { 
-		margin: 0 .5em 0 0; 
+	img.linkIcon {
+		margin: 0 .5em 0 0;
 	}
 	/* Use where list items are not available */
 	a.pdf {
@@ -264,22 +264,22 @@ blockquote {
 		}
 	/* For use on links with an icon to the left of the text - pads the image within the link */
 
-	/* END definition lists */	
+	/* END definition lists */
 
 /* class based lists*/
 
 /* .none class list*/
 	ul.none {
-		list-style-type:none; 
-		list-style-image:none; 
-		margin:0; 
-		padding:0; 
+		list-style-type:none;
+		list-style-image:none;
+		margin:0;
+		padding:0;
 		clear:both;
 	}
 	ul.none li {
-		list-style-type:none; 
-		list-style-image:none; 
-		margin:0; 
+		list-style-type:none;
+		list-style-image:none;
+		margin:0;
 		padding:0;
 	}
 	/* END .none list*/
@@ -293,7 +293,7 @@ blockquote {
 		clear:both;
 	}
 	ul.az1pg li {
-		list-style-type:none; 
+		list-style-type:none;
 		margin:0 0 0.3em 0.3em;
 		padding:0;
 	}
@@ -302,9 +302,9 @@ blockquote {
 		padding:0;
 	}
 	ul.az1pg ul li {
-		list-style-type:none; 
-		list-style-image:none; 
-		margin:0.3em 0 0.3em 1em; 
+		list-style-type:none;
+		list-style-image:none;
+		margin:0.3em 0 0.3em 1em;
 		padding:0;
 	}
 	.hidden {
@@ -312,33 +312,33 @@ blockquote {
 	}
 
 	/* END A-Z indices */
-	
+
 		/*PAGINATION STYLES*/
 		ul.pagination {
 			margin: .5em;
 		}
-		
-		ul.pagination li { 
+
+		ul.pagination li {
 			margin: 0 .1em;
 			display:inline;
 		}
-		
+
 		/*A-Z Pagination styles content*/
 		ul.paginationAZ {
 			margin: .5em 0;
 		}
-	
+
 		ul.paginationAZ li {
 			margin: 0 .4em .4em 0;
 			display:inline;
 			float:left;
 		}
-		
+
 		ul.paginationAZ li a {
 			display: block;
 			width: 2.5em;
 			padding: .2em;
-		}				
+		}
 		/* Used to indicate current page of AZ index */
 		/* Style for adjusting width of 0-9 button */
 		ul.paginationAZ li.azWide a {
@@ -347,18 +347,18 @@ blockquote {
 			padding:.2em 0;
 		}
 		/*END PAGINATION STYLES*/
-		
+
 		/* NEWS STYLES*/
 /*	sagba 201206
-		dl.newsList dt { 
+		dl.newsList dt {
 			clear:both;
 			margin:0;
 			padding:0;
 		}
-		
-		dl.newsList dd { 
-			margin:0; 
-			padding:0; 
+
+		dl.newsList dd {
+			margin:0;
+			padding:0;
 		}
 */
 	/*Tighten up the paragraph spacing in the news list snippets*/
@@ -366,20 +366,20 @@ blockquote {
 		dl.newsList p{
 			margin: 0 0 0.3em 0;
 		}
-			
+
 		ul.newsList,
-		ul.newsList li { 
-			margin: 0; 
-			clear:both; 
+		ul.newsList li {
+			margin: 0;
+			clear:both;
 			padding: 0;
 		}
 		/* NEWS STYLES
 		ul.newsList,
-		ul.newsList li { 
-			list-style-type:none; 
-			list-style-image:none; 
+		ul.newsList li {
+			list-style-type:none;
+			list-style-image:none;
 		}
-/*		Ensures the image aligns tightly to top of heading 
+/*		Ensures the image aligns tightly to top of heading
 		.newsList img.floatLeft{
 			margin: 0 .5em .5em 0;
 		}
@@ -388,7 +388,7 @@ blockquote {
 	NEWS Styles 20/12/06 sagba
 	re-worked to work with non DL based items
 */
-	#content div.news, 
+	#content div.news,
 	#content span.news {
  		display:block;
 		float:left;
@@ -433,34 +433,34 @@ blockquote {
 	END NEW NEWS STYLES
 */
 		/*JOB OPPORTUNITIES*/
-		#content dl.vacancyList dt { 
-			clear:both; 
+		#content dl.vacancyList dt {
+			clear:both;
 		}
-		
-		#content  dl.vacancyList dd { 
-			margin:.3em .3em .3em 1em; 
-			padding:0; 
+
+		#content  dl.vacancyList dd {
+			margin:.3em .3em .3em 1em;
+			padding:0;
 		}
-		/*END JOB OPPORTUNITIES*/	
+		/*END JOB OPPORTUNITIES*/
 		/* Corporate documents snippet lists*/
 			.corporateDoc dt {margin:0; padding:0;}
 			.corporateDoc dd {margin:0; padding:0;}
 			.corporateDoc ul {margin:0; padding:0;}
-			.corporateDoc ul li {margin:0 0 0 17px; padding:0 0 .3em 0;}		
+			.corporateDoc ul li {margin:0 0 0 17px; padding:0 0 .3em 0;}
 		/* END Corporate documents snippet lists*/
-		
+
 		/*Related items heading*/
-		.relatedItem ul, 
-		.relatedItem li { 
-			margin:.3em 0 .3em .3em; 
+		.relatedItem ul,
+		.relatedItem li {
+			margin:.3em 0 .3em .3em;
 		}
 		/*END Featured and Related items*/
-		
+
 		/* Styles for 'full' image link and list */
 		/*When in 'sub' slot
 		.imgFullSub ul {margin:0 0.5em 0.5em 0; padding:0;}
 		.imgFullSub li {margin:0 0 0 17px;}
-		/* END Styles for 'full' image link and list */		
+		/* END Styles for 'full' image link and list */
 /* end class-based lists */
 /* END LISTS */
 /*General floats - use with care */
@@ -470,45 +470,45 @@ blockquote {
 /*content types, snippets, etc*/
 		/* CORPORATE DOCUMENT styles */
 		/*Featured and Related item styles*/
-		.featuredItem, 
-		.relatedItem { 
-			padding:.3em; 
-			margin:0 0 .3em 0; 
+		.featuredItem,
+		.relatedItem {
+			padding:.3em;
+			margin:0 0 .3em 0;
 		}
 		.featuredItem img,
-		.featuredItem img.floatLeft { 
-			float:left; 
-			margin:0 .3em .3em 0; 
+		.featuredItem img.floatLeft {
+			float:left;
+			margin:0 .3em .3em 0;
 		}
 		.featuredItem img.floatRight {
 			margin:0 0 .3em .3em;
 		}
-		/* .date { 
+		/* .date {
 			margin:.3em .3em .3em 0; */
 		}
 		/*IMAGE FLOATS*/
-		#content img.floatLeft { 
-			float:left; 
-			margin:.5em .5em .5em 0; 
+		#content img.floatLeft {
+			float:left;
+			margin:.5em .5em .5em 0;
 		}
-		#content img.floatRight { 
-			float:right; 
-			margin:.5em 0 .5em .5em; 
+		#content img.floatRight {
+			float:right;
+			margin:.5em 0 .5em .5em;
 		}
 		/*Captioned image float left - width is set in an inline style within the content area */
-		#content div.floatCaptionLeft { 
-			float:left; 
-			margin:.3em .3em .3em 0; 
+		#content div.floatCaptionLeft {
+			float:left;
+			margin:.3em .3em .3em 0;
 		}
-		#content div.floatCaptionLeft p { 
+		#content div.floatCaptionLeft p {
 			margin: 0 .3em .3em .3em;
 		}
 		/*Captioned image float right - width is set in an inline style within the content area */
-		#content div.floatCaptionRight { 
-			float:right; 
-			margin:.3em 0 .3em .3em; 
+		#content div.floatCaptionRight {
+			float:right;
+			margin:.3em 0 .3em .3em;
 		}
-		#content div.floatCaptionRight p { 
+		#content div.floatCaptionRight p {
 			margin: 0 .3em .3em .3em;
 		}
 		/*END IMAGE FLOATS*/
@@ -519,8 +519,8 @@ blockquote {
 			/*return to top in A-Z list content*/
 		}
 		div.azHeading {
-			padding: .3em; 
-			margin:.5em 0; 
+			padding: .3em;
+			margin:.5em 0;
 		}
 		/*END A-Z index styles*/
 /*CASE STUDY STYLES*/
@@ -537,7 +537,7 @@ blockquote {
 /*EVENT Snippet styles*/
 	.event_snippet li {clear:both;}
 	.event_snippet .field_name {font-weight:bold;}
-	
+
 	#content .event_snippet {font-size:.9em; /*fix for alignment issues in IE sagba*/ width:99%;}
 	#content .event_snippet p {font-size:1em;}
 	div.event_snippet {float:left; clear:left;}
@@ -578,8 +578,8 @@ blockquote {
 	}
 
 	#content.Building div.building_az_facility ul.az li {
-		list-style-type:none; 
-		margin:0.5em 0 0.3em 0.3em; 
+		list-style-type:none;
+		margin:0.5em 0 0.3em 0.3em;
 		padding:0;
 		border-bottom:1px solid #ccc;
 	}
@@ -608,8 +608,8 @@ blockquote {
 	}
 
 	#content.Building div.building_az ul.az li {
-		list-style-type:none; 
-		margin:0em 0 0.5em 0.2em; 
+		list-style-type:none;
+		margin:0em 0 0.5em 0.2em;
 		padding:0;
 	}
 
@@ -628,7 +628,7 @@ blockquote {
 		body.maps div#nav_horiz {background:#509350;}
 		body.maps div#nav_horiz ul li ul{
 			display: none;
-			position: absolute; 
+			position: absolute;
 			top: 1.3em;
 			left: 4.7em;
 			border-top:2px solid #509350;
@@ -655,33 +655,33 @@ blockquote {
 	/* ADVERT styles */
 
 			/*Right-column*/
-		#sub div.advImg { 
+		#sub div.advImg {
 			margin:.5em 0 0 0;
 			padding:0;
 		}
 			/*Content area*/
-		#content div.advImg { 
-			margin:.5em 0 0 0; 
+		#content div.advImg {
+			margin:.5em 0 0 0;
 			float:left; margin:.5em .5em 0 0;
-		}		
+		}
 		/* HTML Ad both*/
 		div.advHtml {
 			background:#fff;
-			margin: 0 0 .5em 0; 
-			padding:0 0 .3em 0; 
+			margin: 0 0 .5em 0;
+			padding:0 0 .3em 0;
 			clear:both;
 		}
 
-		div.advHtml h4 { 
-			margin:.3em .3em 0 .3em; 
-			font-size:0.9em; 
+		div.advHtml h4 {
+			margin:.3em .3em 0 .3em;
+			font-size:0.9em;
 		}
 
-		div.advHtml p { 
-			margin:.3em .3em 0 .3em; 
+		div.advHtml p {
+			margin:.3em .3em 0 .3em;
 		}
 
-		div.advHtml a img { 
+		div.advHtml a img {
 			margin: 0 .5em 0 0; /* Pads the image within the link */
 		}
 
@@ -691,20 +691,20 @@ blockquote {
 
 /* CORPORATE DOCUMENT styles */
 	/*Featured and Related item styles*/
-		.featuredItem, 
-		.relatedItem { 
-			background:#fff; 
+		.featuredItem,
+		.relatedItem {
+			background:#fff;
 		}
-		#sub div.relatedItem { 
-			background:#fff; 
+		#sub div.relatedItem {
+			background:#fff;
 			border:none;
 		}
 		/*Related items heading*/
-		.relatedItem h4 { 
+		.relatedItem h4 {
 			font-size:1em;
 		}
 		.relatedItem ul,
-		.relatedItem li { 
+		.relatedItem li {
 			list-style-image:none;
 			list-style-type:none;
 		}
@@ -713,22 +713,22 @@ blockquote {
 		.relatedItem li.doc,
 		.relatedItem li.jpg,
 		.relatedItem li.zip {
-			list-style-position:outside; 
-			margin:.3em 0 .3em 15px; 		
+			list-style-position:outside;
+			margin:.3em 0 .3em 15px;
 		}
-		.relatedItem li.pdf { 
-			list-style-image:url(/media/images/document_icon_pdf.gif); 
+		.relatedItem li.pdf {
+			list-style-image:url(/media/images/document_icon_pdf.gif);
 		}
-		.relatedItem li.doc { 
-			list-style-image:url(/media/images/document_icon_doc.gif); 
+		.relatedItem li.doc {
+			list-style-image:url(/media/images/document_icon_doc.gif);
 		}
-		.relatedItem li.jpg { 
-			list-style-image:url(/media/images/document_icon_jpg.gif); 
+		.relatedItem li.jpg {
+			list-style-image:url(/media/images/document_icon_jpg.gif);
 		}
-		.relatedItem li.zip { 
-			list-style-image:url(/media/images/document_icon_zip.gif); 
+		.relatedItem li.zip {
+			list-style-image:url(/media/images/document_icon_zip.gif);
 		}
-		
+
 		#sub dd {margin-left: 1em;}
 		/*END Featured and Related items*/
 		/*Document type lists - places appropriate icon adjacent the list item - for use in any unordered list */
@@ -738,33 +738,33 @@ blockquote {
 		li.zip {
 			list-style-position: outside;
 		}
-		li.pdf { 
+		li.pdf {
 			list-style-image:url(/media/images/document_icon_pdf.gif);
 		}
-		li.doc { 
+		li.doc {
 			list-style-image:url(/media/images/document_icon_doc.gif);
 		}
-		li.jpg { 
-			list-style-image:url(/media/images/document_icon_jpg.gif); 
+		li.jpg {
+			list-style-image:url(/media/images/document_icon_jpg.gif);
 		}
-		li.zip { 
+		li.zip {
 			list-style-image:url(/media/images/document_icon_zip.gif);
 		}
 		/*END Document type lists*/
 		/* #content .date,
-		#sub .date { 
-			color:#999;  
+		#sub .date {
+			color:#999;
 			line-height:1em;
 		} */
-		.author { 
-			font-style:italic; 
+		.author {
+			font-style:italic;
 		}
 		/*Intro paragraph style*/
-		.intro { 
-			font-weight:bold; 
+		.intro {
+			font-weight:bold;
 		}
 		/*IMAGE FLOATS - image with caption area*/
-		div.floatCaptionLeft, 
+		div.floatCaptionLeft,
 		div.floatCaptionRight {
 			background:#eee;
 		}
@@ -774,29 +774,29 @@ blockquote {
 			text-align:center;
 		}
 		ul.pagination li {
-			list-style-position:outside; 
+			list-style-position:outside;
 		}
-		li.prev { 
+		li.prev {
 			background: url(/media/images/arrow_cu_left.gif) no-repeat left 1px;
 			padding:0 0 0 1.5em;
 			list-style-position:outside;
 			list-style-type:none;
 		}
-		li.next { 
+		li.next {
 			background: url(/media/images/arrow_cu_right.gif) no-repeat right 1px;
 			padding:0 1.45em 0 0 ;
 			list-style-position:outside;
 			list-style-type:none;
 		}
 		/*For inactive links (first and last page list items)*/
-		li.prevOff { 
+		li.prevOff {
 			background: url(/media/images/arrow_cu_left_off.gif) no-repeat left 1px;
 			padding:0 0 0 1.5em;
 			list-style-position:outside;
 			list-style-type:none;
 			color:#999;
 		}
-		li.nextOff { 
+		li.nextOff {
 			background: url(/media/images/arrow_cu_right_off.gif) no-repeat right 1px;
 			padding:0 1.45em 0 0 ;
 			list-style-position:outside;
@@ -823,17 +823,17 @@ blockquote {
 			color:#FFF;
 		}
 		/*END PAGINATION STYLES*/
-		.subTitle { 
-			font-size:.8em; 
-			line-height:.8em; 
+		.subTitle {
+			font-size:.8em;
+			line-height:.8em;
 		}
 		/*A-Z index styles*/
 		.azHeading {
 			background-color: #eee;
 		}
 		div.azHeading {
-			text-align:right; 
-			font-size:.9em; 
+			text-align:right;
+			font-size:.9em;
 			background-color:#fff;
 		}
 		/*END A-Z index styles*/
@@ -864,7 +864,7 @@ blockquote {
 /*Alert box - used for important alerts or translation issues*/
 	#content div.alertbox {border:1px dashed #990033; background:#eee; margin: .5em; padding:.3em .3em 0 .3em;}
 	/* Separate style for right-column version */
-	#sub div.alertbox {border:1px dashed #990033; background:#eee; margin: 0 0 .5em 0; padding:.3em .3em 0 .3em;}	
+	#sub div.alertbox {border:1px dashed #990033; background:#eee; margin: 0 0 .5em 0; padding:.3em .3em 0 .3em;}
 
 /* BUILDING Styles */
 	#content.Building ul {
@@ -879,7 +879,7 @@ blockquote {
 	/*Summary box background*/
 	#content.Building .building_summary{background:#ECF5FF;}
 	/*Special image caption handling*/
-	#content.Building div.floatCaptionLeft {background-color:#DCE8F6;}	
+	#content.Building div.floatCaptionLeft {background-color:#DCE8F6;}
 	#content.Building .building_poi h4{clear:both; border-bottom:1px solid #990033; padding:0 0 .3em 0; color:#990033;}
 	#content.Building table#map_building_list td {background:#FFFFFF;}
 	#content.Building .building_number {font-size:.6em; font-weight:normal; color:#000000;}
@@ -894,7 +894,7 @@ blockquote {
 /* CONTACT styling. Also uses tab_menu styling from navs.css*/
 
 	.Contact .other_info ul ,
-	.Contact .selected_publications ul, 
+	.Contact .selected_publications ul,
 	.Contact .selected_projects ul{
 		margin:0;
 		padding:0;
@@ -917,11 +917,11 @@ blockquote {
 	.Contact .selected_projects h4,
 	.Contact .research_related_links h4,
 	.Contact .career_profile h4,
-	.Contact .awards_prizes h4, 
+	.Contact .awards_prizes h4,
 	.Contact .membs_external h4,
 	.Contact .notable_achievements h4,
 	.Contact .presentations h4,
-	.Contact .teaching_profile h4 {	
+	.Contact .teaching_profile h4 {
 		font-size: 1em;
 		font-weight: bold;
 		width: 100%;
@@ -930,8 +930,8 @@ blockquote {
 		clear:both;
 		text-indent: 0.8em;
 		padding-top: 0.2em;
-		padding-bottom: 0.2em;				
-	}	
+		padding-bottom: 0.2em;
+	}
 	/*REMOVE once Contact template has been updated*/
 	.Contact h4.name span.qualifications {
 		font-size: 0.8em;
@@ -941,7 +941,7 @@ blockquote {
 	.Contact .researcher_qualifications {
 		clear:left;
 	}
-/*this section contains styles for information under the 'OVERVIEW' tab*/	
+/*this section contains styles for information under the 'OVERVIEW' tab*/
 	.Contact hr {
 		width: 95%;
 	}
@@ -950,7 +950,7 @@ blockquote {
 		float: right;
 	}
 
-/*professional and contact*/	
+/*professional and contact*/
 	.Contact h3.contactType { background:none;}
 	.Contact h4.name {background:none;}
 	/*'Table' style layout for research homepage*/
@@ -989,7 +989,7 @@ blockquote {
 		{
 			display:block;
 			float:left;
-			width:auto; 
+			width:auto;
 			font-size:.9em;
 			padding:.2em 0;
 		}
@@ -1009,17 +1009,17 @@ blockquote {
 		}
 	/*makes each pairing a block level element*/
 	.Contact div.contactDetails span.contact-block {clear:left; display:block;}
-	
-	.Contact .professionalDetails .position, 
-	.Contact .professionalDetails .school, 
-	.Contact .professionalDetails .research_grp, 
-	.Contact .contact .telephone, 
-	.Contact .contact .fax, 
-	.Contact .contact .email, 
+
+	.Contact .professionalDetails .position,
+	.Contact .professionalDetails .school,
+	.Contact .professionalDetails .research_grp,
+	.Contact .contact .telephone,
+	.Contact .contact .fax,
+	.Contact .contact .email,
 	.Contact .contact .address,
-	.Contact .projects .proj_title, 
-	.Contact .projects .proj_sponsor, 
-	.Contact .projects .proj_value, 
+	.Contact .projects .proj_title,
+	.Contact .projects .proj_sponsor,
+	.Contact .projects .proj_value,
 	.Contact .projects .proj_duration {
 		font-weight: normal;
 	}
@@ -1027,14 +1027,14 @@ blockquote {
 	.Contact .publications .bookjournal {
 		font-style: italic;
 	}
-	
+
 	.Contact .publications .publ_date,
 	.Contact .projects {
 		font-weight:normal;
 	}
 
 /*END professional and contact*/
-	
+
 	/*.research_interests block*/
 		.Contact .research_interests {
 			clear: both;
@@ -1042,17 +1042,17 @@ blockquote {
 			margin-bottom: 1em;
 			margin-top:.5em;
 		}
-		
+
 		.Contact .research_interests p,
 		.Contact .researcher_qualifications p {
 			margin: 0 1.0em .8em 1.0em;
 		}
 	/*END .research_interests block*/
-	
+
 	/*.selected_publications block. NOTE this is styled differently to all_publications*/
-		.Contact .selected_publications {		
+		.Contact .selected_publications {
 			display: block;
-			width: 49%;	
+			width: 49%;
 			float: left;
 			margin-bottom: 1em;
 		}
@@ -1061,7 +1061,7 @@ blockquote {
 	}
 	.Contact .selected_publications p,
 	.Contact .selected_projects p
-		{		
+		{
 			margin: 0 0 .5em .5em;
 		}
 
@@ -1073,7 +1073,7 @@ blockquote {
 	.Contact div.research_interests,
 	.Contact div.other_info,
 	.Contact div.career_profile,
-	.Contact div.awards_prizes, 
+	.Contact div.awards_prizes,
 	.Contact div.membs_external,
 	.Contact div.notable_achievements,
 	.Contact div.presentations,
@@ -1098,7 +1098,7 @@ blockquote {
 		}
 
 	/*END .selected_projects*/
-	
+
 	/*.other_info block*/
 	.Contact .other_info {
 		padding: 0;
@@ -1108,12 +1108,12 @@ blockquote {
 	}
 	.Contact .other_info p{
 			margin: 0 1.0em .8em 1.0em;
-	}	
+	}
 	/* .other_info elements are in as a list to skirt IE rendering issues for the links, and because semantically a list is probably better*/
 	.Contact .other_info li {
 		list-style:none;
 	}
-	
+
 	/*.other_info block - on contact type*/
 	.Contact .other_info,
 	.Contact .personalwebsite {
@@ -1152,28 +1152,28 @@ blockquote {
 		margin-bottom: 1em;
 	}
 /*end 'PROJECTS' tab*/
-		
+
 /*this section contains styles for information under the 'BIOGRAPHY' tab*/
 /*currently all blocks are styled similarly, but have been given different class names to allow for modification*/
-		.Contact .career_profile, 
-		.Contact .awards_prizes, 
+		.Contact .career_profile,
+		.Contact .awards_prizes,
 		.Contact .membs_external,
 		.Contact .notable_achievements,
-		.Contact .presentations, 
+		.Contact .presentations,
 		.Contact .teaching_profile  {
 			clear: both;
 			display: block;
 			margin-bottom: 1em;
-		}		
-		.Contact .career_profile p, 
-		.Contact .awards_prizes p, 
+		}
+		.Contact .career_profile p,
+		.Contact .awards_prizes p,
 		.Contact .membs_external p,
 		.Contact .notable_achievements p,
-		.Contact .presentations p, 
+		.Contact .presentations p,
 		.Contact .teaching_profile p {
 			background-color:#f2f6f8;
 			padding: 0.5em;
-		}	
+		}
 /*end 'BIOGRAPHY' tab*/
 	.Contact .all_projects {display:block; float:left}
 	.Contact .all_publications {display:block; float:left;}
@@ -1193,7 +1193,7 @@ blockquote {
 	/*Displays the strong tags as labels (forming a neater layout) */
 	.Contact div.all_projects ul.projects strong {display:block; float:left; width:7em;}
 	/*end fixes 12/12/06*/
-	
+
 /*sagba 13/12/06*/
 		div.contact_point_snippet_4 {display:block; float:left; clear:left; width:100%;}
 		div.contact_point_snippet_4 span.contact-block {clear:left; display:block;}
@@ -1291,7 +1291,7 @@ blockquote {
 	 	display:block;
 		padding:.1em 0;
 		float:left;
-				
+
 	}
 	div.contact_snippet_details_2 span.location,
 	div.contact_snippet_details_3 span.location
@@ -1302,7 +1302,7 @@ blockquote {
 	div.contact_snippet_details_3 p.BuildingAddress {font-size:1em;}
 	div.contact_snippet_details_3 span.location p.BuildingAddress {font-size:1em; margin:0; padding:0;}
 /**/
-	
+
 /*RESEARCH GROUP*/
 	/*Publications styles*/
 	#content ul.research_grp_publications li {clear:both;}
@@ -1467,7 +1467,7 @@ blockquote {
 		}
 	legend {padding: .3em .5em; background: #fff; margin: 0;}
 	optgroup {font-style: normal; font-weight: normal;}
-	
+
 	form.inlinelabel label,
 	form.inlinelabel input,
 	form.inlinelabel select,
@@ -1476,16 +1476,16 @@ blockquote {
 	form.blocklabel input,
 	form.blocklabel select,
 	form.blocklabel textarea {font-family: Geneva, Helvetica, Verdana, Arial, sans-serif; font-size: .9em;}
-	
+
 	form.hidelegend legend{display: none;}
-	
+
 	form.inlinelabel label{float:left; clear: left;}
 	form.inlinelabel input {float: left;}
 	form.inlinelabel label.inlinelabel {float:left; clear: none; margin: .3em 0 0 .3em;}
 	form.blocklabel input,
 	form.blocklabel select,
 	form.blocklabel textarea {float: left;}
-	
+
 	form.label10 label {width:10%; margin: .3em 0;}
 	form.label20 label {width:20%; margin: .3em 0;}
 	form.label25 label {width:25%; margin: .3em 0;}
@@ -1496,12 +1496,12 @@ blockquote {
 	form.inlinelabel label.full,
 	form.blocklabel label.full,
 	label.full {width: 90%;}
-	
+
 	form.hidefieldset fieldset {border: none; width:98%;}
 	form.showfieldset fieldset {border: 1px solid #e5f0fb; background: #eef5fd;}
 /*Temp fix for IE's inability to display the fieldset background properly - BA */
 	form.showfieldset legend {display: none;}
-/*END temp fix for IE */	
+/*END temp fix for IE */
 	form.fieldsetpad00 fieldset {padding: 0;}
 	form.fieldsetpad03 fieldset {padding: .3em;}
 	form.fieldsetpad05 fieldset {padding: .5em;}
@@ -1520,12 +1520,12 @@ blockquote {
 	input.field80, select.field80, textarea.field80 {width: 80%;}
 	input.field90, select.field90, textarea.field90 {width: 90%;}
 	input.field98, select.field98, textarea.field98 {width: 98%;}
-	
+
 	input.fieldmarginhoriz03 {margin: 0 .3em;}
 	input.fieldmarginhoriz05 {margin: 0 .5em;}
 	input.fieldmarginhoriz07 {margin: 0 .7em;}
 	input.fieldmarginhoriz10 {margin: 0 1.0em;}
-	
+
 	form.fieldmarginvert01 input,
 	form.fieldmarginvert01 select,
 	form.fieldmarginvert01 textarea {margin-top: .1em; margin-bottom: .1em;}
@@ -1541,7 +1541,7 @@ blockquote {
 
 	/*apply to span surrounding the * character */
 	span.required {color:#cc0033}
-	
+
 	/*Room Booking layout styles*/
 	/*sagba 020107*/
 	div.room_details {
@@ -1568,7 +1568,7 @@ blockquote {
 	div.other_info a {font-size:.9em;}
 	div.other_info p a {font-size:1em;}
 	/*END Room Booking layout styles*/
-	
+
 	/*sagba 040107*/
 	div.course_snippet {
 		margin:0 0 .5em 0;
@@ -1601,7 +1601,7 @@ NEW CONTACT STYLES
 			margin-bottom: 1em;
 			margin-top:.5em;
 	}
-		
+
 .Contact_New .overview p {
 		margin: 0 .8em .8em .8em;
 	}
@@ -1640,7 +1640,7 @@ NEW CONTACT STYLES
 /**/
 
 .Contact_New .other_info ul ,
-	.Contact_New .selected_publications ul, 
+	.Contact_New .selected_publications ul,
 	.Contact_New .selected_projects ul{
 		margin:0;
 		padding:0;
@@ -1663,11 +1663,11 @@ NEW CONTACT STYLES
 	.Contact_New .selected_projects h4,
 	.Contact_New .research_related_links h4,
 	.Contact_New .career_profile h4,
-	.Contact_New .awards_prizes h4, 
+	.Contact_New .awards_prizes h4,
 	.Contact_New .membs_external h4,
 	.Contact_New .notable_achievements h4,
 	.Contact_New .presentations h4,
-	.Contact_New .teaching_profile h4 {	
+	.Contact_New .teaching_profile h4 {
 		font-size: 1em;
 		font-weight: bold;
 		width: 100%;
@@ -1676,8 +1676,8 @@ NEW CONTACT STYLES
 		clear:both;
 		text-indent: 0.8em;
 		padding-top: 0.2em;
-		padding-bottom: 0.2em;				
-	}	
+		padding-bottom: 0.2em;
+	}
 	/*REMOVE once Contact template has been updated*/
 	.Contact_New h4.name span.qualifications {
 		font-size: 0.8em;
@@ -1687,7 +1687,7 @@ NEW CONTACT STYLES
 	.Contact_New .researcher_qualifications {
 		clear:left;
 	}
-/*this section contains styles for information under the 'OVERVIEW' tab*/	
+/*this section contains styles for information under the 'OVERVIEW' tab*/
 	.Contact_New hr {
 		width: 95%;
 	}
@@ -1696,7 +1696,7 @@ NEW CONTACT STYLES
 		float: right;
 	}
 
-/*professional and contact*/	
+/*professional and contact*/
 	.Contact_New h3.contactType { background:none;}
 	.Contact_New h4.name {background:none;}
 	/*'Table' style layout for research homepage*/
@@ -1735,7 +1735,7 @@ NEW CONTACT STYLES
 		{
 			display:block;
 			float:left;
-			width:auto; 
+			width:auto;
 			font-size:.9em;
 			padding:.2em 0;
 		}
@@ -1755,17 +1755,17 @@ NEW CONTACT STYLES
 		}
 	/*makes each pairing a block level element*/
 	.Contact_New div.contactDetails span.contact-block {clear:left; display:block;}
-	
-	.Contact_New .professionalDetails .position, 
-	.Contact_New .professionalDetails .school, 
-	.Contact_New .professionalDetails .research_grp, 
-	.Contact_New .contact .telephone, 
-	.Contact_New .contact .fax, 
-	.Contact_New .contact .email, 
+
+	.Contact_New .professionalDetails .position,
+	.Contact_New .professionalDetails .school,
+	.Contact_New .professionalDetails .research_grp,
+	.Contact_New .contact .telephone,
+	.Contact_New .contact .fax,
+	.Contact_New .contact .email,
 	.Contact_New .contact .address,
-	.Contact_New .projects .proj_title, 
-	.Contact_New .projects .proj_sponsor, 
-	.Contact_New .projects .proj_value, 
+	.Contact_New .projects .proj_title,
+	.Contact_New .projects .proj_sponsor,
+	.Contact_New .projects .proj_value,
 	.Contact_New .projects .proj_duration {
 		font-weight: normal;
 	}
@@ -1773,14 +1773,14 @@ NEW CONTACT STYLES
 	.Contact_New .publications .bookjournal {
 		font-style: italic;
 	}
-	
+
 	.Contact_New .publications .publ_date,
 	.Contact_New .projects {
 		font-weight:normal;
 	}
 
 /*END professional and contact*/
-	
+
 	/*.research_interests block*/
 		.Contact_New .research_interests {
 			clear: both;
@@ -1788,17 +1788,17 @@ NEW CONTACT STYLES
 			margin-bottom: 1em;
 			margin-top:.5em;
 		}
-		
+
 		.Contact_New .research_interests p,
 		.Contact_New .researcher_qualifications p {
 			margin: 0 1.0em .8em 1.0em;
 		}
 	/*END .research_interests block*/
-	
+
 	/*.selected_publications block. NOTE this is styled differently to all_publications*/
-		.Contact_New .selected_publications {		
+		.Contact_New .selected_publications {
 			display: block;
-			width: 49%;	
+			width: 49%;
 			float: left;
 			margin-bottom: 1em;
 		}
@@ -1807,7 +1807,7 @@ NEW CONTACT STYLES
 	}
 	.Contact_New .selected_publications p,
 	.Contact_New .selected_projects p
-		{		
+		{
 			margin: 0 0 .5em .5em;
 		}
 
@@ -1819,7 +1819,7 @@ NEW CONTACT STYLES
 	.Contact_New div.research_interests,
 	.Contact_New div.other_info,
 	.Contact_New div.career_profile,
-	.Contact_New div.awards_prizes, 
+	.Contact_New div.awards_prizes,
 	.Contact_New div.membs_external,
 	.Contact_New div.notable_achievements,
 	.Contact_New div.presentations,
@@ -1844,7 +1844,7 @@ NEW CONTACT STYLES
 		}
 
 	/*END .selected_projects*/
-	
+
 	/*.other_info block*/
 	.Contact_New .other_info {
 		padding: 0;
@@ -1854,12 +1854,12 @@ NEW CONTACT STYLES
 	}
 	.Contact_New .other_info p{
 			margin: 0 1.0em .8em 1.0em;
-	}	
+	}
 	/* .other_info elements are in as a list to skirt IE rendering issues for the links, and because semantically a list is probably better*/
 	.Contact_New .other_info li {
 		list-style:none;
 	}
-	
+
 	/*.other_info block - on contact type*/
 	.Contact_New .other_info,
 	.Contact_New .personalwebsite {
@@ -1898,28 +1898,28 @@ NEW CONTACT STYLES
 		margin-bottom: 1em;
 	}
 /*end 'PROJECTS' tab*/
-		
+
 /*this section contains styles for information under the 'BIOGRAPHY' tab*/
 /*currently all blocks are styled similarly, but have been given different class names to allow for modification*/
-		.Contact_New .career_profile, 
-		.Contact_New .awards_prizes, 
+		.Contact_New .career_profile,
+		.Contact_New .awards_prizes,
 		.Contact_New .membs_external,
 		.Contact_New .notable_achievements,
-		.Contact_New .presentations, 
+		.Contact_New .presentations,
 		.Contact_New .teaching_profile  {
 			clear: both;
 			display: block;
 			margin-bottom: 1em;
-		}		
-		.Contact_New .career_profile p, 
-		.Contact_New .awards_prizes p, 
+		}
+		.Contact_New .career_profile p,
+		.Contact_New .awards_prizes p,
 		.Contact_New .membs_external p,
 		.Contact_New .notable_achievements p,
-		.Contact_New .presentations p, 
+		.Contact_New .presentations p,
 		.Contact_New .teaching_profile p {
 			background-color:#f2f6f8;
 			padding: 0.5em;
-		}	
+		}
 /*end 'BIOGRAPHY' tab*/
 	.Contact_New .all_projects {display:block; float:left}
 	.Contact_New .all_publications {display:block; float:left;}
@@ -1940,3 +1940,4 @@ NEW CONTACT STYLES
 	.Contact_New div.all_projects ul.projects strong {display:block; float:left; width:7em;}
 	/*end fixes 12/12/06*/
 /*END NEW CONTACT STYLES*/
+

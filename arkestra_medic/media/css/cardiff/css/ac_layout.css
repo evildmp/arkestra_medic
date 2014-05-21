@@ -17,7 +17,7 @@
     padding: 0px 10px 0px;
     margin: 0 auto ;
     background: #fff;
-   
+
 
 }
 div#wrapper{
@@ -26,14 +26,14 @@ div#wrapper{
 }
 
 #content {
-    
+
 }
 .col_20_80 #nav_local {
 	float:left;
 	margin-left: 0px;
 	width: 160px;
 	white-space:normal;
-       
+
 }
 .col_20_80 #content {
     float: right;
@@ -86,7 +86,7 @@ body.medic #header p.h1subhead {
 }
 
 #footer .top_return{
-    
+
     padding: .5em 20px 1em;
     text-align: right;
     margin: 0;
@@ -120,9 +120,11 @@ div.row {
 
 .row ul.row ,
 .row .row {
-    margin: 0 0 .5em; 
+    margin: 0 0 .5em;
     height: 100%; /* why do we do this? */
     }
 
 div.plugin  {margin-bottom: 1em;}
 div.plugin div.row  {margin: 0; padding: 0;}
+
+span.site-name {color: #903;}

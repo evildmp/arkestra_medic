@@ -205,6 +205,7 @@ INSTALLED_APPS = (
     'pagination',
     'debug_toolbar',
     'inspector',
+    "chained_selectbox",
 
     # core Django applications
     # these should be last, so we can override their templates

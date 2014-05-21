@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 
     url(r'^semantic/', include('semanticeditor.urls')),
     url(r"", include("contacts_and_people.urls")),
+    url(r"", include("links.urls")),
 
     url(r"", include("publications.urls")),
 

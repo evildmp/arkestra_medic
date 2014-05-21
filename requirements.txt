@@ -6,11 +6,11 @@ django-debug-toolbar
 
 -e hg+https://bitbucket.org/spookylukey/django-easyfilters#egg=django-easyfilters
 
--e git+git@github.com:evildmp/Arkestra.git@improve-link-schema#egg=arkestra
+-e git+git@github.com:evildmp/Arkestra.git@develop#egg=arkestra
 -e git+git@github.com:evildmp/django-cms.git@live-13-02-18#egg=django-cms
 
--e git+git@github.com:evildmp/arkestra-publications.git@improve-link-schema#egg=arkestra-publications
--e git+git@github.com:evildmp/arkestra-clinical-studies.git@improve-link-schema#egg=arkestra-clinical-studies
+-e git+git@github.com:evildmp/arkestra-publications.git@develop#egg=arkestra-publications
+-e git+git@github.com:evildmp/arkestra-clinical-studies.git@develop#egg=arkestra-clinical-studies
 
 -e git+git@github.com:raumkraut/django-form-designer.git#egg=django-form-designer
 -e git+git@github.com:evildmp/django-inspector.git#egg=django-inspector

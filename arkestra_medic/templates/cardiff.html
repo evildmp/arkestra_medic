@@ -65,9 +65,9 @@
     			    </div><!-- END #content -->
                             {% endblock content %}
     			    {% block sub %}
-    			        {% if links %}********** now including includes/link_list.html
+    			        {% if links %}
     			            <div id="sub">
-    							{% include "includes/link_list.html" %}
+                                        {% include "includes/link_list.html" %}
     			            </div>
     			        {% endif %}
     			    {% endblock sub %}

@@ -34,7 +34,7 @@ arkestra_medic/restart-fcgi start
 pip install flup
 
 # edit the fcgi.conf (this is an nginx configuration) file:
-#   so that it has the correct path to the virtualenv (change instances of /path/to/virtualenv)
+#   change instances of /path/to/virtualenv to match the virtualenv's path
 #   so that the upstream name matches that of the virtualenv
 #   so that the list (i.e. port) and server_name values are correct
 
@@ -44,8 +44,8 @@ pip install flup
 # restart nginx
 sudo /etc/init.d/nginx restart
 
-# copy the site's media files (uploaded and processed images and video and other files) from
-# the existing installation:
+# copy the site's media files (uploaded and processed images and video and other 
+# files) from the existing installation:
 #   arkestra_medic/arkestra_medic/filer_public
 #   arkestra_medic/arkestra_medic/filer_public_thumbnails
 #   arkestra_medic/arkestra_medic/rendered_video

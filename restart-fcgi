@@ -1,0 +1,52 @@
+#!/bin/bash
+
+NAME="name-of-virtualenv"
+PROJECT_DIR="$HOME/$NAME/arkestra_medic"
+SETTINGS="arkestra_medic.deployment_settings"
+PYTHONPATH="$HOME/$NAME/lib/python2.6/site-packages"
+
+# fire up the virtualenv
+source $HOME/$NAME/bin/activate
+
+PIDFILE="$HOME/$NAME/arkestra.pid"
+SOCKET="$HOME/$NAME/arkestra.sock"
+DAEMON="$HOME/$NAME/bin/python"
+
+OPTS="manage.py runfcgi --settings=$SETTINGS socket=$SOCKET pidfile=$PIDFILE method=prefork minspare=1 maxspare=2 maxchildren=10 maxrequests=1000"
+
+
+fail () {
+    echo "failed!"
+    exit 1
+}
+
+success () {
+    echo "Success: $NAME."
+}
+
+case "$1" in
+  start)
+      echo -n "Starting $NAME: "
+      if PYTHONPATH=$PYTHONPATH start-stop-daemon -d $PROJECT_DIR --start --quiet --pidfile $PIDFILE --exec $DAEMON -- $OPTS ; then
+    echo -n "pidfile $PIDFILE"
+	success
+      else
+        fail
+      fi
+    ;;
+  stop)
+      echo -n "Stopping $NAME: "
+      if PYTHONPATH=$PYTHONPATH start-stop-daemon -d $PROJECT_DIR --stop --quiet --oknodo --retry 30 --pidfile $PIDFILE --exec $DAEMON ; then
+        success
+      else
+        fail
+      fi
+    ;;
+  restart)
+      $0 stop
+      $0 start
+    ;;
+  *)
+      echo "Usage: $0 {start|stop|restart}"
+      exit 1
+esac

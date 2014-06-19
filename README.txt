@@ -51,7 +51,7 @@ sudo /etc/init.d/nginx restart
 #   arkestra_medic/arkestra_medic/rendered_video
 
 # edit the symplectic-scripts file to reflect the correct virtualenv name
-# edit /ect/crontab to run the correct scripts at the correct time
+# edit /etc/crontab to run the correct scripts at the correct time
 # for example:
 #     15 07   * * *   topdog  /path/to/name-of-virtualenv/arkestra_medic/symplectic-scripts
 #     15 19   * * *   topdog  /path/to/name-of-virtualenv/arkestra_medic/symplectic-scripts

@@ -50,3 +50,4 @@ sudo /etc/init.d/nginx restart
 #   arkestra_medic/arkestra_medic/filer_public_thumbnails
 #   arkestra_medic/arkestra_medic/rendered_video
 
+# edit the symplectic-scripts file to reflect the correct virtualenv name

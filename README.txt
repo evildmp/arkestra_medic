@@ -51,3 +51,12 @@ sudo /etc/init.d/nginx restart
 #   arkestra_medic/arkestra_medic/rendered_video
 
 # edit the symplectic-scripts file to reflect the correct virtualenv name
+# edit /ect/crontab to run the correct scripts at the correct time
+# for example:
+#     15 07   * * *   topdog  /path/to/name-of-virtualenv/arkestra_medic/symplectic-scripts
+#     15 19   * * *   topdog  /path/to/name-of-virtualenv/arkestra_medic/symplectic-scripts
+
+# for live sites only (not training etc)
+# find the server's database backup script and edit its DBNAME to match the live database name
+# this script dumps the database so it can be backed up by legato
+# on live, this script is at /home/topdog/backups/arkestra-db-dump.sh; cron runs it daily

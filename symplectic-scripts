@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# use the name of the virtualenv you created
+# don't forget to edit crontab too to point to this file
+
+NAME="live-14-05-21"
+
+echo "running scripts from" $NAME
+
+PROJECT_DIR="$HOME/$NAME/arkestra_medic"
+SETTINGS="deployment_settings"
+
+# path to site-packages in the virtualenv
+# PYTHONPATH="$HOME/$NAME/lib/python2.6/site-packages"
+
+# create the temporary directories we require for users
+echo "creating temporary directories for users..."
+mkdir /tmp/symplectic/
+mkdir /tmp/symplectic/usersadmin
+touch /tmp/symplectic/usersadmin/clear_users.xml
+
+
+# sync users
+echo "synchronising users..."
+$HOME/$NAME/bin/python $PROJECT_DIR/manage.py sync_users
+
+# create the temporary directories we require for publications
+echo "creating temporary directories for publications..."
+mkdir /tmp/symplectic/userpubs
+mkdir /tmp/symplectic/pubs
+mkdir /tmp/symplectic/pubsmodified
+
+# get new publications
+echo "synchronising publications..."
+$HOME/$NAME/bin/python $PROJECT_DIR/manage.py get_new_publications
+
+# python manage.py get_researcher_publications # no longer used
+
+# get all publications - not to be run frequently! usually get_new_publications is enough
+# $HOME/$NAME/bin/python $PROJECT_DIR/manage.py get_all_publications
+echo "...finished"

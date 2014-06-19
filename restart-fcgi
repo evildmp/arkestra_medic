@@ -1,8 +1,12 @@
 #!/bin/bash
 
+# name-of-virtualenv must match that of the virtualenv you've created
 NAME="name-of-virtualenv"
+
 PROJECT_DIR="$HOME/$NAME/arkestra_medic"
 SETTINGS="arkestra_medic.deployment_settings"
+
+# note that this specifies Python 2.6 - you may wish to move to 2.7 later
 PYTHONPATH="$HOME/$NAME/lib/python2.6/site-packages"
 
 # fire up the virtualenv

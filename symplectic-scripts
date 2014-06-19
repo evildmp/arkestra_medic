@@ -3,7 +3,7 @@
 # use the name of the virtualenv you created
 # don't forget to edit crontab too to point to this file
 
-NAME="live-14-05-21"
+NAME="name-of-virtualenv"
 
 echo "running scripts from" $NAME
 

@@ -206,6 +206,7 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'inspector',
     "chained_selectbox",
+    "autocomplete_light",
 
     # core Django applications
     # these should be last, so we can override their templates
@@ -283,6 +284,10 @@ AUTH_PROFILE_MODULE = 'contacts_and_people.Person'
 
 ENABLE_CONTACTS_AND_PEOPLE_AUTH_ADMIN_INTEGRATION=True
 
+
+# ------------------------ Publications
+
+from publications.menu import PublicationsPersonTabs as PERSON_TABS
 
 # ------------------------ Django CMS
 

@@ -7,6 +7,9 @@ source bin/activate
 # clone this project into the virtualenv
 git clone git@github.com:evildmp/arkestra_medic.git
 
+# some packages use the wheel installer, so make it available
+pip install wheel
+
 # install all the packages it needs
 pip install -r arkestra_medic/requirements.txt
 

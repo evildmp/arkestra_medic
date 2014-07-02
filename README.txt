@@ -10,8 +10,10 @@ git clone git@github.com:evildmp/arkestra_medic.git
 # install all the packages it needs
 pip install -r arkestra_medic/requirements.txt
 
-# don't forget to install the Arkestra packages that need to be installed from source
+# don't forget to install the Arkestra and Arkestra Publications packages that need 
+# to be installed from source
 pip install -r src/arkestra/REQUIREMENTS.txt
+pip install -r src/arkestra-publications/REQUIREMENTS.txt
 
 # copy the database; give it the same name as the virtualenv
 

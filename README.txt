@@ -51,9 +51,9 @@ sudo /etc/init.d/nginx restart
 
 # copy the site's media files (uploaded and processed images and video and other 
 # files) from the existing installation:
-#   arkestra_medic/arkestra_medic/filer_public
-#   arkestra_medic/arkestra_medic/filer_public_thumbnails
-#   arkestra_medic/arkestra_medic/rendered_video
+#   arkestra_medic/arkestra_medic/media/filer_public
+#   arkestra_medic/arkestra_medic/media/filer_public_thumbnails
+#   arkestra_medic/arkestra_medic/media/rendered_video
 
 # edit the arkestra_medic/symplectic-scripts file to reflect the correct virtualenv name
 

@@ -5,7 +5,7 @@ cd backup-14-05-22
 source bin/activate
 
 # clone this project into the virtualenv
-git clone git@github.com:evildmp/arkestra_medic.git
+git clone https://github.com/evildmp/arkestra_medic.git
 
 # some packages use the wheel installer, so make it available
 pip install wheel

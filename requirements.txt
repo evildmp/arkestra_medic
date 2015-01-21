@@ -6,6 +6,7 @@ django-debug-toolbar
 
 -e hg+https://bitbucket.org/spookylukey/django-easyfilters#egg=django-easyfilters
 
+# Arkestra needs to be on 52c56a1165d8dbbb405ddb9b7ec5c3db0e1cb8b1
 -e git+https://github.com/evildmp/Arkestra.git@develop#egg=arkestra
 -e git+https://github.com/evildmp/django-cms.git@live-13-02-18#egg=django-cms
 
